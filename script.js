@@ -7,7 +7,7 @@
 // Aquesta variable serveix per quan es connecti el domini real.
 // En entorns locals pot quedar buida o amb el placeholder.
 const configuracioWeb = {
-    dominiPreferit: "https://www.cursadelserrat.cat",
+    dominiPreferit: "http://cursadelserrat.com/",
     dataEsdeveniment: "2026-06-06T09:00:00",
     nomEsdeveniment: "Cursa del Serrat"
 };
@@ -64,3 +64,4 @@ document.querySelectorAll('a[href^="#"]').forEach(ancora => {
 // S'ha utilitzat una estructura de graella responsive per facilitar-ne el canvi.
 
 console.log(`${configuracioWeb.nomEsdeveniment} configurada correctament al domini: ${configuracioWeb.dominiPreferit}`);
+
