@@ -59,9 +59,10 @@ ul {
         rgba(11,15,20,0.75)
     ), url('Imatges/Capçal.jpg');
 
-    background-size: 90% auto;
-    background-position: center;
-    background-attachment: fixed;
+    background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
     
 }
 
@@ -370,15 +371,60 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 20px 60px 20px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    .hero-contingut {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+        line-height: 1.05;
+        margin-bottom: 12px;
+    }
+
+    .subtitol {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
     .comptador {
-        gap: 10px;
+        gap: 12px;
+        margin-bottom: 2rem;
     }
     
     .segment-comptador {
-        min-width: 80px;
-        padding: 10px;
+        min-width: calc(50% - 12px);
+        padding: 14px 10px;
     }
-    
+
+    .segment-comptador span {
+        font-size: 2.2rem;
+    }
+
+    .hero-accions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+    .boto-primari,
+    .boto-secundari,
+    .boto-destacat {
+        width: 100%;
+        text-align: center;
+    }
+
     .graella-classificacions {
         grid-template-columns: 1fr;
     }
@@ -387,9 +433,43 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
-    .hero h1 {
-        font-size: 3rem;
+
+    .presentacio-cursa {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 50px;
+    }
+
+    .presentacio-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentacio-img img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    .presentacio-text {
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .presentacio-text h3 {
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 18px;
+    }
+
+    .presentacio-text p {
+        font-size: 1.05rem;
+        line-height: 1.75;
+        margin-bottom: 16px;
     }
 }
 
@@ -661,4 +741,5 @@ footer {
   .flickr-card img{
     height: 240px;
   }
+
 }
