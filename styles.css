@@ -1042,8 +1042,7 @@ footer {
     }
 
     .sponsors-lateral .sponsor-gros {
-        grid-column: 1 / -1;
-        /* Fa que el gros ocupi totes les columnes des d'inici a final */
+        /* Permetem que cada gros ocupi exactament una columna normal ara que n'hi ha 2 per fila */
         width: 100%;
         height: 140px;
     }
