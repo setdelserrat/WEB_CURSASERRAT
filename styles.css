@@ -989,24 +989,11 @@ footer {
     }
 
     .sponsors-lateral {
-        position: fixed;
+        position: absolute;
+        /* Fixats al document, fan scroll amb la pàgina */
         top: 15vh;
-        /* Just a sota del marquee */
-        bottom: 5vh;
-        width: 200px;
-        /* Ajustat per encabir 2 columnes de petits/mitjans */
+        width: 180px;
         z-index: 50;
-        overflow-y: auto;
-        /* Amagar scrollbar a diferents navegadors */
-        scrollbar-width: none;
-        /* Firefox */
-        -ms-overflow-style: none;
-        /* IE i Edge */
-    }
-
-    .sponsors-lateral::-webkit-scrollbar {
-        display: none;
-        /* Chrome, Safari i Opera */
     }
 
     .sponsors-esquerra {
@@ -1018,31 +1005,27 @@ footer {
     }
 
     .sponsors-logos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* Forcem 2 columnes idèntiques */
-        grid-auto-rows: max-content;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
         width: 100%;
         padding-bottom: 20px;
     }
 
     .sponsor-gros {
-        grid-column: span 2;
-        /* Els grossos ocupen les 2 columnes per destacar més */
-        width: 100%;
+        width: 160px;
         height: 120px;
-        /* Alçada ajustada per als grossos */
     }
 
     .sponsor-mitja {
-        width: 100%;
+        width: 120px;
         height: 90px;
         font-size: 0.75rem;
     }
 
     .sponsor-petit {
-        width: 100%;
+        width: 90px;
         height: 60px;
         font-size: 0.65rem;
     }
