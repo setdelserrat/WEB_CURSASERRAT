@@ -7,9 +7,9 @@
     --fons-seccions: #0f1722;
     --text-principal: #e6edf3;
     --text-secundari: #a9b4c0;
-    --accent-primari: #22c55e;
-    --accent-secundari: #38bdf8;
-    --vora-radius: 16px;
+    --accent-primari: #4d6135;
+    --accent-secundari: #edecd7;
+    --vora-radius: 4px;
     --ombra-suau: 0 4px 20px rgba(0, 0, 0, 0.3);
     --transicio: all 0.3s ease;
 }
@@ -101,19 +101,27 @@ ul {
 }
 
 .segment-comptador {
-    background: rgba(15, 23, 34, 0.8);
-    backdrop-filter: blur(10px);
-    padding: 15px 20px;
-    border-radius: 12px;
-    min-width: 100px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    padding: 10px 15px;
+    min-width: 80px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .segment-comptador span {
     display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--accent-primari);
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: 'Share Tech Mono', monospace;
+    line-height: 1;
+    margin-bottom: 5px;
 }
 
 /* Botons */
@@ -128,7 +136,7 @@ ul {
     background-color: var(--accent-primari);
     color: #000;
     padding: 14px 28px;
-    border-radius: 100px;
+    border-radius: 4px;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -139,7 +147,7 @@ ul {
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--text-principal);
     padding: 14px 28px;
-    border-radius: 100px;
+    border-radius: 4px;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.9rem;
