@@ -56,10 +56,8 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #e50000;
-    /* Fons vermell */
-    color: #ffffff;
-    /* Lletres blanques */
+    background-color: var(--accent-primari);
+    color: var(--fons-principal);
     padding: 12px 0;
     z-index: 9999;
     overflow: hidden;
@@ -194,9 +192,9 @@ ul {
 .boto-primari,
 .boto-destacat {
     background-color: var(--accent-primari);
-    color: #000;
+    color: var(--fons-principal);
     padding: 14px 28px;
-    border-radius: 4px;
+    border-radius: var(--vora-radius);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -208,7 +206,7 @@ ul {
     border: 1px solid rgba(0, 0, 0, 0.2);
     color: var(--text-principal);
     padding: 14px 28px;
-    border-radius: 4px;
+    border-radius: var(--vora-radius);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -300,18 +298,23 @@ section {
     background-color: var(--fons-seccions);
     padding: 30px;
     border-radius: var(--vora-radius);
-    border-left: 4px solid var(--accent-secundari);
+    border-left: 4px solid var(--accent-primari);
     transition: var(--transicio);
 }
 
 .card:hover {
     transform: translateY(-5px);
-    background-color: #161f2c;
+    background-color: var(--accent-primari);
 }
 
 .card h3 {
     margin-bottom: 15px;
-    color: var(--accent-secundari);
+    color: var(--accent-primari);
+    transition: var(--transicio);
+}
+
+.card:hover h3, .card:hover p {
+    color: var(--fons-principal);
 }
 
 /* FAQ */
@@ -331,7 +334,7 @@ details {
     background-color: var(--fons-seccions);
     margin-bottom: 15px;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: var(--vora-radius);
     cursor: pointer;
 }
 
@@ -357,14 +360,14 @@ details p {
     padding: 40px;
     text-align: center;
     border-radius: var(--vora-radius);
-    border: 1px solid rgba(56, 189, 248, 0.2);
+    border: 1px solid var(--accent-primari);
     color: var(--text-principal);
 }
 
 .enllac-card {
     display: inline-block;
     margin-top: 20px;
-    color: var(--accent-secundari);
+    color: var(--accent-primari);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -379,7 +382,7 @@ details p {
 .foto-placeholder {
     aspect-ratio: 1 / 1;
     background-color: var(--fons-seccions);
-    border-radius: 12px;
+    border-radius: var(--vora-radius);
     overflow: hidden;
     position: relative;
 }
@@ -453,7 +456,7 @@ footer {
 
 .presentacio-img img {
     width: 100%;
-    border-radius: 16px;
+    border-radius: var(--vora-radius);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -478,7 +481,7 @@ footer {
     padding: 18px;
     background: var(--fons-seccions);
     border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
+    border-radius: var(--vora-radius);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -506,7 +509,7 @@ footer {
 .input-cercador {
     min-width: 260px;
     padding: 10px 12px;
-    border-radius: 12px;
+    border-radius: var(--vora-radius);
     border: 1px solid rgba(0, 0, 0, 0.12);
     background: var(--fons-principal);
     color: var(--text-principal);
@@ -520,7 +523,7 @@ footer {
 
 .boto-netejar {
     padding: 10px 12px;
-    border-radius: 12px;
+    border-radius: var(--vora-radius);
     border: 1px solid rgba(0, 0, 0, 0.12);
     background: transparent;
     color: var(--text-principal);
@@ -529,7 +532,7 @@ footer {
 
 .taula-wrap {
     overflow: auto;
-    border-radius: 14px;
+    border-radius: var(--vora-radius);
     border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
@@ -571,10 +574,10 @@ footer {
 .boto-info {
     width: 28px;
     height: 28px;
-    border-radius: 999px;
-    border: 1px solid rgba(56, 189, 248, 0.55);
-    background: rgba(56, 189, 248, 0.10);
-    color: #38bdf8;
+    border-radius: var(--vora-radius);
+    border: 1px solid var(--accent-primari);
+    background: rgba(77, 97, 53, 0.1);
+    color: var(--accent-primari);
     cursor: pointer;
     font-weight: 700;
 }
@@ -609,7 +612,7 @@ footer {
     background: var(--fons-seccions);
     /* Fons clar */
     border: 1px solid rgba(0, 0, 0, 0.10);
-    border-radius: 16px;
+    border-radius: var(--vora-radius);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     /* Ombra ajustada */
     overflow: hidden;
@@ -632,7 +635,7 @@ footer {
     color: var(--text-principal);
     width: 34px;
     height: 34px;
-    border-radius: 12px;
+    border-radius: var(--vora-radius);
     cursor: pointer;
 }
 
@@ -655,7 +658,7 @@ footer {
     /* Ajustat a fons clar */
     border: 1px solid rgba(0, 0, 0, 0.06);
     /* Ajustat a fons clar */
-    border-radius: 14px;
+    border-radius: var(--vora-radius);
     padding: 12px;
 }
 
@@ -684,7 +687,7 @@ footer {
 .flickr-card {
     position: relative;
     display: block;
-    border-radius: 16px;
+    border-radius: var(--vora-radius);
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.08);
     background: var(--fons-seccions);
@@ -852,7 +855,7 @@ footer {
         width: 100%;
         max-width: 320px;
         height: auto;
-        border-radius: 18px;
+        border-radius: var(--vora-radius);
     }
 
     .presentacio-text {
