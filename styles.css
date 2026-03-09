@@ -123,17 +123,17 @@ ul {
 }
 
 .logo-placeholder {
-    font-size: 1.8rem;
+    font-size: 2.2rem; /* Make date bigger */
     font-weight: 800;
     color: var(--accent-primari);
     letter-spacing: 2px;
-    margin: 30px 0 0 0; /* Add top margin to space from marquee */
+    margin: 50px 0 20px 0; /* Push date down from marquee, gap from logo */
 }
 
 /* Logo en lloc del títol */
 .logo-hero {
     max-width: 90vw;
-    width: 600px;
+    width: 750px; /* Make logo bigger */
     height: auto;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
 }
@@ -161,21 +161,21 @@ ul {
 .segment-comptador {
     background: transparent;
     padding: 10px 15px;
-    min-width: 80px;
+    min-width: 90px;
     border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--accent-primari);
     /* Dark green text */
-    font-size: 0.9rem;
+    font-size: 1.2rem; /* Make text bigger */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .segment-comptador span {
     display: block;
-    font-size: 4rem;
+    font-size: 5rem; /* Make numbers bigger */
     font-weight: 300;
     color: var(--text-principal);
     /* Dark text */
