@@ -1021,24 +1021,29 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         /* Forcem 2 columnes idèntiques */
+        grid-auto-rows: max-content;
         gap: 10px;
         width: 100%;
+        padding-bottom: 20px;
     }
 
     .sponsor-gros {
         grid-column: span 2;
         /* Els grossos ocupen les 2 columnes per destacar més */
         width: 100%;
-        height: 100px;
+        height: 120px;
+        /* Alçada ajustada per als grossos */
     }
 
     .sponsor-mitja {
         width: 100%;
-        height: 80px;
+        height: 90px;
+        font-size: 0.75rem;
     }
 
     .sponsor-petit {
         width: 100%;
         height: 60px;
+        font-size: 0.65rem;
     }
 }
