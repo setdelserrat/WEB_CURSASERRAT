@@ -993,6 +993,19 @@ footer {
     font-size: 0.65rem;
 }
 
+.sponsors-inferior-hero {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.sponsors-inferior-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
 /* Pantalles amples: col·loquem les barres laterals de forma fixa */
 @media (min-width: 1300px) {
     .seccio-patrocinadors {
