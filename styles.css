@@ -1034,28 +1034,31 @@ footer {
 
     .sponsors-logos {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* Dues columnes en paral·lel */
+        grid-template-columns: repeat(6, 1fr);
+        /* Divisió en 6 per fer divisors (span 6 = 1 fila, span 3 = 2 per fila, span 2 = 3 per fila) */
         gap: 15px;
         width: 100%;
         padding-bottom: 20px;
     }
 
     .sponsors-lateral .sponsor-gros {
-        /* Permetem que cada gros ocupi exactament una columna normal ara que n'hi ha 2 per fila */
+        grid-column: span 6;
+        /* 1 per fila */
         width: 100%;
         height: 140px;
     }
 
     .sponsors-lateral .sponsor-mitja {
+        grid-column: span 3;
+        /* 2 per fila */
         width: 100%;
-        height: 90px;
-        font-size: 0.75rem;
+        height: 100px;
     }
 
     .sponsors-lateral .sponsor-petit {
+        grid-column: span 2;
+        /* 3 per fila */
         width: 100%;
         height: 70px;
-        font-size: 0.65rem;
     }
 }
