@@ -980,32 +980,7 @@ footer {
     font-size: 0.65rem;
 }
 
-.sponsors-inferior-hero {
-    position: absolute;
-    bottom: 20px;
-    /* Separació respecte al límit inferior */
-    left: 50%;
-    transform: translateX(-50%);
-    /* Centrem horitzontalment */
-    width: 100%;
-    max-width: 900px;
-    z-index: 50;
-    padding: 0 10px;
-}
 
-.sponsors-inferior-logos {
-    display: flex;
-    flex-wrap: nowrap;
-    /* Manté a tots en una sola línia sempre */
-    justify-content: flex-start;
-    /* Alinea a l'esquerra inicialment */
-    gap: 12px;
-    width: 100%;
-    overflow-x: auto;
-    /* Afegeix barra de desplaçament horitzontal si cal */
-    padding-bottom: 10px;
-    /* Donar aire a la barra de desplaçament */
-}
 
 /* Pantalles amples: col·loquem les barres laterals de forma fixa */
 @media (min-width: 1300px) {
@@ -1035,7 +1010,11 @@ footer {
     .sponsors-logos {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        /* Divisió en 6 per fer divisors (span 6 = 1 fila, span 3 = 2 per fila, span 2 = 3 per fila) */
+        /* MÀGIA DEL DISSENY: Graella de 6 columnes invisibles.
+           - Grossos:  ocupen 6 (1 per fila perquè 6/6 = 1)
+           - Mitjans:  ocupen 3 (2 per fila perquè 6/3 = 2)
+           - Petits:   ocupen 2 (3 per fila perquè 6/2 = 3)
+        */
         gap: 15px;
         width: 100%;
         padding-bottom: 20px;
