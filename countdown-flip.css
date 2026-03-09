@@ -4,12 +4,12 @@
 
 .countdown {
     width: 100%;
-    max-width: 600px; /* Reduced from 720 to fit better on standard screens */
+    max-width: 800px; /* Ensured wide enough for 1 line */
     margin: 0 auto;
-    display: flex; /* Use flexbox for better centering and responsiveness */
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
-    gap: 15px; /* Spacing between blocks */
+    flex-wrap: nowrap; /* Prevent wrapping so it stays on 1 line */
+    gap: 15px;
 }
 
 .countdown .bloc-time {
@@ -52,7 +52,7 @@
     font-size: 4.5em; /* Scaled down from 5.94em */
     line-height: 87px; /* Scaled down from 107px */
     font-weight: 700;
-    color: #de4848; /* Vermell clàssic del flip */
+    color: var(--fons-principal); /* Text clair beige */
 }
 
 .countdown .figure .top, .countdown .figure .bottom-back {
@@ -73,7 +73,7 @@
 
 .countdown .figure .top {
     z-index: 3;
-    background-color: #f7f7f7;
+    background-color: var(--accent-primari); /* Verd fosc */
     transform-origin: 50% 100%;
     -webkit-transform-origin: 50% 100%;
     border-top-left-radius: 8px;
@@ -86,6 +86,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    background-color: #657e49; /* Verd una mica més clar pel fons bottom */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .countdown .figure .bottom::before {
@@ -104,7 +107,7 @@
     top: 0;
     height: 50%;
     overflow: hidden;
-    background-color: #f7f7f7;
+    background-color: var(--accent-primari); /* Verd fosc */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -127,7 +130,7 @@
 .countdown .figure .top-back {
     z-index: 4;
     bottom: 0;
-    background-color: #fff;
+    background-color: #657e49; /* Verd fons bottom */
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
     transform: perspective(200px) rotateX(180deg);
@@ -147,18 +150,29 @@
 
 /* Responsibilitat mòbil per al flip */
 @media (max-width: 600px) {
+    .countdown {
+        gap: 5px; /* Menys espai entre blocs */
+        max-width: 100vw;
+    }
+
     .countdown .figure {
-        height: 60px;
-        width: 45px;
-        margin-right: 4px;
+        height: 50px;
+        width: 35px;
+        margin-right: 2px;
     }
     
     .countdown .figure > span {
-        font-size: 2.8em;
-        line-height: 58px;
+        font-size: 2em;
+        line-height: 48px;
     }
     
     .countdown .bloc-time {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+
+    .countdown .count-title {
+        font-size: 0.7em;
+        margin-bottom: 5px;
     }
 }
