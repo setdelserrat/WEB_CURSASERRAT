@@ -993,8 +993,8 @@ footer {
         top: 15vh;
         /* Just a sota del marquee */
         bottom: 5vh;
-        width: 220px;
-        /* Eixamplat per encabir les files de 2 */
+        width: 200px;
+        /* Ajustat per encabir 2 columnes de petits/mitjans */
         z-index: 50;
         overflow-y: auto;
         /* Amagar scrollbar a diferents navegadors */
@@ -1018,12 +1018,27 @@ footer {
     }
 
     .sponsors-logos {
-        flex-direction: row;
-        /* Canviat de column a row perquè s'agrupin als costats */
-        flex-wrap: wrap;
-        /* Permetem l'apilament múltiple */
-        justify-content: center;
-        align-items: flex-start;
-        /* Que quedin arran de dalt */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Forcem 2 columnes idèntiques */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .sponsor-gros {
+        grid-column: span 2;
+        /* Els grossos ocupen les 2 columnes per destacar més */
+        width: 100%;
+        height: 100px;
+    }
+
+    .sponsor-mitja {
+        width: 100%;
+        height: 80px;
+    }
+
+    .sponsor-petit {
+        width: 100%;
+        height: 60px;
     }
 }
