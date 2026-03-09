@@ -50,6 +50,34 @@ ul {
     list-style: none;
 }
 
+/* Kiosk Mòbil */
+.kiosk-marquee {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e50000; /* Fons vermell */
+    color: #ffffff;            /* Lletres blanques */
+    padding: 12px 0;
+    z-index: 1000;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.kiosk-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee-rodant 15s linear infinite;
+}
+
+@keyframes marquee-rodant {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -114,20 +142,22 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--text-principal);
+    color: #ffffff;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .segment-comptador span {
     display: block;
     font-size: 4rem;
     font-weight: 300;
-    color: var(--text-principal);
+    color: #ffffff;
     font-family: 'Share Tech Mono', monospace;
     line-height: 1;
     margin-bottom: 5px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 /* Botons */
