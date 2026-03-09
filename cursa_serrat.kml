@@ -1,94 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>LA CURSA DEL SERRAT 2025</name>
+    <name>LA CURSA DEL SERRAT 2026</name>
     <description/>
-    <Style id="icon-1502-FFEA00-nodesc-normal">
+    <Style id="icon-1502-FFEA00-normal">
       <IconStyle>
-        <color>ff00eaff</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-8.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <Style id="icon-1502-FFEA00-nodesc-highlight">
+    <Style id="icon-1502-FFEA00-highlight">
       <IconStyle>
-        <color>ff00eaff</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-8.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1502-FFEA00-nodesc">
+    <StyleMap id="icon-1502-FFEA00">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1502-FFEA00-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1502-FFEA00-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1502-FFEA00-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1502-FFEA00-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1517-A52714-nodesc-normal">
+    <Style id="icon-1517-A52714-normal">
       <IconStyle>
-        <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-7.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <Style id="icon-1517-A52714-nodesc-highlight">
+    <Style id="icon-1517-A52714-highlight">
       <IconStyle>
-        <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-7.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1517-A52714-nodesc">
+    <StyleMap id="icon-1517-A52714">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1517-A52714-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1517-A52714-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1517-A52714-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1517-A52714-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Style id="icon-1574-558B2F-normal">
       <IconStyle>
-        <color>ff2f8b55</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-1.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -97,10 +80,9 @@
     </Style>
     <Style id="icon-1574-558B2F-highlight">
       <IconStyle>
-        <color>ff2f8b55</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-1.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -117,52 +99,43 @@
         <styleUrl>#icon-1574-558B2F-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1577-A52714-nodesc-normal">
+    <Style id="icon-1577-A52714-normal">
       <IconStyle>
-        <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-6.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <Style id="icon-1577-A52714-nodesc-highlight">
+    <Style id="icon-1577-A52714-highlight">
       <IconStyle>
-        <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-6.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1577-A52714-nodesc">
+    <StyleMap id="icon-1577-A52714">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1577-A52714-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1577-A52714-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1577-A52714-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1577-A52714-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Style id="icon-1661-558B2F-normal">
       <IconStyle>
-        <color>ff2f8b55</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-2.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -171,10 +144,9 @@
     </Style>
     <Style id="icon-1661-558B2F-highlight">
       <IconStyle>
-        <color>ff2f8b55</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-2.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -191,149 +163,147 @@
         <styleUrl>#icon-1661-558B2F-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1661-BDBDBD-nodesc-normal">
+    <Style id="icon-1661-BDBDBD-normal">
       <IconStyle>
-        <color>ffbdbdbd</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-3.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <Style id="icon-1661-BDBDBD-nodesc-highlight">
+    <Style id="icon-1661-BDBDBD-highlight">
       <IconStyle>
-        <color>ffbdbdbd</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-3.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1661-BDBDBD-nodesc">
+    <StyleMap id="icon-1661-BDBDBD">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1661-BDBDBD-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1661-BDBDBD-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1661-BDBDBD-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1661-BDBDBD-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1733-0288D1-nodesc-normal">
+    <Style id="icon-1733-0288D1-normal">
       <IconStyle>
-        <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-4.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <Style id="icon-1733-0288D1-nodesc-highlight">
+    <Style id="icon-1733-0288D1-highlight">
       <IconStyle>
-        <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-4.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1733-0288D1-nodesc">
+    <StyleMap id="icon-1733-0288D1">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1733-0288D1-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1733-0288D1-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1733-0288D1-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1733-0288D1-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1865-0288D1-nodesc-normal">
+    <Style id="icon-1865-0288D1-normal">
       <IconStyle>
-        <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-5.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <Style id="icon-1865-0288D1-nodesc-highlight">
+    <Style id="icon-1865-0288D1-highlight">
       <IconStyle>
-        <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>images/icon-5.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1865-0288D1-nodesc">
+    <StyleMap id="icon-1865-0288D1">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1865-0288D1-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1865-0288D1-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1865-0288D1-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1865-0288D1-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="line-A52714-5000-normal">
+    <Style id="line-558B2F-5000-normal">
       <LineStyle>
-        <color>ff1427a5</color>
+        <color>ff2f8b55</color>
         <width>5</width>
       </LineStyle>
     </Style>
-    <Style id="line-A52714-5000-highlight">
+    <Style id="line-558B2F-5000-highlight">
       <LineStyle>
-        <color>ff1427a5</color>
+        <color>ff2f8b55</color>
         <width>7.5</width>
       </LineStyle>
     </Style>
-    <StyleMap id="line-A52714-5000">
+    <StyleMap id="line-558B2F-5000">
       <Pair>
         <key>normal</key>
-        <styleUrl>#line-A52714-5000-normal</styleUrl>
+        <styleUrl>#line-558B2F-5000-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#line-A52714-5000-highlight</styleUrl>
+        <styleUrl>#line-558B2F-5000-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="poly-1A237E-2501-163-nodesc-normal">
+    <Style id="line-E65100-5000-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-5000-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>7.5</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-5000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-5000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-5000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-1A237E-2501-163-normal">
       <LineStyle>
         <color>ff7e231a</color>
         <width>2.501</width>
@@ -343,11 +313,8 @@
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <Style id="poly-1A237E-2501-163-nodesc-highlight">
+    <Style id="poly-1A237E-2501-163-highlight">
       <LineStyle>
         <color>ff7e231a</color>
         <width>3.7515</width>
@@ -357,26 +324,35 @@
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <StyleMap id="poly-1A237E-2501-163-nodesc">
+    <StyleMap id="poly-1A237E-2501-163">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-1A237E-2501-163-nodesc-normal</styleUrl>
+        <styleUrl>#poly-1A237E-2501-163-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-1A237E-2501-163-nodesc-highlight</styleUrl>
+        <styleUrl>#poly-1A237E-2501-163-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Folder>
       <name>Wikiloc - 7dS</name>
       <Placemark>
         <name>Inici de la ruta 7dS</name>
-        <description><![CDATA[dimarts, 6 de maig del 2025 19:12 CEST<br>Elevació: 612 m]]></description>
+        <description><![CDATA[descripció: dimarts, 6 de maig del 2025 19:12 CEST<br>Elevació: 612 m<br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1574-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value>dimarts, 6 de maig del 2025 19:12 CEST
+Elevació: 612 m</value>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             2.021053,41.94481,612.417
@@ -385,8 +361,20 @@
       </Placemark>
       <Placemark>
         <name>Fi de la ruta 7dS</name>
-        <description><![CDATA[dimarts, 6 de maig del 2025 20:22 CEST<br>Elevació: 613 m]]></description>
+        <description><![CDATA[descripció: dimarts, 6 de maig del 2025 20:22 CEST<br>Elevació: 613 m<br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1661-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value>dimarts, 6 de maig del 2025 20:22 CEST
+Elevació: 613 m</value>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             2.021027,41.944964,613.409
@@ -394,230 +382,20 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>7dS</name>
-        <description><![CDATA[Estadístiques calculades a partir de les dades importades<br><br>dimarts, 6 de maig del 2025 19:12 CEST<br>Distància: 12,1 km<br>Durada: 1 hores, 10 minuts i 20 segons<br>Velocitat mitjana: 10,3 km/h<br>Elevació mínima: 544 m<br>Elevació màxima: 617 m<br>Ascensió total: 98 m<br>Baixada total: 99 m]]></description>
-        <styleUrl>#line-A52714-5000</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>
-            2.021053,41.94481,612.417
-            2.022134,41.945244,620.687
-            2.021493,41.945915,621.515
-            2.020578,41.946541,628.909
-            2.019523,41.946866,629.233
-            2.018713,41.947356,628.122
-            2.018351,41.947244,628.263
-            2.018065,41.947348,627.545
-            2.017836,41.947541,626.445
-            2.017663,41.948173,623.691
-            2.017154,41.948166,622.968
-            2.015622,41.947762,613.674
-            2.014781,41.947354,607.686
-            2.014279,41.948208,600.512
-            2.013333,41.949315,592.132
-            2.012353,41.949989,595.505
-            2.011589,41.950288,592.109
-            2.011078,41.95033,592.993
-            2.009729,41.950053,589.662
-            2.008917,41.949517,584.723
-            2.008155,41.949484,585.165
-            2.00806,41.949385,582.835
-            2.008126,41.949181,578.871
-            2.008437,41.94907,575.858
-            2.009787,41.9496,580.624
-            2.010493,41.949315,575.546
-            2.010382,41.949032,568.749
-            2.010194,41.949112,567.502
-            2.009522,41.949059,563.922
-            2.008688,41.948511,553.909
-            2.0087,41.948359,548.016
-            2.0085,41.948183,543.165
-            2.008006,41.94815,540.776
-            2.007814,41.948349,545.658
-            2.006834,41.9483,536.998
-            2.00664,41.948654,542.474
-            2.006049,41.94892,538.191
-            2.006662,41.950082,542.037
-            2.006619,41.950445,537.959
-            2.007569,41.95057,549.272
-            2.00788,41.950484,554.113
-            2.008281,41.950951,549.814
-            2.008223,41.951193,545.309
-            2.008526,41.951459,547.369
-            2.008302,41.951486,544.468
-            2.008059,41.951346,543.239
-            2.007868,41.951582,543.031
-            2.007923,41.951738,543.111
-            2.007643,41.952169,550.247
-            2.007744,41.952548,554.184
-            2.008028,41.952916,555.75
-            2.007427,41.953314,571.192
-            2.007391,41.953627,571.513
-            2.007223,41.953724,571.043
-            2.006853,41.953625,578.307
-            2.00617,41.953662,580.109
-            2.005946,41.953804,575.943
-            2.005817,41.954123,571.342
-            2.00501,41.954583,561.673
-            2.004998,41.954955,560.395
-            2.004734,41.955178,555.265
-            2.004585,41.955789,540.171
-            2.004489,41.955829,538.438
-            2.003742,41.955393,536.564
-            2.003599,41.955076,538.046
-            2.003079,41.955267,528.374
-            2.002746,41.955236,525.856
-            2.002165,41.954961,522.821
-            2.001262,41.955142,525.809
-            2.001124,41.955346,528.649
-            2.0011,41.955788,528.948
-            2.000795,41.956252,530.189
-            2.000524,41.95625,534.411
-            2.000573,41.95598,534.361
-            2.00047,41.955785,535.967
-            2.000218,41.955928,536.994
-            1.99979,41.95681,544.22
-            1.999188,41.957201,550.812
-            1.999154,41.957571,554.575
-            1.998991,41.957862,555.928
-            1.997639,41.958427,551.82
-            1.997511,41.95859,551.909
-            1.997615,41.959121,555.299
-            1.996467,41.960283,562.938
-            1.995578,41.960899,563.289
-            1.99502,41.960947,566.771
-            1.994641,41.961313,571.741
-            1.99433,41.961449,573.657
-            1.993465,41.961581,578.184
-            1.993012,41.96152,581.11
-            1.992667,41.960823,592.252
-            1.992263,41.960613,596.084
-            1.99167,41.96005,604.607
-            1.989682,41.959071,639.117
-            1.989056,41.958601,653.109
-            1.989021,41.958244,661.92
-            1.9887,41.95803,670.449
-            1.98772,41.957825,680.78
-            1.986844,41.957156,689.912
-            1.986358,41.957235,686.982
-            1.985814,41.957634,680.968
-            1.985465,41.95729,673.945
-            1.985712,41.956987,672.091
-            1.986316,41.956724,677.253
-            1.986465,41.956471,679.127
-            1.986087,41.955825,670.368
-            1.985839,41.955633,665.014
-            1.985687,41.954973,657.109
-            1.985042,41.953741,644.674
-            1.985074,41.95246,628.983
-            1.9856,41.952326,628.054
-            1.986215,41.951981,619.256
-            1.986614,41.952238,618.196
-            1.986684,41.952053,616.892
-            1.987163,41.951997,612.939
-            1.987947,41.951565,609.075
-            1.988495,41.951442,600.697
-            1.988545,41.95177,597.412
-            1.988041,41.952306,597.032
-            1.988189,41.952708,591.205
-            1.988027,41.953085,593.809
-            1.988105,41.953327,593.833
-            1.988859,41.952824,582.292
-            1.989504,41.952792,574.723
-            1.989687,41.952532,570.615
-            1.989959,41.952583,571.245
-            1.990114,41.952167,568.351
-            1.990526,41.951777,567.378
-            1.990979,41.951718,572.444
-            1.991218,41.951176,563.156
-            1.991781,41.950963,564.016
-            1.992355,41.950939,559.676
-            1.992871,41.951385,564.613
-            1.993789,41.951077,558.109
-            1.994025,41.951758,560.993
-            1.994205,41.951787,558.872
-            1.994298,41.951615,557.173
-            1.994534,41.951582,556.215
-            1.99475,41.951396,555.515
-            1.995174,41.950751,549.571
-            1.995261,41.950378,547.478
-            1.99513,41.950052,541.174
-            1.995311,41.949714,537.556
-            1.995797,41.9495,540.625
-            1.99694,41.949517,546.426
-            1.997387,41.949329,539.008
-            1.997918,41.949583,543.509
-            1.998572,41.949436,534.934
-            1.998904,41.949675,542.553
-            1.999707,41.94994,540.284
-            1.999837,41.950295,542.476
-            1.999729,41.950608,544.976
-            2.000023,41.950805,539.722
-            2.00022,41.951202,536.199
-            2.000433,41.951274,532.455
-            1.999717,41.951678,537.967
-            1.999049,41.951847,539.779
-            1.99919,41.951989,537.405
-            2.000377,41.951831,529.825
-            2.001523,41.951947,520.509
-            2.001568,41.95208,518.569
-            2.000942,41.952472,523.948
-            2.000625,41.952993,521.879
-            2.00072,41.953187,518.461
-            2.001064,41.95325,515.021
-            2.001023,41.952844,516.287
-            2.001257,41.952585,516.384
-            2.001701,41.952482,513.09
-            2.002415,41.952548,520.192
-            2.002696,41.952181,521.756
-            2.002855,41.951661,521.559
-            2.002871,41.950393,529.514
-            2.002708,41.949105,525.509
-            2.003012,41.949003,525.317
-            2.003884,41.949225,523.056
-            2.00373,41.949015,519.497
-            2.004534,41.949155,520.979
-            2.004158,41.948954,516.949
-            2.003863,41.948584,514.665
-            2.002817,41.948229,512.922
-            2.002019,41.94768,503.298
-            2.002295,41.947731,507.12
-            2.002703,41.947536,513.035
-            2.003327,41.947517,521.786
-            2.003619,41.947774,524.314
-            2.003828,41.947804,528.909
-            2.004442,41.947172,544.885
-            2.005027,41.94707,547.844
-            2.005602,41.94678,558.865
-            2.006429,41.946956,555.847
-            2.00671,41.946813,564.247
-            2.007225,41.946825,571.193
-            2.007714,41.946651,579.59
-            2.0083,41.946728,578.876
-            2.008805,41.946536,583.628
-            2.010362,41.946773,587.022
-            2.011244,41.946496,589.462
-            2.011475,41.946236,587.808
-            2.011744,41.946395,591.609
-            2.012826,41.946369,596.084
-            2.013181,41.946625,600.113
-            2.013898,41.94668,598.384
-            2.014235,41.946462,593.346
-            2.015106,41.946499,599.666
-            2.015617,41.946174,604.232
-            2.016363,41.945259,613.169
-            2.01694,41.945077,613.395
-            2.017965,41.945131,607.437
-            2.018708,41.945347,607.356
-            2.019968,41.945076,614.559
-            2.020469,41.945383,618.014
-            2.021027,41.944964,613.409
-          </coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
         <name>SORTIDA/ARRIBADA</name>
-        <styleUrl>#icon-1661-BDBDBD-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1661-BDBDBD</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             2.02109,41.9448646,0
@@ -626,7 +404,19 @@
       </Placemark>
       <Placemark>
         <name>PARKING</name>
-        <styleUrl>#poly-1A237E-2501-163-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#poly-1A237E-2501-163</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -644,7 +434,19 @@
       </Placemark>
       <Placemark>
         <name>WC</name>
-        <styleUrl>#icon-1733-0288D1-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1733-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             2.0212529,41.9453369,0
@@ -653,7 +455,19 @@
       </Placemark>
       <Placemark>
         <name>DUTXES</name>
-        <styleUrl>#icon-1865-0288D1-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1865-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             2.0154339,41.9441496,0
@@ -662,7 +476,19 @@
       </Placemark>
       <Placemark>
         <name>CONTROL (SERRAT LLOBATER)</name>
-        <styleUrl>#icon-1577-A52714-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1577-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             1.986844,41.957156,0
@@ -671,7 +497,19 @@
       </Placemark>
       <Placemark>
         <name>CONTROL (HIDRATACIÓ)</name>
-        <styleUrl>#icon-1517-A52714-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1517-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             2.0038203,41.9491366,0
@@ -680,7 +518,19 @@
       </Placemark>
       <Placemark>
         <name>ANIMACIÓ 1</name>
-        <styleUrl>#icon-1502-FFEA00-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1502-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             2.008302,41.951486,0
@@ -689,7 +539,19 @@
       </Placemark>
       <Placemark>
         <name>BALMA DE LES PASTORELLES</name>
-        <styleUrl>#icon-1502-FFEA00-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1502-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             1.9954339,41.9609222,0
@@ -698,7 +560,19 @@
       </Placemark>
       <Placemark>
         <name>ANIMACIÓ 2</name>
-        <styleUrl>#icon-1502-FFEA00-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1502-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             2.003541,41.9489955,0
@@ -707,13 +581,2241 @@
       </Placemark>
       <Placemark>
         <name>SERRAT LLOBATER</name>
-        <styleUrl>#icon-1502-FFEA00-nodesc</styleUrl>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1502-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
             1.9876137,41.9570927,0
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>CDS12k</name>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#line-E65100-5000</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            2.02107299119234,41.9449190050364,611.6
+            2.02106502838433,41.9449169933796,611.6
+            2.02109696343541,41.9448910094798,611.8
+            2.02113702893257,41.9448750000447,612
+            2.02119000256062,41.9448699709028,612.2
+            2.02123702503741,41.944867959246,612.6
+            2.02132998034358,41.9448750000447,613
+            2.02146400697529,41.9449050072581,613.6
+            2.02153097838163,41.944941971451,614.6
+            2.02157096005976,41.944963010028,615
+            2.02164899557829,41.9450090266764,615.8
+            2.02169098891318,41.9450269639492,616
+            2.02178000472486,41.9450620003045,616.6
+            2.02181898057461,41.9450790155679,617
+            2.02185896225274,41.9450940191746,617
+            2.02190296724439,41.9451120402664,617.4
+            2.02201100997627,41.9451579730958,618.4
+            2.02204596251249,41.9451780058444,618.6
+            2.02205501496792,41.9451989606023,619
+            2.02202098444104,41.9452609866858,619.4
+            2.02196398749948,41.9453279580921,619.6
+            2.02192903496325,41.9453420396894,619.6
+            2.02184102497995,41.9454189855605,619.8
+            2.02174597419798,41.945510013029,619.8
+            2.02164698392153,41.9455970171839,620
+            2.02153701335192,41.9456980191171,620.4
+            2.02151102945209,41.9457280263305,620.4
+            2.0214220136404,41.9458239991218,621
+            2.02132696285844,41.9459130149335,622
+            2.02120802365243,41.946035977453,623.2
+            2.02114800922573,41.9460959918797,624
+            2.02111096121371,41.9461259990931,624.2
+            2.02107198536396,41.9461570121348,624.6
+            2.02090702950954,41.9462839979678,625.8
+            2.02078599482775,41.9463659729809,626.6
+            2.0207419898361,41.9463920406997,627
+            2.02058097347617,41.9464900251478,628
+            2.02047795988619,41.9465610198677,629.2
+            2.02044200152159,41.946582980454,629.6
+            2.02039699070156,41.9466040190309,630
+            2.02035197988153,41.9466180168092,630.4
+            2.02020102180541,41.946656992659,631.4
+            2.02015399932861,41.9466709904373,632
+            2.0200339704752,41.9467050209641,632.4
+            2.01993104070425,41.9467340223491,633.6
+            2.01976901851594,41.946767969057,634
+            2.01967597939074,41.9467890076339,634.6
+            2.01942301355302,41.9468699768186,635.2
+            2.01932796277106,41.9469230342656,634.6
+            2.01923500746489,41.9469780195504,634
+            2.0191050041467,41.9470610003918,633.4
+            2.01897399500012,41.9471409637481,632.6
+            2.01887198723853,41.9471920095384,632.4
+            2.01862899586558,41.9472909998149,631.2
+            2.01858700253069,41.9472950231284,631
+            2.01855196617544,41.9472830370069,630.8
+            2.01840603724122,41.9472380261868,630.2
+            2.01834904029965,41.9472309853882,630.2
+            2.01823001727462,41.9472360145301,629.8
+            2.01812499202788,41.947265015915,629.4
+            2.01807897537947,41.9472889881581,629.2
+            2.01802600175142,41.9473169837147,629.2
+            2.01797797344625,41.9473459850997,628.8
+            2.01789197511971,41.9474110286683,628.4
+            2.01785802841186,41.9474469870329,628.2
+            2.01774696819484,41.9476059917361,627.8
+            2.01765703037381,41.9478029664606,627.6
+            2.0176110137254,41.9478799961507,627.4
+            2.01758301816881,41.9479189720005,627.4
+            2.01744597405195,41.948100021109,627.2
+            2.01741303317249,41.9481219816953,627.2
+            2.01736902818084,41.9481329619884,627
+            2.01727003790438,41.9481400027871,626.8
+            2.01715302653611,41.9481260050088,627
+            2.01709502376616,41.9481140188873,627
+            2.01686301268637,41.9480560161173,626.8
+            2.01661901548505,41.947997007519,625.6
+            2.01634400524199,41.9479179661721,625
+            2.01611400581896,41.9478550180793,624.8
+            2.01599498279393,41.9478209875524,624.6
+            2.01587503775954,41.9477840233594,624
+            2.01581703498959,41.9477700255811,623.2
+            2.01558602973819,41.947709005326,622
+            2.01543197035789,41.9476439617574,621.2
+            2.01532401144505,41.9475950114429,620.4
+            2.015271037817,41.9475680217147,619.4
+            2.01516299508512,41.9475110247731,618.4
+            2.01510800980031,41.9474769942462,617.2
+            2.01505796983838,41.9474410358816,616.8
+            2.0150070078671,41.9474090170115,615.8
+            2.01490801759064,41.9473550375551,614.4
+            2.01485496014357,41.9473419617862,614
+            2.01479502953589,41.9473479967564,614
+            2.01469696126878,41.947404993698,613.4
+            2.01463501900434,41.9474840350449,611.4
+            2.01457601040602,41.9475639984012,611
+            2.01450199820101,41.9476810097694,610.2
+            2.01440401375294,41.9478339795023,609
+            2.01432396657765,41.9479980133474,608
+            2.01425498351455,41.9481710158288,607.2
+            2.01422799378633,41.9482099916786,607
+            2.0142020098865,41.9482509791851,606.6
+            2.01413403265178,41.9483249913901,605.8
+            2.014094972983,41.9483629614115,605.6
+            2.01403202489018,41.94844099693,605
+            2.01397997327149,41.9485249835998,604.4
+            2.01393202878535,41.9485989958048,603.4
+            2.01390101574361,41.9486310146749,603
+            2.0138000138104,41.9487180188298,602
+            2.01376799494028,41.9487419910729,601.2
+            2.01374402269721,41.9487689808011,600.6
+            2.013717032969,41.9488119799644,599.2
+            2.0136929769069,41.9488579966128,597.8
+            2.01367101632059,41.9489040132612,597.4
+            2.01362801715732,41.9489920232445,596.6
+            2.01359800994396,41.9490299932659,596.4
+            2.01353196054697,41.9491040054709,596.4
+            2.01349499635398,41.9491380359977,596.4
+            2.01342299580574,41.9492029957473,596.4
+            2.01330598443747,41.9493279699236,597
+            2.01326902024448,41.9493549596518,597.4
+            2.01323096640408,41.9493800215423,598.2
+            2.01303097419441,41.9495120365173,598.8
+            2.01299903914332,41.9495449773967,598.8
+            2.01287004165351,41.9496840331703,597.6
+            2.01282997615635,41.9497149623931,597.2
+            2.01278496533632,41.9497370067984,597
+            2.01263903640211,41.9497909862548,596.8
+            2.01254499144852,41.9498270284384,596.8
+            2.01247097924352,41.9498749729246,597
+            2.01244398951531,41.9499059859663,597
+            2.01240702532232,41.9499349873513,596.8
+            2.01231197454035,41.9499850273132,596.8
+            2.01225799508393,41.950002964586,596.8
+            2.01204601675272,41.9500720314682,596
+            2.01179699040949,41.9501789845526,595.4
+            2.01174804009497,41.9502020347863,595.2
+            2.01165097765624,41.9502469617873,595
+            2.01160202734172,41.9502609595656,594.6
+            2.01149901375174,41.9502799864858,594
+            2.01122500933707,41.9503150228411,593.8
+            2.01111696660519,41.9503270089626,593.6
+            2.01106198132038,41.9503270089626,593.6
+            2.010801974684,41.9503000192344,594
+            2.01075302436948,41.9502899609506,594
+            2.01070097275078,41.9502740353346,594
+            2.01064799912274,41.9502509851009,594
+            2.01054699718952,41.9501980114728,593.2
+            2.01044800691307,41.9501600414515,592.4
+            2.0103960391134,41.9501469656825,592.4
+            2.01029101386666,41.9501300342381,592.2
+            2.01008800417185,41.9500970095396,592.8
+            2.01003997586667,41.9500870350748,593
+            2.00994400307536,41.9500659964979,593.4
+            2.00984199531376,41.9500590395182,593.4
+            2.00973596423864,41.9500590395182,593.4
+            2.0096880197525,41.9500479754061,593.4
+            2.00960797257721,41.9500000309199,593.2
+            2.00958299450576,41.9499609712511,593.2
+            2.00953303836286,41.9498869590461,592.6
+            2.00945500284433,41.9498339854181,592.2
+            2.00941099785268,41.9498149584979,592.2
+            2.00936397537589,41.9497980270535,592.2
+            2.00923103839159,41.9497560337186,592.2
+            2.00915903784335,41.9497059937567,592.2
+            2.00909298844635,41.9496500026435,592.2
+            2.00905602425337,41.9496220070869,592.2
+            2.00901503674686,41.9495970290154,592.2
+            2.00888201594353,41.9495189934969,592.8
+            2.0087260287255,41.94948496297,593.2
+            2.00867598876357,41.949477000162,593.4
+            2.00843500904739,41.9494500104338,594
+            2.00835403986275,41.9494569674134,594
+            2.00828203931451,41.9494909979403,594
+            2.00810199603438,41.9494780059904,592
+            2.00801499187946,41.9493869785219,589.4
+            2.00801901519299,41.9493490085006,588.6
+            2.00803896412253,41.9493129663169,587.8
+            2.00806897133589,41.9492360204458,586.2
+            2.00808003544807,41.9491960387677,585.6
+            2.00810400769114,41.9491599965841,584.6
+            2.00814097188413,41.9491320010275,583.6
+            2.0081839710474,41.9491109624505,583.2
+            2.00829796493053,41.9490729924291,583
+            2.00846803374588,41.949040973559,582.8
+            2.00867598876357,41.9490679632872,582.6
+            2.00877497904003,41.9491019938141,582.6
+            2.00896600261331,41.9491989724338,581.4
+            2.00901403091848,41.9492269679904,581.2
+            2.0092529989779,41.9493429735303,580.2
+            2.00930002145469,41.9493680354208,580
+            2.00934997759759,41.9493910018355,579.8
+            2.00948903337121,41.9494569674134,579.2
+            2.00970897451043,41.9495790079236,578.2
+            2.00974803417921,41.9496019743383,578
+            2.00979103334248,41.9496220070869,577.8
+            2.00989396311343,41.9496309757233,577.6
+            2.0099470205605,41.9496189896017,577.4
+            2.01000301167369,41.9496039859951,577
+            2.01010099612176,41.9495479948819,575.8
+            2.01017701998353,41.9494899921119,575.2
+            2.01021096669137,41.9494650140405,574.8
+            2.01029201969504,41.9494279660285,574.6
+            2.01039000414312,41.9494090229273,574.6
+            2.01046703383326,41.9493749924004,574.6
+            2.0104790199548,41.9493480026722,574.6
+            2.01049100607634,41.9493179954588,574
+            2.0104930177331,41.9492640160024,572.2
+            2.01048002578318,41.9492279738188,570.4
+            2.01045697554946,41.9491879921407,569.2
+            2.01042897999287,41.9491459988058,568
+            2.01039696112275,41.9490679632872,567
+            2.01038296334446,41.9490380398929,566.8
+            2.01035396195948,41.9490350224078,566.8
+            2.01022303663194,41.9490849785507,564.8
+            2.01017802581191,41.9490829668939,564.6
+            2.01007903553546,41.9490529596806,563.6
+            2.00996504165232,41.9490399677306,562.6
+            2.00980301946402,41.949040973559,561.6
+            2.00973403640091,41.9490529596806,561.4
+            2.0096779614687,41.9490610063076,560.6
+            2.00963102281094,41.9490559771657,559.6
+            2.00958198867738,41.9490480143577,559.2
+            2.00942499563098,41.9489490240812,557.8
+            2.00933296233416,41.9488460104913,556.6
+            2.00924403034151,41.948745008558,555.4
+            2.00920203700662,41.9487170130014,555
+            2.00911201536655,41.9486699905246,553.6
+            2.00901201926172,41.9486359599978,552.6
+            2.00896499678493,41.9486229680479,552.2
+            2.00876701623201,41.9485369697213,552.8
+            2.00874698348343,41.9485089741647,552.8
+            2.00868898071349,41.9483349658549,551.4
+            2.00862100347877,41.9482389930636,550.2
+            2.00858202762902,41.9481730274856,548.4
+            2.00852603651583,41.9481219816953,547
+            2.00841003097594,41.948062973097,545.4
+            2.00836401432753,41.9480570219457,544.4
+            2.00826896354556,41.9480730313808,543.4
+            2.00818598270416,41.9481039606035,543
+            2.00795103795826,41.9481349736452,542.8
+            2.00789596885443,41.9481550063938,542.8
+            2.00786696746945,41.9481420144439,542.6
+            2.00778096914291,41.9481229875237,541.4
+            2.00769396498799,41.9481440261006,539.6
+            2.00752699747682,41.9481690041721,539.2
+            2.00726196169853,41.9482120033354,540
+            2.00710999779403,41.9481959939003,538.6
+            2.00706901028752,41.9482020288706,538
+            2.0069960039109,41.9482570141554,537.8
+            2.0069629792124,41.9482669886202,538.2
+            2.00683498755097,41.9482789747417,538.8
+            2.00680003501475,41.9482969958335,539
+            2.00676097534597,41.9483450241387,539
+            2.00665796175599,41.9484600238502,539
+            2.006620997563,41.9485539849848,539.2
+            2.00650700367987,41.9486539810896,539.4
+            2.00645998120308,41.9486689846963,539.4
+            2.0062739867717,41.9487060327083,539.2
+            2.00613903813064,41.9488089624792,539.6
+            2.00611003674567,41.9488200265914,541
+            2.00602403841913,41.9489180110395,541.8
+            2.00602102093399,41.9489460065961,542
+            2.00603501871228,41.9489719904959,542.4
+            2.00607500039041,41.9490200188011,543
+            2.00609503313899,41.9490470085293,543.4
+            2.00613199733198,41.9491019938141,544.2
+            2.00615203008056,41.9491309951991,544.6
+            2.00626702979207,41.9492910057306,545
+            2.00629100203514,41.9493250362575,544.8
+            2.00639896094799,41.9494940154254,543.8
+            2.00641698203981,41.94952997379,543.6
+            2.00643097981811,41.9495670218021,543.6
+            2.0064690336585,41.9497159682214,542.4
+            2.00648898258805,41.9497869629413,542.2
+            2.00653499923646,41.9499639887363,541.4
+            2.00655100867152,41.9499990250915,541.4
+            2.00662200339139,41.9501459598541,540.4
+            2.0066349953413,41.9501850195229,539.8
+            2.00663901865482,41.9502260070294,539.2
+            2.00660498812795,41.9503789767623,537.8
+            2.00660423375666,41.9504192098975,537.4
+            2.00660867616534,41.9504372309893,536.8
+            2.00660498812795,41.9504420086741,532
+            2.00658403337002,41.9505549967289,530.4
+            2.00657498091459,41.9506079703569,529.6
+            2.00656802393496,41.950632026419,528.8
+            2.00656198896468,41.9506549928337,527.6
+            2.00652301311493,41.9506880175322,527
+            2.00649300590158,41.9506949745119,526.8
+            2.00646601617336,41.9506989978254,526.6
+            2.00641798786819,41.950697991997,526.4
+            2.00636602006853,41.9506730139256,526.2
+            2.00612403452396,41.9506669789553,526
+            2.00609100982547,41.9506760314107,526.4
+            2.0059600006789,41.950697991997,527.8
+            2.00594197958708,41.9506880175322,528.2
+            2.00586201623082,41.9505990017205,528.8
+            2.00573100708425,41.9504979997873,529.4
+            2.00569102540612,41.9504479598254,529.4
+            2.00551902875304,41.950335977599,529.6
+            2.0054140035063,41.950290966779,529.8
+            2.00536798685789,41.9502850156277,530
+            2.00522700324655,41.9502690061927,530.4
+            2.00515299104154,41.950283003971,531.2
+            2.00510697439313,41.9502740353346,531.2
+            2.00502399355173,41.9501730334014,531.6
+            2.00501100160181,41.9501550123096,531.8
+            2.00497001409531,41.9501369912177,531.8
+            2.00493799522519,41.9500430300832,531.8
+            2.00491796247661,41.9499980192631,532.2
+            2.00489399023354,41.9499349873513,532.4
+            2.004882004112,41.9499680120498,532.6
+            2.00486800633371,41.9500629790127,532.6
+            2.00485702604055,41.9500659964979,532.6
+            2.00482802465558,41.9500929862261,533
+            2.00481997802854,41.9501069840044,533.2
+            2.00478401966393,41.9501369912177,534.8
+            2.00474495999515,41.9501209817827,535.4
+            2.00468502938747,41.9501150306314,535.6
+            2.00465996749699,41.9501169584692,535.8
+            2.00452200137079,41.9501049723476,537.2
+            2.00444597750902,41.9500830117613,537.4
+            2.00432100333273,41.9500730372965,538
+            2.00428596697748,41.9500710256398,538.4
+            2.0042569655925,41.9500629790127,538.8
+            2.00419602915645,41.9500359892845,539.8
+            2.00404699891806,41.9499560259283,540.6
+            2.00402101501823,41.9499369990081,541
+            2.0038650278002,41.9498209934682,541.2
+            2.00377098284662,41.949728038162,541
+            2.0037579908967,41.949728038162,541
+            2.00376000255346,41.9497520104051,541
+            2.00374499894679,41.9498069956899,541.4
+            2.00370996259153,41.9497950095683,541.8
+            2.00368297286332,41.9497929979116,542
+            2.00366402976215,41.9498149584979,542.2
+            2.00367702171207,41.9498270284384,542.6
+            2.00372002087534,41.9498510006815,543.2
+            2.00374399311841,41.9498639926314,543.2
+            2.00376100838184,41.9498820137233,543.2
+            2.00382102280855,41.9499369990081,544.2
+            2.00385396368802,41.9499720353633,545
+            2.00388003140688,41.9499970134348,545.2
+            2.00390400364995,41.9500110112131,546.4
+            2.0039530377835,41.9500479754061,547
+            2.00399201363325,41.9500710256398,547.4
+            2.00400802306831,41.9500860292464,547.4
+            2.0040220208466,41.9501560181379,548.2
+            2.00401598587632,41.9501680042595,548.6
+            2.00401296839118,41.9501779787242,549
+            2.00400098226965,41.9501820020378,550.2
+            2.00398698449135,41.9501769728959,550.6
+            2.00396996922791,41.9501710217446,551
+            2.00394700281322,41.9501669984311,551.2
+            2.0038739964366,41.9501680042595,552.4
+            2.00384600088,41.9501659926027,553.4
+            2.00382102280855,41.9501609634608,553.8
+            2.00377299450338,41.9501540064812,553.8
+            2.0037529617548,41.9501639809459,553.8
+            2.00372898951173,41.950201028958,553.8
+            2.00374801643193,41.9502349756658,554
+            2.00377400033176,41.9502649828792,554.8
+            2.00384298339486,41.9503809884191,555
+            2.00388598255813,41.950520966202,555.2
+            2.00392697006464,41.9505509734154,555.4
+            2.00398296117783,41.9505750294775,555.4
+            2.00403903611004,41.950690029189,555.2
+            2.00395597144961,41.9508640374988,554.6
+            2.00394197367132,41.9509210344404,554.4
+            2.00390903279185,41.9510669633746,553.8
+            2.00385002419352,41.9512630160898,552.8
+            2.00381599366665,41.9514119625092,552.4
+            2.00381498783827,41.9514390360564,552.4
+            2.00383401475847,41.9514899980277,552.4
+            2.00386896729469,41.9515210110694,552.4
+            2.00393702834845,41.9515149760991,553.6
+            2.00395395979285,41.951511958614,553.8
+            2.00397902168333,41.9515149760991,554.4
+            2.00400299392641,41.9515189994127,555
+            2.00403501279652,41.9515159819275,556
+            2.0040640141815,41.9515100307763,557.4
+            2.00407600030303,41.9515070132911,558.2
+            2.00408999808133,41.9515139702708,558.8
+            2.00408999808133,41.9515149760991,559
+            2.00412201695144,41.951520005241,559.4
+            2.00413199141622,41.9515159819275,559.8
+            2.00414297170937,41.9515240285546,560.4
+            2.00414900667965,41.9515350088477,561
+            2.00415596365929,41.951532997191,561.6
+            2.00416099280119,41.9515510182828,562.2
+            2.0041739847511,41.9515619985759,562.8
+            2.00418303720653,41.951556969434,563.4
+            2.00418597087264,41.9515449833125,564.8
+            2.00418102554977,41.9514950271696,565.2
+            2.00420499779284,41.9514340069145,566
+            2.00421798974276,41.9513940252364,567
+            2.00424397364259,41.9512999802828,567.4
+            2.00427297502756,41.9512030016631,567.4
+            2.004289990291,41.9511959608644,567.4
+            2.00442301109433,41.9511729944497,567.8
+            2.00445100665093,41.9511829689145,567.8
+            2.00446198694408,41.9511879980564,568.2
+            2.00442401692271,41.9512040074915,568.6
+            2.00438898056745,41.9512040074915,570.2
+            2.00437003746629,41.9512060191482,570.6
+            2.00432603247464,41.9512350205332,571.2
+            2.00431698001921,41.9512500241399,571.4
+            2.00432100333273,41.951281959191,572.6
+            2.00432200916112,41.951290005818,574
+            2.00433198362589,41.9513129722327,574.6
+            2.00434103608131,41.9513539597392,575.8
+            2.00435997918248,41.9513790216297,576.2
+            2.00438101775944,41.9514179974794,577
+            2.00439996086061,41.9514709711075,578.2
+            2.00440297834575,41.9514790177345,579
+            2.00441001914442,41.9514859747142,579.6
+            2.00444798916578,41.9515129644424,581.2
+            2.00448403134942,41.9515449833125,582.8
+            2.00448897667229,41.9515660218894,583.2
+            2.00452895835042,41.9515899941325,583.4
+            2.00456500053406,41.9515980407596,583.8
+            2.00462199747562,41.9516250304878,584.2
+            2.00474102050066,41.9516800157726,583.8
+            2.00480204075575,41.951755033806,584
+            2.0048029627651,41.951791997999,584
+            2.00482098385692,41.9518429599702,585
+            2.00486297719181,41.9519280362874,585.4
+            2.00495501048863,41.9520639907569,585.6
+            2.00502298772335,41.952148983255,585.6
+            2.00502499938011,41.9522049743682,586.2
+            2.00502499938011,41.9522420223802,587.2
+            2.0050310343504,41.9522540085018,587.4
+            2.00504503212869,41.9522619713098,587.8
+            2.00506498105824,41.9522710237652,588.4
+            2.00510202907026,41.9522820040584,589.6
+            2.00511401519179,41.9522860273719,589.6
+            2.00511996634304,41.9523020368069,589.8
+            2.00513295829296,41.9523410126567,591.2
+            2.00512700714171,41.952355010435,591.8
+            2.00513203628361,41.9523700140417,592.2
+            2.00513698160648,41.9523749593645,592.8
+            2.00514100492001,41.9523860234767,593.6
+            2.00514796189964,41.9523980095983,594
+            2.0051740296185,41.9524349737912,595.2
+            2.00517000630498,41.9524509832263,595.6
+            2.00516103766859,41.9524639751762,596.6
+            2.00516799464822,41.9524809904397,597
+            2.00519800186157,41.9525140151381,597
+            2.00530403293669,41.9525870215148,596.4
+            2.00533202849329,41.952630020678,595.4
+            2.00536102987826,41.9526639673859,594.8
+            2.00536999851465,41.9526689965278,593.8
+            2.00538600794971,41.9526740256697,593.2
+            2.00539698824287,41.9526819884777,592.8
+            2.00539899989963,41.952733034268,591.8
+            2.00541702099145,41.9527470320463,591.8
+            2.00552900321782,41.9528679829091,592.6
+            2.00556001625955,41.9529050309211,593
+            2.00560703873634,41.9529229681939,593.8
+            2.00563000515103,41.9529330264777,593.8
+            2.00564903207123,41.9529440067708,593.8
+            2.00565699487925,41.9529590103775,593.4
+            2.00567501597107,41.9530040211976,592.8
+            2.00567702762783,41.9530460145324,592.6
+            2.0056920312345,41.9530620239675,592.4
+            2.00569798238576,41.9530989881605,591.8
+            2.00570703484118,41.9531139917672,591.6
+            2.0057800412178,41.9531500339508,590.4
+            2.00583200901747,41.9531819690019,590
+            2.00586603954434,41.9532109703869,589.4
+            2.00593301095068,41.9533139839768,588.4
+            2.00596100650728,41.9533419795334,587.8
+            2.00599000789225,41.9533610064536,587.4
+            2.00602998957038,41.9533959589899,587
+            2.00607097707689,41.9534399639815,586.8
+            2.00611900538206,41.9535650219768,586.2
+            2.00612101703882,41.9536190014333,585.6
+            2.00611799955368,41.9536370225251,585
+            2.00610903091729,41.9536490086466,584.2
+            2.00609000399709,41.9536800216883,580.6
+            2.00594197958708,41.9537820294499,578
+            2.00590996071696,41.9538100250065,576.8
+            2.00587903149426,41.953842965886,576
+            2.00585497543216,41.9538759905845,575.4
+            2.00583796016872,41.9539489969611,574
+            2.00582102872431,41.9540209975094,573.4
+            2.00581901706755,41.9540579617023,572.8
+            2.00578699819744,41.9541029725224,571.6
+            2.0057559851557,41.9541149586439,571.4
+            2.00571198016405,41.9541280344129,571.4
+            2.00560502707958,41.9541639927775,569.4
+            2.00551299378276,41.9542000349611,568.6
+            2.00547200627625,41.9542250130326,567.8
+            2.00530000962317,41.9543720316142,566.8
+            2.00526497326791,41.9544039666653,566.2
+            2.00523496605456,41.954434979707,565.6
+            2.00512499548495,41.9545059744269,565.4
+            2.00498501770198,41.9546219799668,566.4
+            2.00497998856008,41.9546529930085,566.6
+            2.00499599799514,41.9547809846699,566.2
+            2.00500496663153,41.9548119977117,565
+            2.0050170365721,41.9548750296235,563.8
+            2.0050120074302,41.9549069646746,562
+            2.00497303158045,41.9549580104649,559.8
+            2.0049239974469,41.9550040271133,558.6
+            2.00483196415007,41.9551259838045,557.6
+            2.00481696054339,41.9551580026746,557.2
+            2.0047939941287,41.9552300032228,556
+            2.00473599135876,41.9553080387414,554.6
+            2.00471302494407,41.9553470145911,553.6
+            2.00470003299415,41.9553849846125,552.2
+            2.00468603521586,41.9554239604622,550.8
+            2.00464798137546,41.9554930273443,549.8
+            2.00462996028364,41.9555309973657,548.8
+            2.00460498221219,41.9556119665504,547.2
+            2.00460900552571,41.9556520320475,545.8
+            2.0046319719404,41.9557309895754,545
+            2.0046420302242,41.9557680375874,544.6
+            2.00465200468898,41.9558350089938,543.2
+            2.00461998581886,41.9558770023286,541.8
+            2.00455703772605,41.9558299798518,540.8
+            2.00450599193573,41.9558050017804,539.8
+            2.00446198694408,41.9557830411941,539.4
+            2.00433600693941,41.9556500203907,538.2
+            2.0042019803077,41.9555180054158,537.2
+            2.00396301224828,41.9554379582405,537.6
+            2.00377802364528,41.9553809612989,538.4
+            2.00374701060355,41.9553630240262,538.6
+            2.0037220325321,41.9553419854492,538.8
+            2.00368196703494,41.955220028758,539.4
+            2.00369697064161,41.9551760237664,539.4
+            2.00365900062025,41.9550389796495,539.8
+            2.00360896065831,41.9550249818712,539.8
+            2.00355900451541,41.9550259876996,539.8
+            2.00345096178353,41.955055994913,539
+            2.00335901230574,41.9550999999046,537.8
+            2.0032399892807,41.9551880098879,536.4
+            2.00319397263229,41.9552149996161,535.2
+            2.00311501510441,41.9552369602025,533.8
+            2.00306799262762,41.9552360381931,533.8
+            2.00297000817954,41.9552399776876,532.6
+            2.00291996821761,41.955240983516,531.6
+            2.00281603261828,41.9552379660308,529.6
+            2.00276096351445,41.9552289973944,528.6
+            2.00271402485669,41.9552139937878,527.2
+            2.00258997268975,41.9551490340382,526.4
+            2.00252995826304,41.955092959106,526
+            2.0023850351572,41.9549959804863,525.6
+            2.00228302739561,41.9549750257283,525
+            2.00212502852082,41.9549740199,524.6
+            2.00198203325272,41.9549939688295,524.4
+            2.00188002549112,41.9550099782646,523.8
+            2.00173300690949,41.9550509657711,523.4
+            2.00159403495491,41.9550799671561,522.4
+            2.00144802220166,41.9550839904696,521.2
+            2.00135003775358,41.9550910312682,520.8
+            2.00125096365809,41.9551490340382,520.8
+            2.00121500529349,41.9552050251514,522
+            2.0012089703232,41.9552170112729,522
+            2.00120000168681,41.9552289973944,522.6
+            2.00116395950317,41.9552640337497,523.8
+            2.00110604055226,41.9553360342979,524.4
+            2.00108902528882,41.955434018746,524.8
+            2.00110302306712,41.9554989784956,525
+            2.00110503472388,41.9555950351059,526.2
+            2.00111098587513,41.9556330051273,526.6
+            2.00105398893356,41.9558240287006,526.8
+            2.00103303417563,41.955861998722,526.8
+            2.00094502419233,41.956033995375,527
+            2.00092599727213,41.9560670200735,527
+            2.00088199228048,41.9561650045216,525
+            2.00086698867381,41.9561889767647,525
+            2.00078903697431,41.9562980253249,526.6
+            2.00073396787047,41.9563110172749,527.8
+            2.00061796233058,41.9562889728695,529
+            2.00059700757265,41.9562820158899,529.6
+            2.00057697482407,41.9562759809196,530.4
+            2.00053799897432,41.9562609773129,531
+            2.00052098371089,41.9562499970198,531.6
+            2.00047697871923,41.9562230072916,532.6
+            2.00047798454762,41.9562120269984,533.2
+            2.00048100203276,41.9561919942498,533.8
+            2.00047203339636,41.9561319798231,534.8
+            2.00047597289085,41.9561130367219,535.2
+            2.00048301368952,41.9560909923166,535.6
+            2.00049399398267,41.9560700375587,536.2
+            2.00051402673125,41.9559840392321,537.4
+            2.00050497427583,41.9558849651366,538.2
+            2.00048603117466,41.9558380264789,538.4
+            2.00042098760605,41.9557620026171,539.2
+            2.00039198622108,41.9557689595968,539.4
+            2.00037103146315,41.955787986517,539.6
+            2.00031797401607,41.9558579754084,540.6
+            2.00030095875263,41.9558770023286,541.2
+            2.00025301426649,41.9559339992702,542.4
+            2.00021697208285,41.9559820275754,543
+            2.00009099207819,41.9561439659446,543
+            2.00006500817835,41.9562289584428,542.6
+            2.00006500817835,41.9562860392034,542.8
+            2.00005603954196,41.9563120231032,542.8
+            2.000035000965,41.9563769828528,543.2
+            2.00002796016634,41.9564019609243,543.4
+            2.00002796016634,41.9564300402999,543.6
+            2.00000398792326,41.9565570261329,544.2
+            1.99997096322477,41.9566310383379,544.6
+            1.99995595961809,41.9566519930959,545.6
+            1.99991698376834,41.956691974774,546.4
+            1.99989996850491,41.9567110016942,546.8
+            1.99983299709857,41.9567850138992,548
+            1.99978203512728,41.9568369816989,548
+            1.99961498379707,41.956905964762,548
+            1.99942496605217,41.9570209644735,547.4
+            1.99928599409759,41.9571419991553,549
+            1.99927199631929,41.9571549911052,549.4
+            1.99924198910594,41.9571669772267,550
+            1.99921801686287,41.9571819808334,550.6
+            1.99919898994267,41.9572010077536,551
+            1.99917996302247,41.9572269916534,551.2
+            1.99913403019309,41.9573320169002,551.6
+            1.99913201853633,41.9573529716581,551.6
+            1.99914299882948,41.9574089627713,551.8
+            1.99917702935636,41.9575409777462,553
+            1.99916303157806,41.9575959630311,553.6
+            1.99914098717272,41.9576559774578,554.2
+            1.99906303547323,41.9578100368381,554.8
+            1.99893202632666,41.9578780140728,555
+            1.99880101718009,41.9579179957509,555.2
+            1.99863899499178,41.957986978814,555.2
+            1.99847496114671,41.9580469932407,554
+            1.99831997975707,41.9581100251526,553.2
+            1.99828100390732,41.9581260345876,553
+            1.99806097894907,41.9581970293075,552
+            1.9980230089277,41.958216978237,551.8
+            1.99787599034607,41.9582879729569,550.6
+            1.99780398979783,41.9583380129188,550
+            1.99772503226995,41.9583960156888,549.6
+            1.99768697842956,41.9584250170738,549.2
+            1.99760098010302,41.9585159607232,548
+            1.99755001813173,41.9585820101202,547
+            1.99753602035344,41.9586410187185,546.6
+            1.99758899398148,41.9587880373001,546.4
+            1.99761497788131,41.9588890392333,548.4
+            1.99760299175978,41.9590040389448,549.6
+            1.99762201867998,41.9590580184013,550.2
+            1.99762302450836,41.9590779673308,550.6
+            1.99761598370969,41.9591440167278,551.4
+            1.99757700785995,41.9591880217195,552.2
+            1.99750400148332,41.9592549931258,553.2
+            1.99744298122823,41.9592850003392,553.6
+            1.99737399816513,41.9593069609255,554.8
+            1.99732001870871,41.9593580067158,556.2
+            1.99728003703058,41.9594170153141,556.4
+            1.99720200151205,41.9594999961555,556.8
+            1.99712899513543,41.959562022239,557.4
+            1.9970559887588,41.9596279878169,558.6
+            1.99693302623928,41.9597520399839,559.6
+            1.99677402153611,41.9599009864032,560.8
+            1.99675197713077,41.959924036637,561.2
+            1.99666698463261,41.9599829614162,562
+            1.99660001322627,41.9600760005414,563.4
+            1.9964639749378,41.9602540321648,564.2
+            1.99624596163631,41.9603820238262,563.6
+            1.9960339833051,41.9605149608105,562.8
+            1.99596902355552,41.9605639949441,562
+            1.99588503688574,41.9606860354543,560.6
+            1.99583298526704,41.9607499893755,560.2
+            1.99575101025403,41.9608130212873,560
+            1.99568998999894,41.9608319643885,559.6
+            1.99566300027072,41.9608379993588,559.4
+            1.99558395892382,41.9608489796519,557.8
+            1.99557197280228,41.9608720298856,557.2
+            1.99553802609444,41.9609029591084,557
+            1.99546401388943,41.9609170407057,556.6
+            1.99527500197291,41.9609710201621,555
+            1.9952480122447,41.9609690085053,555
+            1.99514801613986,41.9609489757568,556.2
+            1.99513804167509,41.960939001292,556.6
+            1.99513996951282,41.9609290268272,557.2
+            1.99514902196825,41.9609069824219,558.4
+            1.9951409753412,41.9609059765935,559
+            1.99511096812785,41.9609140232205,559.4
+            1.99508699588478,41.9609140232205,559.8
+            1.99503201059997,41.9609280209988,560.8
+            1.99500502087176,41.960960039869,561.6
+            1.99493695981801,41.9610880315304,561.8
+            1.99478700757027,41.9611379876733,563
+            1.99463998898864,41.9612890295684,562.4
+            1.99451602064073,41.9613369740546,563.8
+            1.99440001510084,41.9613870140165,564.2
+            1.99430798180401,41.9614290073514,565.2
+            1.99424603953958,41.9614440109581,566.4
+            1.99409499764442,41.9614620320499,567
+            1.9940270204097,41.9614659715444,567.4
+            1.99383297935128,41.9615050312132,567.8
+            1.99373600073159,41.9615470245481,568.6
+            1.99361203238368,41.9615880120546,569.4
+            1.99356702156365,41.9615900237113,569.4
+            1.99352997355163,41.9615900237113,569.6
+            1.99332897551358,41.9615460187197,570.6
+            1.99329402297735,41.9615350384265,570.6
+            1.99307198636234,41.9615239743143,571.4
+            1.99300199747086,41.9615069590509,571.8
+            1.9929719902575,41.961435964331,572
+            1.99299302883446,41.9612610340118,572.4
+            1.9929770193994,41.9612020254135,572.8
+            1.99292102828622,41.9611359760165,574.2
+            1.99290401302278,41.9611300248653,574.8
+            1.99287802912295,41.9611209724098,575.4
+            1.99279395863414,41.9610860198736,577.2
+            1.99276797473431,41.961065987125,577.6
+            1.99273696169257,41.9610389973968,578.2
+            1.99274199083448,41.960984012112,579
+            1.99273897334933,41.9609649851918,579.4
+            1.99272204190493,41.9609410129488,580.6
+            1.99270402081311,41.9608970079571,581.6
+            1.99268599972129,41.9608720298856,583
+            1.99266898445785,41.9608400110155,584
+            1.9926490355283,41.9607960060239,585.4
+            1.99259899556637,41.9607659988105,586.4
+            1.99258600361645,41.9607560243458,586.6
+            1.99248701334,41.9607309624553,587.2
+            1.99245097115636,41.9607229996473,587.6
+            1.99239699169993,41.9607039727271,588.2
+            1.99238601140678,41.9606980215758,588.6
+            1.99234896339476,41.9606649968773,589.8
+            1.99229498393834,41.9606390129775,591.2
+            1.99223597534001,41.9606090057641,592.2
+            1.99221602641046,41.9605940021574,592.6
+            1.99220303446055,41.9605370052159,593
+            1.992161963135,41.9604769907892,593.6
+            1.99209700338543,41.9604429602623,594
+            1.9920379947871,41.960375988856,594.8
+            1.99197798036039,41.9603520166129,595.2
+            1.99189198203385,41.960265012458,595.8
+            1.99188200756908,41.9602419622242,596.2
+            1.99181000702083,41.9601660221815,597.4
+            1.99178704060614,41.9601340033114,597.6
+            1.99173700064421,41.960087986663,598.4
+            1.99165401980281,41.9600319955498,599.4
+            1.99163599871099,41.9600159861147,599.8
+            1.99160004034638,41.9599900022149,600.4
+            1.99155796319246,41.9599780160934,601
+            1.99153700843453,41.9599749986082,601.6
+            1.99152301065624,41.9599670358002,602.2
+            1.9914869684726,41.9599520321935,603.6
+            1.99145997874439,41.9599449913949,604
+            1.9914039876312,41.9599210191518,604.6
+            1.99134397320449,41.959873996675,606
+            1.99130902066827,41.9598510302603,606.6
+            1.99127700179815,41.9598389603198,607.2
+            1.99124003760517,41.9598360266537,608.2
+            1.99122603982687,41.9598330091685,608.6
+            1.99116602540016,41.9598259683698,610.2
+            1.99112403206527,41.9598129764199,611.4
+            1.99108002707362,41.959792021662,611.8
+            1.99098598212004,41.9597439933568,612.6
+            1.99091498740017,41.9596989825368,612.8
+            1.99085698463023,41.9596559833735,613.6
+            1.99075698852539,41.9596180133522,614.2
+            1.99072798714042,41.9596080388874,614.4
+            1.9907149951905,41.9596009980887,614.6
+            1.99069999158382,41.9595930352807,614.8
+            1.99067995883524,41.9595709908754,616
+            1.99067300185561,41.9595610164106,616.2
+            1.99065900407732,41.9595450069755,617.4
+            1.99063997715712,41.9595369603485,618.4
+            1.99063000269234,41.9595289975405,618.8
+            1.99059597216546,41.9595079589635,620
+            1.99054199270904,41.9594740122557,621.2
+            1.99048801325262,41.9594709947705,622.4
+            1.99047300964594,41.959459008649,623
+            1.99045901186764,41.9594580028206,623.8
+            1.99039103463292,41.9594539795071,625.2
+            1.99037401936948,41.9594490341842,625.6
+            1.99034099467099,41.9594279956073,626.2
+            1.99030302464962,41.9593870081007,627.4
+            1.99029598385096,41.9593809731305,627.8
+            1.99025901965797,41.9593649636954,628.4
+            1.99024099856615,41.9593570008874,628.6
+            1.9901829957962,41.959319030866,629.6
+            1.99009699746966,41.9592789653689,630.6
+            1.99007101356983,41.959265973419,631
+            1.98998903855681,41.9592399895191,632
+            1.98992097750306,41.9592140056193,632.4
+            1.98981896974146,41.9591799750924,633
+            1.98979600332677,41.9591669831425,633.2
+            1.98965803720057,41.9590870197862,634
+            1.98964001610875,41.9590620417148,634.2
+            1.98951403610408,41.9589369837195,635.2
+            1.98938596062362,41.95880102925,636.4
+            1.98933801613748,41.9587749615312,637
+            1.98929904028773,41.9587590359151,637.8
+            1.98927599005401,41.9587440323085,639
+            1.98926702141762,41.9587319623679,639.4
+            1.98924296535552,41.9587199762464,640
+            1.98922796174884,41.9587140250951,640.4
+            1.98919200338423,41.9586889632046,642
+            1.9891800172627,41.9586629793048,642.8
+            1.98917699977756,41.95865300484,643
+            1.98917398229241,41.9586400128901,644.2
+            1.98915001004934,41.958624003455,645.6
+            1.98909502476454,41.958600031212,646.6
+            1.98906099423766,41.9586049765348,648
+            1.98903903365135,41.9586069881916,648.4
+            1.98901799507439,41.9586039707065,648.6
+            1.989009026438,41.9585990253836,649
+            1.98900802060962,41.9585749693215,650.2
+            1.98901497758925,41.9585509970784,651
+            1.98902403004468,41.9585329759866,651.6
+            1.98904096148908,41.9584439601749,652.6
+            1.98904297314584,41.9583970215172,653
+            1.98902302421629,41.9583479873836,654
+            1.98899896815419,41.9582990370691,655.2
+            1.98900299146771,41.9582279585302,656
+            1.98898002505302,41.9582100212574,656.2
+            1.98896401561797,41.9581920001656,656.4
+            1.98888899758458,41.958127040416,657.6
+            1.98886502534151,41.958118993789,658.2
+            1.98885102756321,41.9581169821322,658.8
+            1.98881096206605,41.9581019785255,660.2
+            1.98877399787307,41.9580960273743,661.4
+            1.98875597678125,41.9580859690905,662.6
+            1.98873401619494,41.9580749887973,663.8
+            1.98872303590178,41.9580719713122,664.6
+            1.98871398344636,41.9580690376461,665.2
+            1.98869001120329,41.9580550398678,666.2
+            1.98864600621164,41.9580439757556,667.2
+            1.98862798511982,41.9580390304327,667.4
+            1.98852002620697,41.9579950254411,668
+            1.98848800733686,41.9579739868641,668.4
+            1.98841600678861,41.9579530321062,669.8
+            1.98840703815222,41.957950014621,670
+            1.98838197626173,41.9579350110143,670.4
+            1.98836303316057,41.9579319935292,670.8
+            1.98831902816892,41.9579250365496,672
+            1.98827804066241,41.9579230248928,673.2
+            1.98824803344905,41.957921013236,674.4
+            1.98823302984238,41.9579220190644,674.6
+            1.98821098543704,41.9579240307212,675.2
+            1.98816698044539,41.9579230248928,675.6
+            1.98808399960399,41.9579159840941,676.2
+            1.98806296102703,41.9579090271145,676.6
+            1.98791200295091,41.9578640162945,677.4
+            1.98784201405942,41.9578589871526,677.6
+            1.98773397132754,41.9577999785543,678.6
+            1.98760497383773,41.9576729927212,679.4
+            1.98748704046011,41.9575259741396,679
+            1.98730297386646,41.9574669655412,680
+            1.98725301772356,41.9574460107833,681.6
+            1.98719996027649,41.9574180152267,682.8
+            1.98718596249819,41.9574020057917,683.2
+            1.98717095889151,41.9573679752648,684
+            1.98714497499168,41.9573529716581,685.2
+            1.98712603189051,41.957341991365,686.2
+            1.98710801079869,41.9573310110718,686.6
+            1.98708303272724,41.9573089666665,688
+            1.987011032179,41.9572580046952,689.4
+            1.98698597028852,41.9572340324521,689.6
+            1.9867689628154,41.9571610260755,690
+            1.98652102611959,41.95716496557,689.2
+            1.98647601529956,41.957173012197,688.6
+            1.98643402196467,41.9571890216321,688.2
+            1.9863910228014,41.957202013582,687
+            1.98625800199807,41.9572669733316,686.2
+            1.98623897507787,41.9572969805449,685.8
+            1.98618600144982,41.9573699869215,684
+            1.98613596148789,41.9574190210551,682.8
+            1.9860249850899,41.9575299974531,682
+            1.98595298454166,41.9575859885663,681.8
+            1.98588802479208,41.9576159957796,680.8
+            1.98584795929491,41.9576269760728,679.6
+            1.98579800315201,41.9576299935579,679.2
+            1.98574896901846,41.957624964416,678.6
+            1.98562198318541,41.9575559813529,678.2
+            1.98559700511396,41.9574719946831,677.4
+            1.98556498624384,41.9574310071766,676
+            1.98551000095904,41.9574020057917,674.6
+            1.98549399152398,41.9573780335486,673
+            1.98547597043216,41.9573360402137,672
+            1.98546096682549,41.9572939630598,671.4
+            1.985457027331,41.9572600163519,670
+            1.98546800762415,41.957231014967,668.6
+            1.9855069834739,41.9571770355105,668.2
+            1.98556599207223,41.9571389816701,667.6
+            1.98560203425586,41.9571170210838,667.6
+            1.98568099178374,41.9570209644735,668
+            1.98571401648223,41.9569860119373,668.4
+            1.98574603535235,41.9569769594818,668.6
+            1.98582398705185,41.9569339603186,669.2
+            1.98589397594333,41.9569010194391,669.6
+            1.98603998869657,41.9568649772555,670.6
+            1.9862200319767,41.9567619636655,671.4
+            1.98627501726151,41.9567450322211,672
+            1.98635699227452,41.9566909689456,672.4
+            1.98636302724481,41.9566669967026,672.8
+            1.98636302724481,41.9566379953176,673.2
+            1.9863669667393,41.9565779808909,673.4
+            1.98641398921609,41.9565100036561,674.6
+            1.98647199198604,41.9564609695226,675.2
+            1.98649697005749,41.9564010389149,675.4
+            1.98649495840073,41.956329960376,675.4
+            1.98644701391459,41.9562619831413,675.8
+            1.98638498783112,41.9562299642712,675.8
+            1.98628096841276,41.9561810139567,675
+            1.98624400421977,41.956128962338,674.8
+            1.98623101226985,41.9560940098018,674.6
+            1.98615599423647,41.9559189956635,673.4
+            1.98609204031527,41.9558100309223,672
+            1.98606396093965,41.9557839632034,671.6
+            1.98603998869657,41.9557540398091,670.4
+            1.98601702228189,41.955722020939,668.4
+            1.98597201146185,41.955677010119,667.2
+            1.98593999259174,41.9556579831988,666
+            1.98590998537839,41.9556390400976,665.4
+            1.98588198982179,41.9556149840355,665
+            1.98582700453699,41.955499984324,664
+            1.98581602424383,41.9554679654539,663.8
+            1.98569800704718,41.9552910234779,663.8
+            1.98568199761212,41.9552579987794,664
+            1.98571301065385,41.9551470223814,665.2
+            1.98572499677539,41.9549669791013,665.4
+            1.985716028139,41.9549369718879,664.4
+            1.98570001870394,41.9549109879881,663.4
+            1.98567596264183,41.9548440165818,661.2
+            1.98565601371229,41.9547669868916,659.6
+            1.98565299622714,41.9547290168703,658
+            1.98563698679209,41.9546990096569,657
+            1.98562399484217,41.9546669907868,656.8
+            1.98560697957873,41.9546320382506,656.6
+            1.98553699068725,41.9545479677618,655.6
+            1.98548804037273,41.9544939883053,654.6
+            1.98546800762415,41.9544659927487,654.2
+            1.9854049757123,41.954287039116,654.2
+            1.98538997210562,41.9542219955474,654.6
+            1.98526399210095,41.9540420360863,654.8
+            1.98519400320947,41.9539110269397,653.2
+            1.9851700309664,41.9538479950279,651.8
+            1.98515703901648,41.9538179878145,650.8
+            1.98514002375305,41.9537950213999,649.4
+            1.98511303402484,41.9537719711661,648
+            1.98507900349796,41.9537139683962,646.8
+            1.98507196269929,41.9536889903247,646
+            1.98507104068994,41.9536690413952,645
+            1.98510599322617,41.9535500183702,644.4
+            1.98509199544787,41.9534429814667,644
+            1.98507104068994,41.9533829670399,641.6
+            1.98506098240614,41.9533510319889,640.6
+            1.98505402542651,41.9533210247755,640
+            1.98504296131432,41.9532760139555,638
+            1.98505000211299,41.9532099645585,637.4
+            1.98508503846824,41.9530719984323,636.6
+            1.98509400710464,41.9530320167542,635.8
+            1.98509995825589,41.9529939629138,635.6
+            1.98508503846824,41.9528819806874,634
+            1.98507900349796,41.9528119917959,633.6
+            1.98503701016307,41.9526460301131,633.8
+            1.98502896353602,41.9525779690593,634.2
+            1.98503902181983,41.9524509832263,634
+            1.98507598601282,41.9524310342968,634
+            1.98522903956473,41.952400021255,632.8
+            1.98528100736439,41.9523890409619,631.8
+            1.98532601818442,41.9523779768497,631.2
+            1.98537496849895,41.9523649848998,630.2
+            1.98541696183384,41.9523519929498,629
+            1.98550597764552,41.9523270148784,627.6
+            1.98564000427723,41.9522789865732,626.2
+            1.98567504063249,41.9522590376437,625.4
+            1.98570898734033,41.9522369932383,624.6
+            1.98578601703048,41.9522039685398,623
+            1.98590504005551,41.9521530065686,622
+            1.98597796261311,41.9520990271121,620.6
+            1.98606597259641,41.9520649965852,619
+            1.98620704002678,41.9520000368357,618
+            1.98627904057503,41.9519820157439,616.4
+            1.98631298728287,41.9519769866019,616.2
+            1.98635196313262,41.9519749749452,616.2
+            1.98653200641274,41.9520329777151,616.6
+            1.9865810405463,41.9520850293338,616.8
+            1.9865950383246,41.9521430321038,616.8
+            1.9866500236094,41.9521789904684,616.8
+            1.98667198419571,41.9521690160036,616.8
+            1.98670500889421,41.9520879629999,616.6
+            1.98672302998602,41.9519769866019,616.8
+            1.98679897002876,41.9519680179656,616.6
+            1.98699804022908,41.9519739691168,615.2
+            1.98710097000003,41.9519390165806,614.4
+            1.98715503327549,41.9519270304591,613.4
+            1.98723801411688,41.9518950115889,611.2
+            1.98725704103708,41.9518729671836,611.2
+            1.98735997080803,41.9517650082707,610.8
+            1.98740003630519,41.9517420418561,610.6
+            1.98744202964008,41.9517240207642,609.4
+            1.98756398633122,41.951681021601,608.4
+            1.98765995912254,41.9516550377011,607.2
+            1.98776699602604,41.9516339991242,606.4
+            1.98786799795926,41.9515589810908,606.2
+            1.98796497657895,41.9514889921993,606.2
+            1.98819497600198,41.9513889960945,605.8
+            1.98823596350849,41.9513689633459,605.6
+            1.98843997903168,41.9513309933245,605.8
+            1.98846202343702,41.9513459969312,605.8
+            1.98850703425705,41.9513839669526,605
+            1.98854399845004,41.9514559675008,603.2
+            1.988565037027,41.9515360146761,602
+            1.9885959662497,41.9516999647021,600.8
+            1.98847501538694,41.9518329855055,599.6
+            1.98829002678394,41.9519779924303,598.8
+            1.98826303705573,41.9520029705018,598.8
+            1.98817703872919,41.9520970154554,598.6
+            1.9881059601903,41.9521810021252,598.4
+            1.98804896324873,41.9522850215435,597
+            1.98802096769214,41.9523740373552,596
+            1.988047035411,41.952400021255,595.8
+            1.98812297545373,41.9525049626827,594.8
+            1.98814703151584,41.9525300245732,594.8
+            1.98814200237393,41.9527269992977,594
+            1.98813202790916,41.9528030231595,593.6
+            1.98811903595924,41.952880974859,592.6
+            1.98808500543237,41.9529490359128,592.2
+            1.98806497268379,41.9529969803989,591.6
+            1.9880610331893,41.953050037846,591.2
+            1.98806002736092,41.9530790392309,591.2
+            1.98809296824038,41.9532239623368,590.8
+            1.98813102208078,41.953258998692,590.2
+            1.98814703151584,41.9532579928637,589.2
+            1.98816203512251,41.9532470125705,588
+            1.98823001235723,41.9531719945371,586.6
+            1.98825800791383,41.953139975667,585.8
+            1.98829103261232,41.9531249720603,584.4
+            1.98836898431182,41.9530839845538,583.2
+            1.9884030148387,41.9530600123107,582.6
+            1.98850896209478,41.9529870059341,582.2
+            1.98858900927007,41.952954987064,581.2
+            1.98872798122466,41.9528770353645,580
+            1.98875597678125,41.9528529793024,578.8
+            1.98882797732949,41.9527860078961,578
+            1.98889603838325,41.9527470320463,577.8
+            1.98900701478124,41.9527079723775,577.8
+            1.98922796174884,41.952717024833,578.4
+            1.98929996229708,41.9526990037411,579
+            1.98940297588706,41.952688023448,579.2
+            1.98955896310508,41.9527480378747,578.8
+            1.98958695866168,41.9527180306613,577.8
+            1.98963196948171,41.952650975436,577
+            1.98964596726,41.9526190403849,576
+            1.98964303359389,41.9525470398366,573.8
+            1.98965401388705,41.952503034845,571.8
+            1.98969097808003,41.9525079801679,570.2
+            1.98971000500023,41.9525209721178,569.8
+            1.98982198722661,41.952547961846,569.2
+            1.9898639805615,41.9525610376149,569
+            1.98990304023027,41.9525669887662,568
+            1.98997596278787,41.9525260012597,568
+            1.99005098082125,41.9523680023849,568.2
+            1.99006296694279,41.952309999615,568.4
+            1.99008601717651,41.9522570259869,569
+            1.99013002216816,41.9521939940751,569.4
+            1.99026698246598,41.9520729593933,570.2
+            1.9902939721942,41.9520540162921,570.2
+            1.99047300964594,41.9519220013172,570.8
+            1.99051399715245,41.9518840312958,571.2
+            1.99052397161722,41.9518570415676,571.2
+            1.99056101962924,41.9517810177058,572
+            1.9906650390476,41.951688984409,572.2
+            1.99073201045394,41.9516550377011,572.6
+            1.99092697352171,41.9516390282661,573
+            1.99102596379817,41.9516589771956,573.4
+            1.99110198765993,41.9516439735889,573.8
+            1.99113400653005,41.9516240246594,573.8
+            1.99115999042988,41.9515019841492,574.2
+            1.99119796045125,41.9512969627976,573.6
+            1.99119402095675,41.9512350205332,572
+            1.99121799319983,41.9511890038848,570.6
+            1.9912419654429,41.9511689711362,569.8
+            1.99141304008663,41.9510660413653,569.6
+            1.99155997484922,41.9509870000184,569.4
+            1.99159702286124,41.9509610161185,569.2
+            1.99178201146424,41.9509010016918,568.6
+            1.99187002144754,41.9508900213987,568.2
+            1.99197496287525,41.9508649595082,566
+            1.99202097952366,41.9508519675583,565
+            1.99219197034836,41.9508559908718,564.8
+            1.99243001639843,41.9509050250053,564.6
+            1.99255800805986,41.95103100501,563.8
+            1.99260100722313,41.9511220324785,562.8
+            1.99273302219808,41.9512969627976,562.4
+            1.99278398416936,41.9513259641826,562.6
+            1.99298196472228,41.9513370282948,563.4
+            1.99309595860541,41.9513009861112,564.2
+            1.99314096942544,41.9512930233032,564.2
+            1.99320903047919,41.9512510299683,564.6
+            1.99341204017401,41.9511370360851,565.2
+            1.99351597577333,41.9511019997299,565.6
+            1.99363801628351,41.9510729983449,565.6
+            1.99382199905813,41.9510409794748,564
+            1.99382903985679,41.9510569889098,563.8
+            1.99383901432157,41.951096970588,563.8
+            1.99386700987816,41.9511999841779,563.4
+            1.99394596740603,41.951326970011,563.2
+            1.99401997961104,41.9514360185713,562.8
+            1.99403095990419,41.9515609927475,562
+            1.99401402845979,41.9516759924591,561.6
+            1.99401101097465,41.9517420418561,561.4
+            1.99404998682439,41.9517769943923,561
+            1.99408200569451,41.9517800118774,560.4
+            1.9941239990294,41.9517810177058,559.2
+            1.99415199458599,41.9517690315843,558.6
+            1.99418602511287,41.9517479930073,557
+            1.99420597404242,41.9517179857939,555.2
+            1.99426297098398,41.951607009396,552.6
+            1.99429398402572,41.9515950232744,552
+            1.99433295987546,41.951585970819,551.4
+            1.99448802508414,41.9515540357679,550.6
+            1.99458299204707,41.9515400379896,551.2
+            1.99470201507211,41.9514139741659,551.8
+            1.99481097981334,41.9513419736177,551.8
+            1.9948870036751,41.951163019985,550.6
+            1.99490896426141,41.9511320069432,550
+            1.99503997340798,41.9509839825332,549
+            1.9950389675796,41.950911981985,548.8
+            1.9950669631362,41.9508529733866,546.6
+            1.99513401836157,41.9507920369506,545.6
+            1.995262010023,41.9506399892271,545.4
+            1.99529201723635,41.9506010133773,545
+            1.99532403610647,41.9505249895155,544.4
+            1.99534901417792,41.9504140131176,544.2
+            1.99529998004436,41.9502260070294,544
+            1.99520702473819,41.9501319620758,542.8
+            1.99515698477626,41.9500700198114,540.6
+            1.9951460044831,41.9500450417399,540
+            1.99514701031148,41.9499850273132,539.2
+            1.9951650314033,41.9499250128865,539
+            1.99518196284771,41.949868015945,538.8
+            1.99519202113152,41.9498449657112,538.8
+            1.99526402167976,41.9497309718281,539
+            1.99528497643769,41.9497039820999,539
+            1.99541296809912,41.9496550317854,539.4
+            1.99550902470946,41.949616977945,541.2
+            1.9956039916724,41.9495360087603,542.2
+            1.99564598500729,41.9494869746268,542.4
+            1.99571396224201,41.9494619965553,543.2
+            1.99574296362698,41.9494459871203,543.8
+            1.99592602439225,41.9494390301406,544.2
+            1.99607597663999,41.9494650140405,544.8
+            1.99622098356485,41.9494899921119,545.4
+            1.99637101963162,41.949498038739,545.2
+            1.9966069702059,41.9494820293039,544.4
+            1.99684996157885,41.9494920037687,544
+            1.99704601429403,41.9494380243123,544.2
+            1.99718196876347,41.949337022379,544.2
+            1.99724701233208,41.9492940232158,544.2
+            1.99742797762156,41.9493029918522,543.8
+            1.99760500341654,41.9493879843503,542.8
+            1.99771296232939,41.94948496297,542.8
+            1.9978329911828,41.9495289679617,542
+            1.99787699617446,41.9495419599116,541.6
+            1.99792301282287,41.9495419599116,541.4
+            1.99806097894907,41.9495230168104,540.6
+            1.99810397811234,41.9495260342956,540.2
+            1.99834504164755,41.9494840409607,540
+            1.99838200584054,41.949469037354,540.2
+            1.99851603247225,41.9494189973921,541.6
+            1.99857001192868,41.9493879843503,542
+            1.9987209700048,41.9494439754635,542.6
+            1.99875198304653,41.9494609907269,542.8
+            1.99886203743517,41.9495459832251,543
+            1.99887896887958,41.9495749846101,543
+            1.99907996691763,41.949670035392,542.2
+            1.99932396411896,41.9497289601713,543
+            1.99947701767087,41.9497680198401,543.8
+            1.99958899989724,41.9497820176184,543.8
+            1.99971799738705,41.9498960115016,544
+            1.99978798627853,41.9500349834561,543.8
+            1.99980298988521,41.950098015368,543.6
+            1.99985797517002,41.9502310361713,543.4
+            1.99979603290558,41.9503529928625,542.8
+            1.99975898489356,41.9505399931222,543
+            1.99978002347052,41.9505639653653,543
+            1.99991203844547,41.9506620336324,542.8
+            1.99993802234531,41.950697991997,542.6
+            2.0000400301069,41.9508799631149,542.8
+            2.00015301816165,41.9510210305452,542.8
+            2.00019400566816,41.9511259719729,541.6
+            2.00019903481007,41.9511640258133,541.4
+            2.00027103535831,41.9512589927763,540.4
+            2.00031202286482,41.951273996383,540
+            2.00038896873593,41.9512999802828,538.8
+            2.00042802840471,41.9513449911028,537.8
+            2.00041998177767,41.9513760041445,537
+            2.00040698982775,41.9514060113579,536.2
+            2.0003820117563,41.9514319952577,534.4
+            2.00031897984445,41.9514609966427,533.8
+            2.00028796680272,41.951474994421,533.8
+            2.00012502260506,41.9515540357679,533.8
+            2.00008504092693,41.9515640102327,533.6
+            1.99987901374698,41.9516370166093,533.4
+            1.99983500875533,41.9516510143876,533.4
+            1.99978899210692,41.9516500085592,533.4
+            1.9997070170939,41.9516579713672,533.4
+            1.99967801570892,41.951668029651,533.4
+            1.99955496937036,41.951704993844,534.2
+            1.9994979724288,41.9517220091075,534.6
+            1.99944198131561,41.9517410360277,535.6
+            1.99940501712263,41.9517449755222,536.4
+            1.99936302378774,41.9517500046641,536.6
+            1.99918197467923,41.951853018254,536.4
+            1.99914501048624,41.9519159663469,536.2
+            1.99917300604284,41.9519710354507,535.8
+            1.99923302046955,41.9520019646734,535.4
+            1.99931097216904,41.9520100113005,534.8
+            1.9993959646672,41.9520090054721,534.4
+            1.99952898547053,41.9520250149071,533
+            1.99956796132028,41.9520189799368,533
+            1.99968296103179,41.9519789982587,532
+            1.99982101097703,41.9519680179656,531
+            2.00003097765148,41.9519230071455,530
+            2.0000899862498,41.9519199896604,529
+            2.00023398734629,41.9519289582968,528.2
+            2.00047203339636,41.9519029743969,528
+            2.00057596899569,41.9518810138106,526.8
+            2.00067998841405,41.9518759846687,526
+            2.00073296204209,41.9518749788404,525.4
+            2.00092499144375,41.9518719613552,524.8
+            2.00099799782038,41.9518429599702,524.4
+            2.00111500918865,41.9518250226974,524
+            2.00134299695492,41.9518650043756,523.8
+            2.00153301469982,41.9519370049238,523.2
+            2.00156402774155,41.9519680179656,523
+            2.00157903134823,41.9519990310073,522.6
+            2.001589005813,41.9520629849285,522
+            2.0015839766711,41.9520909804851,521.8
+            2.00156696140766,41.9521110132337,521.6
+            2.00146797113121,41.9521749671549,521.2
+            2.0013799611479,41.9522260129452,521
+            2.0012369658798,41.9522949960083,520.4
+            2.0011399872601,41.9523529987782,520
+            2.00109397061169,41.9523809943348,519.8
+            2.00093697756529,41.9525079801679,519.2
+            2.00088903307915,41.9525760412216,518.8
+            2.00086003169417,41.9526310265064,518.8
+            2.00077503919601,41.952740997076,518.4
+            2.00065903365612,41.952918022871,518.2
+            2.00067303143442,41.9530839845538,518
+            2.00072198174894,41.9531630259007,517.2
+            2.00085097923875,41.9532299973071,516.6
+            2.00103496201336,41.9532450009137,516.4
+            2.00106496922672,41.9532279856503,516.4
+            2.00109899975359,41.9531750120223,516.6
+            2.00109195895493,41.9531460106373,516.4
+            2.0010160189122,41.9530640356243,516
+            2.0009689964354,41.9530060328543,515.4
+            2.00095198117197,41.9529330264777,514.8
+            2.00098400004208,41.9528320245445,514.4
+            2.00108600780368,41.9526470359415,514
+            2.00111098587513,41.9526410009712,513.8
+            2.00114903971553,41.9526339601725,513.8
+            2.00119698420167,41.9526089821011,513.8
+            2.00131902471185,41.9525010231882,513.6
+            2.00136202387512,41.9524840079248,513.4
+            2.00158799998462,41.9524469599128,513.2
+            2.00178698636591,41.9524540007114,513.8
+            2.00182696804404,41.952465986833,514
+            2.00190600939095,41.9524769671261,514.4
+            2.00194397941232,41.9524730276316,515
+            2.00198697857559,41.9524860195816,515.4
+            2.00203198939562,41.9525020290166,515.6
+            2.00215101242065,41.9525470398366,516
+            2.00227699242532,41.9525329582393,517
+            2.00231596827507,41.9525239896029,517.2
+            2.00241596437991,41.9525040406734,518.4
+            2.00251998379827,41.952445032075,519.2
+            2.00264202430844,41.9522749632597,518.8
+            2.00271000154316,41.9522140268236,519.6
+            2.0027270168066,41.9521889649332,520.2
+            2.00274302624166,41.9521609693766,520.6
+            2.00278895907104,41.9520830176771,522
+            2.00280002318323,41.9519980251789,522.2
+            2.00283698737621,41.9519329816103,522.8
+            2.00283899903297,41.9518039841205,522.6
+            2.0028430223465,41.9517650082707,522.6
+            2.00284897349775,41.9517319835722,522.6
+            2.00287504121661,41.9516510143876,523.2
+            2.00286900624633,41.9516299758106,523.6
+            2.00285098515451,41.9515920057893,524.8
+            2.00284503400326,41.9514790177345,525.8
+            2.00284503400326,41.9514540396631,525.8
+            2.00282701291144,41.9513979647309,527.2
+            2.00282500125468,41.9513589888811,528.2
+            2.00283899903297,41.9512859825045,529
+            2.00283598154783,41.9512599986047,529.4
+            2.00281997211277,41.9511930271983,530.6
+            2.00281603261828,41.9511299952865,531
+            2.00284997932613,41.9510510377586,531.2
+            2.00290496461093,41.9509440008551,531.4
+            2.00288300402462,41.9508210383356,531.6
+            2.00285299681127,41.9507310166955,532
+            2.00284503400326,41.9505470339209,532.4
+            2.00286800041795,41.9504150189459,532.6
+            2.00289901345968,41.9503619614989,533
+            2.0028980076313,41.9502779748291,533.2
+            2.00287596322596,41.9501310400665,533.8
+            2.00288501568139,41.9500430300832,534.2
+            2.00284101068973,41.9498939998448,534.4
+            2.00281896628439,41.9497560337186,534.8
+            2.00280597433448,41.9496820215136,535.2
+            2.00277898460627,41.9495189934969,535.4
+            2.00273900292814,41.9493390340358,535.2
+            2.0027270168066,41.9493029918522,535.2
+            2.00271201319992,41.9491129741073,534.8
+            2.00272098183632,41.9490829668939,534.6
+            2.00274000875652,41.9490549713373,533.4
+            2.00281603261828,41.949011972174,532.4
+            2.00286498293281,41.9490050151944,532.2
+            2.00296598486602,41.949004009366,531
+            2.00302599929273,41.9490139838308,530.4
+            2.00308400206268,41.9490220304579,529.8
+            2.00318198651075,41.9490389619023,529
+            2.00323001481593,41.9490529596806,527.8
+            2.00336596928537,41.9491159915924,526.4
+            2.00346001423895,41.9491380359977,525.6
+            2.00349697843194,41.9491470046341,525.4
+            2.0035510417074,41.9491569790989,524.8
+            2.00370602309704,41.9492040015757,524.2
+            2.00376997701824,41.9492279738188,523.6
+            2.00386402197182,41.9492250401527,523
+            2.00388799421489,41.9492029957473,522.6
+            2.0038739964366,41.9491820409894,522.4
+            2.00384197756648,41.9491630140692,522
+            2.00377098284662,41.9491259660572,522
+            2.00362698175013,41.9490200188011,520.8
+            2.00362698175013,41.9489979743958,520.6
+            2.00371398590505,41.9489790312946,518.4
+            2.00385698117316,41.9490129780024,517.4
+            2.00394398532808,41.9490370340645,516.6
+            2.00411698780954,41.9491679593921,516.2
+            2.00415696948767,41.9491900037974,516.2
+            2.00439300388098,41.9492269679904,516.2
+            2.0045159664005,41.9492770079523,515.2
+            2.0045439619571,41.949276002124,514.6
+            2.00454496778548,41.9492559693754,514
+            2.00452803634107,41.9492360204458,512.8
+            2.00449299998581,41.949217999354,512.6
+            2.00433198362589,41.9491259660572,511.8
+            2.00431002303958,41.9491119682789,511.6
+            2.00423802249134,41.9490559771657,511.2
+            2.00418001972139,41.9489950407296,510.8
+            2.00414900667965,41.9489630218595,509.2
+            2.00403903611004,41.9488429930061,509
+            2.0039429794997,41.9486959744245,508
+            2.0038739964366,41.9486699905246,507.6
+            2.00383502058685,41.9486760254949,507.4
+            2.00367802754044,41.9486249797046,507
+            2.00364902615547,41.9486040249467,507
+            2.00341701507568,41.9485300127417,506.4
+            2.00337803922594,41.9485170207918,506.4
+            2.00331500731409,41.9485000055283,506.2
+            2.00321601703763,41.9484499655664,506
+            2.00317704118788,41.9484440144151,506
+            2.00311199761927,41.9484379794449,505.8
+            2.00309003703296,41.9484290108085,505.8
+            2.00303304009139,41.948388023302,505.8
+            2.00296799652278,41.9483430124819,505.6
+            2.00294402427971,41.9483450241387,505.6
+            2.0028239954263,41.9483119994402,505.4
+            2.00279197655618,41.9482329580933,505.4
+            2.00279298238456,41.9482069741935,505.4
+            2.00277202762663,41.9481759611517,506
+            2.00270899571478,41.948152994737,506.4
+            2.00249802321196,41.9480529986322,505.2
+            2.00245200656354,41.9480059761554,504.4
+            2.00236399658024,41.9479710236192,504
+            2.00233600102365,41.9479670003057,503.8
+            2.00213701464236,41.9478810019791,503.6
+            2.00209996663034,41.9478309620172,504.2
+            2.00202696025372,41.9477189797908,504.4
+            2.00204196386039,41.9477150402963,504.4
+            2.00215201824903,41.9476800039411,505.8
+            2.00216400437057,41.9476710353047,506.4
+            2.00217699632049,41.9476710353047,506.8
+            2.00218898244202,41.9476729631424,507.2
+            2.0022090151906,41.9476919900626,508
+            2.00223198160529,41.9477069936693,508.6
+            2.00233298353851,41.9477120228112,509.4
+            2.00235502794385,41.9477120228112,509.8
+            2.00242099352181,41.947685033083,511
+            2.00246097519994,41.9476710353047,511.8
+            2.00248503126204,41.9476609770209,512
+            2.00252995826304,41.9476400222629,513.2
+            2.00258796103299,41.9475990347564,514.4
+            2.00263800099492,41.9475629925728,515.8
+            2.00269097462296,41.9475459773093,516.8
+            2.00271201319992,41.9475500006229,517
+            2.0028789807111,41.9475289620459,518.2
+            2.00289901345968,41.9475209992379,518.2
+            2.00302298180759,41.9475540239364,519.6
+            2.0030499715358,41.9475619867444,519.8
+            2.0031620375812,41.9475700333714,521
+            2.00321400538087,41.9475550297648,522
+            2.00330100953579,41.9475410319865,523.2
+            2.00333504006267,41.9475429598242,523.4
+            2.00340896844864,41.9475759845227,524.2
+            2.00342598371208,41.9475970230997,524.4
+            2.00345196761191,41.9476220011711,524.8
+            2.00346998870373,41.9476359989494,525
+            2.00348599813878,41.9476520083845,525.4
+            2.00355598703027,41.9477159623057,526.8
+            2.0035959687084,41.9477359950542,528
+            2.0036839786917,41.9477520044893,528.6
+            2.00370199978352,41.9477479811758,529
+            2.00372999534011,41.9477440416813,529.4
+            2.00374499894679,41.9477499928325,529.6
+            2.00378003530204,41.9477619789541,530
+            2.0037910155952,41.9477639906108,530.2
+            2.00383300893009,41.9477599672973,530.8
+            2.00384499505162,41.9477339833975,531.4
+            2.00385002419352,41.9477179739624,531.6
+            2.00389503501356,41.9476899784058,532.6
+            2.0039670355618,41.9476690236479,532.8
+            2.00401003472507,41.9476250186563,533.6
+            2.00407901778817,41.9475560355932,534.4
+            2.00408999808133,41.9475439656526,534.6
+            2.00411598198116,41.947524016723,535
+            2.00412696227431,41.9475059956312,535.8
+            2.00413199141622,41.9474990386516,536.2
+            2.00414498336613,41.9474850408733,537
+            2.00418395921588,41.9474540278316,538.2
+            2.00419896282256,41.94744204171,538.8
+            2.00422503054142,41.9474250264466,539.4
+            2.00427297502756,41.9473559595644,540.2
+            2.00431698001921,41.9473029859364,540.4
+            2.00438101775944,41.9472390320152,540.8
+            2.00442602857947,41.9471930153668,541.4
+            2.00445896945894,41.9471599906683,541.8
+            2.00449601747096,41.9471370242536,542.4
+            2.00453599914908,41.9471279717982,543.2
+            2.00456198304892,41.9471299834549,543.4
+            2.00458603911102,41.9471279717982,543.8
+            2.00463800691068,41.9471179973334,544.6
+            2.00469098053873,41.947116991505,545.4
+            2.00471797026694,41.9471119623631,545.8
+            2.00476700440049,41.9471039995551,546.4
+            2.00479198247194,41.9470979645848,546.8
+            2.00492299161851,41.9470569770783,547.8
+            2.00494696386159,41.9470490142703,548
+            2.0051550026983,41.946990005672,549
+            2.00521996244788,41.9469520356506,549.6
+            2.0052710082382,41.9469269737601,550
+            2.00531501322985,41.9469009898603,550.4
+            2.00543403625488,41.9468259718269,551.2
+            2.00545096769929,41.9468139857054,551.4
+            2.00547502376139,41.9467989820987,551.6
+            2.00555398128927,41.9467620179057,552.2
+            2.0056679751724,41.9467579945922,553
+            2.00570502318442,41.9467640295625,553.6
+            2.00573796406388,41.9467740040272,553.8
+            2.00582396239042,41.9468429870903,553.8
+            2.00605002231896,41.9469060190022,552.8
+            2.00614297762513,41.9469060190022,553.4
+            2.00631396844983,41.9469299912453,554.6
+            2.00638496316969,41.9469370320439,554.6
+            2.00647397898138,41.9468969665468,555.2
+            2.00650700367987,41.9468660373241,556
+            2.00656500644982,41.946834018454,557.2
+            2.00658797286451,41.9468310009688,557.4
+            2.00667598284781,41.9468040112406,558.4
+            2.0067370031029,41.9467949587852,559.8
+            2.00677698478103,41.9467880018055,560.4
+            2.00679500587285,41.9467880018055,560.8
+            2.00685200281441,41.946783978492,562
+            2.00687304139137,41.9467819668353,562.6
+            2.00692199170589,41.9467750098556,563.4
+            2.00700396671891,41.9467869959772,565
+            2.00710899196565,41.9467910192907,565.4
+            2.0073430147022,41.9467709865421,566
+            2.00745197944343,41.9467429909855,567.2
+            2.00752196833491,41.9467160012573,568.4
+            2.0075880177319,41.9466880057007,569.8
+            2.00765398330986,41.9466579984874,571.4
+            2.00772698968649,41.946636037901,572.6
+            2.00788800604641,41.946627991274,573.8
+            2.00795103795826,41.9466320145875,574
+            2.00812797993422,41.9466900173575,574.8
+            2.00815597549081,41.9466969743371,574.8
+            2.00831699185073,41.9467119779438,575
+            2.0083790179342,41.9466849882156,576
+            2.00856098905206,41.9465939607471,576.6
+            2.00870901346207,41.9465200323611,577.4
+            2.00879199430346,41.9464900251478,578
+            2.00885301455855,41.9464860018343,578.6
+            2.00906096957624,41.9464900251478,579.4
+            2.0092339720577,41.9465119857341,579.8
+            2.0093079842627,41.9465259835124,579.8
+            2.00949003919959,41.9465890154243,580.2
+            2.00952700339258,41.9466040190309,580.2
+            2.00974501669407,41.9467030093074,580.6
+            2.00978097505867,41.9467190187424,580.8
+            2.00981601141393,41.9467320106924,580.8
+            2.01000301167369,41.9467740040272,582.2
+            2.01011901721358,41.9467890076339,582.6
+            2.01032102108002,41.9467510376126,582.8
+            2.01042596250773,41.9467160012573,583.4
+            2.01055998913944,41.9466689787805,584
+            2.01068001799285,41.9466269854456,584.4
+            2.01081102713942,41.9465730059892,585.2
+            2.01090297661722,41.9465490337461,585.6
+            2.01101202517748,41.9465239718556,587
+            2.01113901101053,41.9465060345829,587.2
+            2.01134000904858,41.9464050326496,587.6
+            2.01146297156811,41.9462509732693,588
+            2.01148702763021,41.9462359696627,588
+            2.01155500486493,41.946220966056,588.6
+            2.01157998293638,41.9462300185114,589
+            2.01160898432136,41.9462480396032,589.2
+            2.01166799291968,41.9463150110096,590.2
+            2.01176597736776,41.9463710021228,591.6
+            2.01182297430933,41.9463710021228,592.4
+            2.0118570048362,41.9463699962944,592.8
+            2.01212002895773,41.9463890232146,593.6
+            2.01236201450229,41.9464000035077,593.4
+            2.01239596121013,41.9463989976794,593.2
+            2.01266602613032,41.9463740196079,592.6
+            2.01278395950794,41.9463559985161,592.4
+            2.01289099641144,41.9464129954576,592.2
+            2.01297800056636,41.9465300068259,594
+            2.01317799277604,41.9466620218009,593.8
+            2.0132159627974,41.9466780312359,593.8
+            2.01340899802744,41.9467119779438,593.4
+            2.01368099078536,41.9467170070857,593.6
+            2.01372499577701,41.9467109721154,593.8
+            2.01396597549319,41.9466549810022,593.6
+            2.01410201378167,41.9465389754623,592.8
+            2.01421701349318,41.9464669749141,592.6
+            2.01425297185779,41.9464590121061,592.6
+            2.01445497572422,41.946464041248,593.6
+            2.01453804038465,41.9464620295912,594
+            2.01480399817228,41.9464920368046,593.8
+            2.0149189978838,41.9465210381895,593.2
+            2.01495001092553,41.9465330243111,593.4
+            2.01498102396727,41.9465470220894,594.6
+            2.01499896124005,41.9465440046042,595.6
+            2.01506702229381,41.9465109799057,596.6
+            2.01515796594322,41.9464600179344,597.8
+            2.01521697454154,41.9464170187712,598.8
+            2.015315964818,41.9462990015745,600
+            2.01539299450815,41.9462639652193,600.4
+            2.01547597534955,41.9462450221181,601.2
+            2.01556599698961,41.9462190382183,602.4
+            2.01558996923268,41.94620504044,602.6
+            2.01564797200263,41.9461580179632,603.6
+            2.01567898504436,41.9460890349001,604.4
+            2.01569298282266,41.9460690021515,604.6
+            2.01573296450078,41.9459720235318,605.8
+            2.01575299724936,41.9459489732981,605.8
+            2.01584603637457,41.9458459597081,606.4
+            2.01590797863901,41.9457749649882,606.8
+            2.01592599973082,41.9457519985735,607
+            2.01604502275586,41.9456199835986,607.6
+            2.01609497889876,41.9455639924854,607.8
+            2.0161450188607,41.9455140363425,608
+            2.0162880141288,41.9453579653054,608.6
+            2.01634400524199,41.9453070033342,609
+            2.01637300662696,41.9452810194343,609.2
+            2.01645095832646,41.945213964209,610.2
+            2.01653402298689,41.9451749883592,610.4
+            2.01676896773279,41.9451120402664,610.4
+            2.01686502434313,41.9450849667192,610
+            2.01711396686733,41.9450299814343,609
+            2.01721102930605,41.945028975606,608.4
+            2.01740900985897,41.9450480025262,607.8
+            2.0175560284406,41.9450690411031,607.4
+            2.01774797402322,41.9450910016894,606.8
+            2.01794696040451,41.9451049994677,606.4
+            2.0180359762162,41.945126960054,606.4
+            2.01826999895275,41.9451899919659,606
+            2.0183969847858,41.9452350027859,605.6
+            2.01851902529597,41.9452909938991,605.4
+            2.01874097809196,41.9453579653054,605.2
+            2.01902403496206,41.9453199952841,605.4
+            2.0191599894315,41.9452869705856,605.8
+            2.01932201161981,41.9452159758657,606.2
+            2.01954103074968,41.9451350066811,606.8
+            2.01979500241578,41.9450749922544,607.2
+            2.01989198103547,41.945082033053,607.4
+            2.02008099295199,41.9450970366597,608
+            2.02015399932861,41.9451340008527,608.4
+            2.02027696184814,41.9452609866858,609.2
+            2.02029498293996,41.9452899880707,609.4
+            2.02032901346684,41.945341033861,610.4
+            2.02039003372192,41.9453810155392,611.6
+            2.02042599208653,41.9453940074891,612
+            2.02054602093995,41.9454120285809,612.4
+            2.02058197930455,41.9453999586403,612.4
+            2.02061098068953,41.945377998054,612.4
+            2.02070603147149,41.9452179875225,612.2
+            2.0208020042628,41.9451439753175,610.8
+            2.02085196040571,41.9451459869742,610.8
+            2.02095002867281,41.9451220147312,610.6
+            2.02104600146413,41.9450599886477,610.4
+            2.02114197425544,41.9449569750577,610.6
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>CDS5k</name>
+        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#line-558B2F-5000</styleUrl>
+        <ExtendedData>
+          <Data name="descripció">
+            <value/>
+          </Data>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            2.02107299119234,41.9449190050364,611.6
+            2.02106502838433,41.9449169933796,611.6
+            2.02109696343541,41.9448910094798,611.8
+            2.02113702893257,41.9448750000447,612
+            2.02119000256062,41.9448699709028,612.2
+            2.02123702503741,41.944867959246,612.6
+            2.02132998034358,41.9448750000447,613
+            2.02146400697529,41.9449050072581,613.6
+            2.02153097838163,41.944941971451,614.6
+            2.02157096005976,41.944963010028,615
+            2.02164899557829,41.9450090266764,615.8
+            2.02169098891318,41.9450269639492,616
+            2.02178000472486,41.9450620003045,616.6
+            2.02181898057461,41.9450790155679,617
+            2.02185896225274,41.9450940191746,617
+            2.02190296724439,41.9451120402664,617.4
+            2.02201100997627,41.9451579730958,618.4
+            2.02204596251249,41.9451780058444,618.6
+            2.02205501496792,41.9451989606023,619
+            2.02202098444104,41.9452609866858,619.4
+            2.02196398749948,41.9453279580921,619.6
+            2.02192903496325,41.9453420396894,619.6
+            2.02184102497995,41.9454189855605,619.8
+            2.02174597419798,41.945510013029,619.8
+            2.02164698392153,41.9455970171839,620
+            2.02153701335192,41.9456980191171,620.4
+            2.02151102945209,41.9457280263305,620.4
+            2.0214220136404,41.9458239991218,621
+            2.02132696285844,41.9459130149335,622
+            2.02120802365243,41.946035977453,623.2
+            2.02114800922573,41.9460959918797,624
+            2.02111096121371,41.9461259990931,624.2
+            2.02107198536396,41.9461570121348,624.6
+            2.02090702950954,41.9462839979678,625.8
+            2.02078599482775,41.9463659729809,626.6
+            2.0207419898361,41.9463920406997,627
+            2.02058097347617,41.9464900251478,628
+            2.02047795988619,41.9465610198677,629.2
+            2.02044200152159,41.946582980454,629.6
+            2.02039699070156,41.9466040190309,630
+            2.02035197988153,41.9466180168092,630.4
+            2.02020102180541,41.946656992659,631.4
+            2.02015399932861,41.9466709904373,632
+            2.0200339704752,41.9467050209641,632.4
+            2.01993104070425,41.9467340223491,633.6
+            2.01976901851594,41.946767969057,634
+            2.01967597939074,41.9467890076339,634.6
+            2.01942301355302,41.9468699768186,635.2
+            2.01932796277106,41.9469230342656,634.6
+            2.01923500746489,41.9469780195504,634
+            2.0191050041467,41.9470610003918,633.4
+            2.01897399500012,41.9471409637481,632.6
+            2.01887198723853,41.9471920095384,632.4
+            2.01862899586558,41.9472909998149,631.2
+            2.01858700253069,41.9472950231284,631
+            2.01855196617544,41.9472830370069,630.8
+            2.01840603724122,41.9472380261868,630.2
+            2.01834904029965,41.9472309853882,630.2
+            2.01823001727462,41.9472360145301,629.8
+            2.01812499202788,41.947265015915,629.4
+            2.01807897537947,41.9472889881581,629.2
+            2.01802600175142,41.9473169837147,629.2
+            2.01797797344625,41.9473459850997,628.8
+            2.01789197511971,41.9474110286683,628.4
+            2.01785802841186,41.9474469870329,628.2
+            2.01774696819484,41.9476059917361,627.8
+            2.01765703037381,41.9478029664606,627.6
+            2.0176110137254,41.9478799961507,627.4
+            2.01758301816881,41.9479189720005,627.4
+            2.01744597405195,41.948100021109,627.2
+            2.01741303317249,41.9481219816953,627.2
+            2.01736902818084,41.9481329619884,627
+            2.01727003790438,41.9481400027871,626.8
+            2.01715302653611,41.9481260050088,627
+            2.01709502376616,41.9481140188873,627
+            2.01686301268637,41.9480560161173,626.8
+            2.01661901548505,41.947997007519,625.6
+            2.01634400524199,41.9479179661721,625
+            2.01611400581896,41.9478550180793,624.8
+            2.01599498279393,41.9478209875524,624.6
+            2.01587503775954,41.9477840233594,624
+            2.01581703498959,41.9477700255811,623.2
+            2.01558602973819,41.947709005326,622
+            2.01543197035789,41.9476439617574,621.2
+            2.01532401144505,41.9475950114429,620.4
+            2.015271037817,41.9475680217147,619.4
+            2.01516299508512,41.9475110247731,618.4
+            2.01510800980031,41.9474769942462,617.2
+            2.01505796983838,41.9474410358816,616.8
+            2.0150070078671,41.9474090170115,615.8
+            2.01490801759064,41.9473550375551,614.4
+            2.01485496014357,41.9473419617862,614
+            2.01479502953589,41.9473479967564,614
+            2.01469696126878,41.947404993698,613.4
+            2.01463501900434,41.9474840350449,611.4
+            2.01457601040602,41.9475639984012,611
+            2.01450199820101,41.9476810097694,610.2
+            2.01440401375294,41.9478339795023,609
+            2.01432396657765,41.9479980133474,608
+            2.01425498351455,41.9481710158288,607.2
+            2.01422799378633,41.9482099916786,607
+            2.0142020098865,41.9482509791851,606.6
+            2.01413403265178,41.9483249913901,605.8
+            2.014094972983,41.9483629614115,605.6
+            2.01403202489018,41.94844099693,605
+            2.01397997327149,41.9485249835998,604.4
+            2.01393202878535,41.9485989958048,603.4
+            2.01390101574361,41.9486310146749,603
+            2.0138000138104,41.9487180188298,602
+            2.01376799494028,41.9487419910729,601.2
+            2.01374402269721,41.9487689808011,600.6
+            2.013717032969,41.9488119799644,599.2
+            2.0136929769069,41.9488579966128,597.8
+            2.01367101632059,41.9489040132612,597.4
+            2.01362801715732,41.9489920232445,596.6
+            2.01359800994396,41.9490299932659,596.4
+            2.01353196054697,41.9491040054709,596.4
+            2.01349499635398,41.9491380359977,596.4
+            2.01342299580574,41.9492029957473,596.4
+            2.01330598443747,41.9493279699236,597
+            2.01326902024448,41.9493549596518,597.4
+            2.01323096640408,41.9493800215423,598.2
+            2.01303097419441,41.9495120365173,598.8
+            2.01299903914332,41.9495449773967,598.8
+            2.01287004165351,41.9496840331703,597.6
+            2.01282997615635,41.9497149623931,597.2
+            2.01278496533632,41.9497370067984,597
+            2.01263903640211,41.9497909862548,596.8
+            2.01254499144852,41.9498270284384,596.8
+            2.01247097924352,41.9498749729246,597
+            2.01244398951531,41.9499059859663,597
+            2.01240702532232,41.9499349873513,596.8
+            2.01231197454035,41.9499850273132,596.8
+            2.01225799508393,41.950002964586,596.8
+            2.01204601675272,41.9500720314682,596
+            2.01179699040949,41.9501789845526,595.4
+            2.01174804009497,41.9502020347863,595.2
+            2.01165097765624,41.9502469617873,595
+            2.01160202734172,41.9502609595656,594.6
+            2.01149901375174,41.9502799864858,594
+            2.01122500933707,41.9503150228411,593.8
+            2.01111696660519,41.9503270089626,593.6
+            2.01106198132038,41.9503270089626,593.6
+            2.010801974684,41.9503000192344,594
+            2.01075302436948,41.9502899609506,594
+            2.01070097275078,41.9502740353346,594
+            2.01064799912274,41.9502509851009,594
+            2.01054699718952,41.9501980114728,593.2
+            2.01044800691307,41.9501600414515,592.4
+            2.0103960391134,41.9501469656825,592.4
+            2.01029101386666,41.9501300342381,592.2
+            2.01008800417185,41.9500970095396,592.8
+            2.01003997586667,41.9500870350748,593
+            2.00994400307536,41.9500659964979,593.4
+            2.00984199531376,41.9500590395182,593.4
+            2.00973596423864,41.9500590395182,593.4
+            2.0096880197525,41.9500479754061,593.4
+            2.00960797257721,41.9500000309199,593.2
+            2.00958299450576,41.9499609712511,593.2
+            2.00953303836286,41.9498869590461,592.6
+            2.00945500284433,41.9498339854181,592.2
+            2.00941099785268,41.9498149584979,592.2
+            2.00936397537589,41.9497980270535,592.2
+            2.00923103839159,41.9497560337186,592.2
+            2.00915903784335,41.9497059937567,592.2
+            2.00909298844635,41.9496500026435,592.2
+            2.00905602425337,41.9496220070869,592.2
+            2.00901503674686,41.9495970290154,592.2
+            2.00888201594353,41.9495189934969,592.8
+            2.0087260287255,41.94948496297,593.2
+            2.00867598876357,41.949477000162,593.4
+            2.00843500904739,41.9494500104338,594
+            2.00835403986275,41.9494569674134,594
+            2.00828203931451,41.9494909979403,594
+            2.00810199603438,41.9494780059904,592
+            2.00801499187946,41.9493869785219,589.4
+            2.00801901519299,41.9493490085006,588.6
+            2.00803896412253,41.9493129663169,587.8
+            2.00806897133589,41.9492360204458,586.2
+            2.00808003544807,41.9491960387677,585.6
+            2.00810400769114,41.9491599965841,584.6
+            2.00814097188413,41.9491320010275,583.6
+            2.0081839710474,41.9491109624505,583.2
+            2.00829796493053,41.9490729924291,583
+            2.00846803374588,41.949040973559,582.8
+            2.00867598876357,41.9490679632872,582.6
+            2.00877497904003,41.9491019938141,582.6
+            2.00896600261331,41.9491989724338,581.4
+            2.00901403091848,41.9492269679904,581.2
+            2.0092529989779,41.9493429735303,580.2
+            2.00930002145469,41.9493680354208,580
+            2.00934997759759,41.9493910018355,579.8
+            2.00948903337121,41.9494569674134,579.2
+            2.00970897451043,41.9495790079236,578.2
+            2.00974803417921,41.9496019743383,578
+            2.00979103334248,41.9496220070869,577.8
+            2.00989396311343,41.9496309757233,577.6
+            2.0099470205605,41.9496189896017,577.4
+            2.01000301167369,41.9496039859951,577
+            2.01010099612176,41.9495479948819,575.8
+            2.01017701998353,41.9494899921119,575.2
+            2.01021096669137,41.9494650140405,574.8
+            2.01029201969504,41.9494279660285,574.6
+            2.01039000414312,41.9494090229273,574.6
+            2.01046703383326,41.9493749924004,574.6
+            2.0104790199548,41.9493480026722,574.6
+            2.01049100607634,41.9493179954588,574
+            2.0104930177331,41.9492640160024,572.2
+            2.01048002578318,41.9492279738188,570.4
+            2.01045697554946,41.9491879921407,569.2
+            2.01042897999287,41.9491459988058,568
+            2.01039696112275,41.9490679632872,567
+            2.01038296334446,41.9490380398929,566.8
+            2.01035396195948,41.9490350224078,566.8
+            2.01022303663194,41.9490849785507,564.8
+            2.01017802581191,41.9490829668939,564.6
+            2.01007903553546,41.9490529596806,563.6
+            2.00996504165232,41.9490399677306,562.6
+            2.00980301946402,41.949040973559,561.6
+            2.00973403640091,41.9490529596806,561.4
+            2.0096779614687,41.9490610063076,560.6
+            2.00963102281094,41.9490559771657,559.6
+            2.00958198867738,41.9490480143577,559.2
+            2.00942499563098,41.9489490240812,557.8
+            2.00933296233416,41.9488460104913,556.6
+            2.00924403034151,41.948745008558,555.4
+            2.00920203700662,41.9487170130014,555
+            2.00911201536655,41.9486699905246,553.6
+            2.00901201926172,41.9486359599978,552.6
+            2.00896499678493,41.9486229680479,552.2
+            2.00876701623201,41.9485369697213,552.8
+            2.00874698348343,41.9485089741647,552.8
+            2.00868898071349,41.9483349658549,551.4
+            2.00862100347877,41.9482389930636,550.2
+            2.00858202762902,41.9481730274856,548.4
+            2.00852603651583,41.9481219816953,547
+            2.00841003097594,41.948062973097,545.4
+            2.00836401432753,41.9480570219457,544.4
+            2.00826896354556,41.9480730313808,543.4
+            2.00818598270416,41.9481039606035,543
+            2.00795103795826,41.9481349736452,542.8
+            2.00789596885443,41.9481550063938,542.8
+            2.00786696746945,41.9481420144439,542.6
+            2.00778096914291,41.9481229875237,541.4
+            2.00769396498799,41.9481440261006,539.6
+            2.00752699747682,41.9481690041721,539.2
+            2.00726196169853,41.9482120033354,540
+            2.00710999779403,41.9481959939003,538.6
+            2.00706901028752,41.9482020288706,538
+            2.0069960039109,41.9482570141554,537.8
+            2.0069629792124,41.9482669886202,538.2
+            2.00683498755097,41.9482789747417,538.8
+            2.00680003501475,41.9482969958335,539
+            2.00676097534597,41.9483450241387,539
+            2.00665796175599,41.9484600238502,539
+            2.006620997563,41.9485539849848,539.2
+            2.00650700367987,41.9486539810896,539.4
+            2.00645998120308,41.9486689846963,539.4
+            2.0062739867717,41.9487060327083,539.2
+            2.00613903813064,41.9488089624792,539.6
+            2.00611003674567,41.9488200265914,541
+            2.00602403841913,41.9489180110395,541.8
+            2.00602102093399,41.9489460065961,542
+            2.00603501871228,41.9489719904959,542.4
+            2.00607500039041,41.9490200188011,543
+            2.00609503313899,41.9490470085293,543.4
+            2.00613199733198,41.9491019938141,544.2
+            2.00615203008056,41.9491309951991,544.6
+            2.00626702979207,41.9492910057306,545
+            2.00629100203514,41.9493250362575,544.8
+            2.00639896094799,41.9494940154254,543.8
+            2.00641698203981,41.94952997379,543.6
+            2.00643097981811,41.9495670218021,543.6
+            2.0064690336585,41.9497159682214,542.4
+            2.00648898258805,41.9497869629413,542.2
+            2.00653499923646,41.9499639887363,541.4
+            2.00655100867152,41.9499990250915,541.4
+            2.00662200339139,41.9501459598541,540.4
+            2.0066349953413,41.9501850195229,539.8
+            2.00663901865482,41.9502260070294,539.2
+            2.00660498812795,41.9503789767623,537.8
+            2.00660423375666,41.9504192098975,537.4
+            2.00660867616534,41.9504372309893,536.8
+            2.00660498812795,41.9504420086741,532
+            2.00658403337002,41.9505549967289,530.4
+            2.00657498091459,41.9506079703569,529.6
+            2.00656802393496,41.950632026419,528.8
+            2.00656198896468,41.9506549928337,527.6
+            2.00652301311493,41.9506880175322,527
+            2.00649300590158,41.9506949745119,526.8
+            2.00646601617336,41.9506989978254,526.6
+            2.00641798786819,41.950697991997,526.4
+            2.00636602006853,41.9506730139256,526.2
+            2.00536270625889,41.9500983506441,0
+            2.0049478020519,41.9498647470027,0
+            2.00445536524057,41.9494470767677,0
+            2.00430599972606,41.94944255054,0
+            2.00388556346297,41.9491685461253,0
+            2.0038739964366,41.9491820409894,522.4
+            2.00384197756648,41.9491630140692,522
+            2.00377098284662,41.9491259660572,522
+            2.00362698175013,41.9490200188011,520.8
+            2.00362698175013,41.9489979743958,520.6
+            2.00371398590505,41.9489790312946,518.4
+            2.00385698117316,41.9490129780024,517.4
+            2.00394398532808,41.9490370340645,516.6
+            2.00411698780954,41.9491679593921,516.2
+            2.00415696948767,41.9491900037974,516.2
+            2.00439300388098,41.9492269679904,516.2
+            2.0045159664005,41.9492770079523,515.2
+            2.0045439619571,41.949276002124,514.6
+            2.00454496778548,41.9492559693754,514
+            2.00452803634107,41.9492360204458,512.8
+            2.00449299998581,41.949217999354,512.6
+            2.00433198362589,41.9491259660572,511.8
+            2.00431002303958,41.9491119682789,511.6
+            2.00423802249134,41.9490559771657,511.2
+            2.00418001972139,41.9489950407296,510.8
+            2.00414900667965,41.9489630218595,509.2
+            2.00403903611004,41.9488429930061,509
+            2.0039429794997,41.9486959744245,508
+            2.0038739964366,41.9486699905246,507.6
+            2.00383502058685,41.9486760254949,507.4
+            2.00367802754044,41.9486249797046,507
+            2.00364902615547,41.9486040249467,507
+            2.00341701507568,41.9485300127417,506.4
+            2.00337803922594,41.9485170207918,506.4
+            2.00331500731409,41.9485000055283,506.2
+            2.00321601703763,41.9484499655664,506
+            2.00317704118788,41.9484440144151,506
+            2.00311199761927,41.9484379794449,505.8
+            2.00309003703296,41.9484290108085,505.8
+            2.00303304009139,41.948388023302,505.8
+            2.00296799652278,41.9483430124819,505.6
+            2.00294402427971,41.9483450241387,505.6
+            2.0028239954263,41.9483119994402,505.4
+            2.00279197655618,41.9482329580933,505.4
+            2.00279298238456,41.9482069741935,505.4
+            2.00277202762663,41.9481759611517,506
+            2.00270899571478,41.948152994737,506.4
+            2.00249802321196,41.9480529986322,505.2
+            2.00245200656354,41.9480059761554,504.4
+            2.00236399658024,41.9479710236192,504
+            2.00233600102365,41.9479670003057,503.8
+            2.00213701464236,41.9478810019791,503.6
+            2.00209996663034,41.9478309620172,504.2
+            2.00202696025372,41.9477189797908,504.4
+            2.00204196386039,41.9477150402963,504.4
+            2.00215201824903,41.9476800039411,505.8
+            2.00216400437057,41.9476710353047,506.4
+            2.00217699632049,41.9476710353047,506.8
+            2.00218898244202,41.9476729631424,507.2
+            2.0022090151906,41.9476919900626,508
+            2.00223198160529,41.9477069936693,508.6
+            2.00233298353851,41.9477120228112,509.4
+            2.00235502794385,41.9477120228112,509.8
+            2.00242099352181,41.947685033083,511
+            2.00246097519994,41.9476710353047,511.8
+            2.00248503126204,41.9476609770209,512
+            2.00252995826304,41.9476400222629,513.2
+            2.00258796103299,41.9475990347564,514.4
+            2.00263800099492,41.9475629925728,515.8
+            2.00269097462296,41.9475459773093,516.8
+            2.00271201319992,41.9475500006229,517
+            2.0028789807111,41.9475289620459,518.2
+            2.00289901345968,41.9475209992379,518.2
+            2.00302298180759,41.9475540239364,519.6
+            2.0030499715358,41.9475619867444,519.8
+            2.0031620375812,41.9475700333714,521
+            2.00321400538087,41.9475550297648,522
+            2.00330100953579,41.9475410319865,523.2
+            2.00333504006267,41.9475429598242,523.4
+            2.00340896844864,41.9475759845227,524.2
+            2.00342598371208,41.9475970230997,524.4
+            2.00345196761191,41.9476220011711,524.8
+            2.00346998870373,41.9476359989494,525
+            2.00348599813878,41.9476520083845,525.4
+            2.00355598703027,41.9477159623057,526.8
+            2.0035959687084,41.9477359950542,528
+            2.0036839786917,41.9477520044893,528.6
+            2.00370199978352,41.9477479811758,529
+            2.00372999534011,41.9477440416813,529.4
+            2.00374499894679,41.9477499928325,529.6
+            2.00378003530204,41.9477619789541,530
+            2.0037910155952,41.9477639906108,530.2
+            2.00383300893009,41.9477599672973,530.8
+            2.00384499505162,41.9477339833975,531.4
+            2.00385002419352,41.9477179739624,531.6
+            2.00389503501356,41.9476899784058,532.6
+            2.0039670355618,41.9476690236479,532.8
+            2.00401003472507,41.9476250186563,533.6
+            2.00407901778817,41.9475560355932,534.4
+            2.00408999808133,41.9475439656526,534.6
+            2.00411598198116,41.947524016723,535
+            2.00412696227431,41.9475059956312,535.8
+            2.00413199141622,41.9474990386516,536.2
+            2.00414498336613,41.9474850408733,537
+            2.00418395921588,41.9474540278316,538.2
+            2.00419896282256,41.94744204171,538.8
+            2.00422503054142,41.9474250264466,539.4
+            2.00427297502756,41.9473559595644,540.2
+            2.00431698001921,41.9473029859364,540.4
+            2.00438101775944,41.9472390320152,540.8
+            2.00442602857947,41.9471930153668,541.4
+            2.00445896945894,41.9471599906683,541.8
+            2.00449601747096,41.9471370242536,542.4
+            2.00453599914908,41.9471279717982,543.2
+            2.00456198304892,41.9471299834549,543.4
+            2.00458603911102,41.9471279717982,543.8
+            2.00463800691068,41.9471179973334,544.6
+            2.00469098053873,41.947116991505,545.4
+            2.00471797026694,41.9471119623631,545.8
+            2.00476700440049,41.9471039995551,546.4
+            2.00479198247194,41.9470979645848,546.8
+            2.00492299161851,41.9470569770783,547.8
+            2.00494696386159,41.9470490142703,548
+            2.0051550026983,41.946990005672,549
+            2.00521996244788,41.9469520356506,549.6
+            2.0052710082382,41.9469269737601,550
+            2.00531501322985,41.9469009898603,550.4
+            2.00543403625488,41.9468259718269,551.2
+            2.00545096769929,41.9468139857054,551.4
+            2.00547502376139,41.9467989820987,551.6
+            2.00555398128927,41.9467620179057,552.2
+            2.0056679751724,41.9467579945922,553
+            2.00570502318442,41.9467640295625,553.6
+            2.00573796406388,41.9467740040272,553.8
+            2.00582396239042,41.9468429870903,553.8
+            2.00605002231896,41.9469060190022,552.8
+            2.00614297762513,41.9469060190022,553.4
+            2.00631396844983,41.9469299912453,554.6
+            2.00638496316969,41.9469370320439,554.6
+            2.00647397898138,41.9468969665468,555.2
+            2.00650700367987,41.9468660373241,556
+            2.00656500644982,41.946834018454,557.2
+            2.00658797286451,41.9468310009688,557.4
+            2.00667598284781,41.9468040112406,558.4
+            2.0067370031029,41.9467949587852,559.8
+            2.00677698478103,41.9467880018055,560.4
+            2.00679500587285,41.9467880018055,560.8
+            2.00685200281441,41.946783978492,562
+            2.00687304139137,41.9467819668353,562.6
+            2.00692199170589,41.9467750098556,563.4
+            2.00700396671891,41.9467869959772,565
+            2.00710899196565,41.9467910192907,565.4
+            2.0073430147022,41.9467709865421,566
+            2.00745197944343,41.9467429909855,567.2
+            2.00752196833491,41.9467160012573,568.4
+            2.0075880177319,41.9466880057007,569.8
+            2.00765398330986,41.9466579984874,571.4
+            2.00772698968649,41.946636037901,572.6
+            2.00788800604641,41.946627991274,573.8
+            2.00795103795826,41.9466320145875,574
+            2.00812797993422,41.9466900173575,574.8
+            2.00815597549081,41.9466969743371,574.8
+            2.00831699185073,41.9467119779438,575
+            2.0083790179342,41.9466849882156,576
+            2.00856098905206,41.9465939607471,576.6
+            2.00870901346207,41.9465200323611,577.4
+            2.00879199430346,41.9464900251478,578
+            2.00885301455855,41.9464860018343,578.6
+            2.00906096957624,41.9464900251478,579.4
+            2.0092339720577,41.9465119857341,579.8
+            2.0093079842627,41.9465259835124,579.8
+            2.00949003919959,41.9465890154243,580.2
+            2.00952700339258,41.9466040190309,580.2
+            2.00974501669407,41.9467030093074,580.6
+            2.00978097505867,41.9467190187424,580.8
+            2.00981601141393,41.9467320106924,580.8
+            2.01000301167369,41.9467740040272,582.2
+            2.01011901721358,41.9467890076339,582.6
+            2.01032102108002,41.9467510376126,582.8
+            2.01042596250773,41.9467160012573,583.4
+            2.01055998913944,41.9466689787805,584
+            2.01068001799285,41.9466269854456,584.4
+            2.01081102713942,41.9465730059892,585.2
+            2.01090297661722,41.9465490337461,585.6
+            2.01101202517748,41.9465239718556,587
+            2.01113901101053,41.9465060345829,587.2
+            2.01134000904858,41.9464050326496,587.6
+            2.01146297156811,41.9462509732693,588
+            2.01148702763021,41.9462359696627,588
+            2.01155500486493,41.946220966056,588.6
+            2.01157998293638,41.9462300185114,589
+            2.01160898432136,41.9462480396032,589.2
+            2.01166799291968,41.9463150110096,590.2
+            2.01176597736776,41.9463710021228,591.6
+            2.01182297430933,41.9463710021228,592.4
+            2.0118570048362,41.9463699962944,592.8
+            2.01212002895773,41.9463890232146,593.6
+            2.01236201450229,41.9464000035077,593.4
+            2.01239596121013,41.9463989976794,593.2
+            2.01266602613032,41.9463740196079,592.6
+            2.01278395950794,41.9463559985161,592.4
+            2.01289099641144,41.9464129954576,592.2
+            2.01297800056636,41.9465300068259,594
+            2.01317799277604,41.9466620218009,593.8
+            2.0132159627974,41.9466780312359,593.8
+            2.01340899802744,41.9467119779438,593.4
+            2.01368099078536,41.9467170070857,593.6
+            2.01372499577701,41.9467109721154,593.8
+            2.01396597549319,41.9466549810022,593.6
+            2.01410201378167,41.9465389754623,592.8
+            2.01421701349318,41.9464669749141,592.6
+            2.01425297185779,41.9464590121061,592.6
+            2.01445497572422,41.946464041248,593.6
+            2.01453804038465,41.9464620295912,594
+            2.01480399817228,41.9464920368046,593.8
+            2.0149189978838,41.9465210381895,593.2
+            2.01495001092553,41.9465330243111,593.4
+            2.01498102396727,41.9465470220894,594.6
+            2.01499896124005,41.9465440046042,595.6
+            2.01506702229381,41.9465109799057,596.6
+            2.01515796594322,41.9464600179344,597.8
+            2.01521697454154,41.9464170187712,598.8
+            2.015315964818,41.9462990015745,600
+            2.01539299450815,41.9462639652193,600.4
+            2.01547597534955,41.9462450221181,601.2
+            2.01556599698961,41.9462190382183,602.4
+            2.01558996923268,41.94620504044,602.6
+            2.01564797200263,41.9461580179632,603.6
+            2.01567898504436,41.9460890349001,604.4
+            2.01569298282266,41.9460690021515,604.6
+            2.01573296450078,41.9459720235318,605.8
+            2.01575299724936,41.9459489732981,605.8
+            2.01584603637457,41.9458459597081,606.4
+            2.01590797863901,41.9457749649882,606.8
+            2.01592599973082,41.9457519985735,607
+            2.01604502275586,41.9456199835986,607.6
+            2.01609497889876,41.9455639924854,607.8
+            2.0161450188607,41.9455140363425,608
+            2.0162880141288,41.9453579653054,608.6
+            2.01634400524199,41.9453070033342,609
+            2.01637300662696,41.9452810194343,609.2
+            2.01645095832646,41.945213964209,610.2
+            2.01653402298689,41.9451749883592,610.4
+            2.01676896773279,41.9451120402664,610.4
+            2.01686502434313,41.9450849667192,610
+            2.01711396686733,41.9450299814343,609
+            2.01721102930605,41.945028975606,608.4
+            2.01740900985897,41.9450480025262,607.8
+            2.0175560284406,41.9450690411031,607.4
+            2.01774797402322,41.9450910016894,606.8
+            2.01794696040451,41.9451049994677,606.4
+            2.0180359762162,41.945126960054,606.4
+            2.01826999895275,41.9451899919659,606
+            2.0183969847858,41.9452350027859,605.6
+            2.01851902529597,41.9452909938991,605.4
+            2.01874097809196,41.9453579653054,605.2
+            2.01902403496206,41.9453199952841,605.4
+            2.0191599894315,41.9452869705856,605.8
+            2.01932201161981,41.9452159758657,606.2
+            2.01954103074968,41.9451350066811,606.8
+            2.01979500241578,41.9450749922544,607.2
+            2.01989198103547,41.945082033053,607.4
+            2.02008099295199,41.9450970366597,608
+            2.02015399932861,41.9451340008527,608.4
+            2.02027696184814,41.9452609866858,609.2
+            2.02029498293996,41.9452899880707,609.4
+            2.02032901346684,41.945341033861,610.4
+            2.02039003372192,41.9453810155392,611.6
+            2.02042599208653,41.9453940074891,612
+            2.02054602093995,41.9454120285809,612.4
+            2.02058197930455,41.9453999586403,612.4
+            2.02061098068953,41.945377998054,612.4
+            2.02070603147149,41.9452179875225,612.2
+            2.0208020042628,41.9451439753175,610.8
+            2.02085196040571,41.9451459869742,610.8
+            2.02095002867281,41.9451220147312,610.6
+            2.02104600146413,41.9450599886477,610.4
+            2.02114197425544,41.9449569750577,610.6
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>LaCursadelSerrat_12K.gpx</name>
     </Folder>
   </Document>
 </kml>
