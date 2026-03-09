@@ -52,14 +52,14 @@ ul {
 
 /* Kiosk Mòbil */
 .kiosk-marquee {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #e50000; /* Fons vermell */
     color: #ffffff;            /* Lletres blanques */
     padding: 12px 0;
-    z-index: 1000;
+    z-index: 9999;
     overflow: hidden;
     white-space: nowrap;
     font-size: 1.2rem;
