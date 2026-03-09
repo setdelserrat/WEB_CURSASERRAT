@@ -999,13 +999,16 @@ footer {
         padding: 0;
         background-color: transparent;
         display: block;
+        position: relative;
+        /* Necessari per posicionar la barra inferior a sota */
     }
 
     .sponsors-lateral {
         position: absolute;
         /* Fixats al document, fan scroll amb la pàgina */
         top: 15vh;
-        width: 180px;
+        width: 220px;
+        /* Amplada necessària per 2 columnes */
         z-index: 50;
     }
 
@@ -1018,28 +1021,51 @@ footer {
     }
 
     .sponsors-logos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Forcem 2 columnes idèntiques */
+        grid-auto-rows: max-content;
+        gap: 10px;
         width: 100%;
         padding-bottom: 20px;
     }
 
+    /* Fila Inferior de Patrocinadors Petits */
+    .sponsors-inferior {
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        /* Una mica d'oxigen amb el contingut de dalt */
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .sponsors-logos-horitzontal {
+        display: flex;
+        flex-wrap: wrap;
+        /* Apilar en vàries files si no hi caben de llarg */
+        justify-content: center;
+        gap: 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     .sponsor-gros {
-        width: 320px;
-        height: 240px;
+        grid-column: span 2;
+        /* Els grossos ocupen les 2 columnes per destacar més */
+        width: 100%;
+        height: 120px;
     }
 
     .sponsor-mitja {
-        width: 240px;
-        height: 180px;
+        width: 100%;
+        height: 90px;
         font-size: 0.75rem;
     }
 
     .sponsor-petit {
-        width: 180px;
-        height: 120px;
+        width: 90px;
+        height: 60px;
         font-size: 0.65rem;
     }
 }
