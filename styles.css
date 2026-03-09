@@ -981,9 +981,16 @@ footer {
 }
 
 .sponsors-inferior-hero {
-    margin-top: 40px;
+    position: absolute;
+    bottom: 20px;
+    /* Separació respecte al límit inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centrem horitzontalment */
     width: 100%;
     max-width: 900px;
+    z-index: 50;
+    padding: 0 10px;
 }
 
 .sponsors-inferior-logos {
