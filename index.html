@@ -18,15 +18,16 @@
 
 <body>
 
-    <!-- Kiosk Mòbil (Marquee) -->
-    <div class="kiosk-marquee">
-        <div class="kiosk-text">
-            inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions #CDS2026 propereament
-            &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions
-            CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament
-            &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions
-            CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament
-        </div>
+    <!-- Badge Rotatiu (substitueix el kiosk) -->
+    <div class="badge-rotatiu" onclick="alert('EP NO CORRIS! ENCARA NO!... AVIAT AVIAT'); return false;">
+        <svg viewBox="0 0 100 100" width="120" height="120">
+            <path id="badgePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="none" />
+            <text font-size="10.5" font-weight="bold" fill="var(--fons-principal)">
+                <textPath href="#badgePath" startOffset="0%" textLength="215">
+                    #CDS2026 PROPERAMENT • #CDS2026 PROPERAMENT • 
+                </textPath>
+            </text>
+        </svg>
     </div>
 
     <!-- Capçalera i Secció Hero -->
