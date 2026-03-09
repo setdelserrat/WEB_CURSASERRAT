@@ -98,23 +98,23 @@ ul {
 .hero-contingut {
     position: relative;
     z-index: 2;
-    padding: 0 20px;
+    padding: 60px 20px 0 20px; /* Add top padding to clear the 50px fixed marquee */
 }
 
 .logo-placeholder {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 800;
     color: var(--accent-primari);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     letter-spacing: 2px;
 }
 
 /* Logo en lloc del títol */
 .logo-hero {
     max-width: 90vw;
-    width: 600px;
+    width: 800px;
     height: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
 }
 
@@ -130,7 +130,7 @@ ul {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
 
