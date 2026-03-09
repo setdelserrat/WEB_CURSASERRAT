@@ -1001,9 +1001,16 @@ footer {
 
 .sponsors-inferior-logos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    /* Manté a tots en una sola línia sempre */
+    justify-content: flex-start;
+    /* Alinea a l'esquerra inicialment */
     gap: 12px;
+    width: 100%;
+    overflow-x: auto;
+    /* Afegeix barra de desplaçament horitzontal si cal */
+    padding-bottom: 10px;
+    /* Donar aire a la barra de desplaçament */
 }
 
 /* Pantalles amples: col·loquem les barres laterals de forma fixa */
