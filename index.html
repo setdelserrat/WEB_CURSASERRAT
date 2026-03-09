@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trail del Serrat - Cursa de Muntanya</title>
-    <meta name="description" content="Web oficial de la Trail del Serrat, una experiència única de running per la muntanya a Catalunya.">
+    <meta name="description"
+        content="Web oficial de la Trail del Serrat, una experiència única de running per la muntanya a Catalunya.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="styles.css?v=6">
     <link rel="stylesheet" href="mapa.css">
     <link rel="stylesheet" href="countdown-flip.css">
 </head>
+
 <body>
 
     <!-- Kiosk Mòbil (Marquee) -->
     <div class="kiosk-marquee">
         <div class="kiosk-text">
-            inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament
+            inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions #CDS2026 propereament
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions
+            CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions
+            CDS2026 propereament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions CDS2026 propereament
         </div>
     </div>
 
@@ -29,47 +37,55 @@
         <div class="hero-contingut">
             <div class="logo-placeholder">06 - 06 - 2026</div>
             <img src="./Imatges/logo.png" alt="Logo La Cursa del Serrat" class="logo-hero">
-            
+
             <!-- Compte enrere Flip -->
             <div class="comptador-contenidor">
                 <div class="countdown">
                     <div class="bloc-time days" data-init-value="0">
                         <span class="count-title">Dies</span>
                         <div class="figure days days-1">
-                            <span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span>
+                            <span class="top">0</span><span class="top-back"><span>0</span></span><span
+                                class="bottom">0</span><span class="bottom-back"><span>0</span></span>
                         </div>
                         <div class="figure days days-2">
-                            <span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span>
+                            <span class="top">0</span><span class="top-back"><span>0</span></span><span
+                                class="bottom">0</span><span class="bottom-back"><span>0</span></span>
                         </div>
                     </div>
-                
+
                     <div class="bloc-time hours" data-init-value="0">
                         <span class="count-title">Hores</span>
                         <div class="figure hours hours-1">
-                            <span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span>
+                            <span class="top">0</span><span class="top-back"><span>0</span></span><span
+                                class="bottom">0</span><span class="bottom-back"><span>0</span></span>
                         </div>
                         <div class="figure hours hours-2">
-                            <span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span>
+                            <span class="top">0</span><span class="top-back"><span>0</span></span><span
+                                class="bottom">0</span><span class="bottom-back"><span>0</span></span>
                         </div>
                     </div>
-                
+
                     <div class="bloc-time min" data-init-value="0">
                         <span class="count-title">Minuts</span>
                         <div class="figure min min-1">
-                            <span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span>
+                            <span class="top">0</span><span class="top-back"><span>0</span></span><span
+                                class="bottom">0</span><span class="bottom-back"><span>0</span></span>
                         </div>
                         <div class="figure min min-2">
-                            <span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span>
+                            <span class="top">0</span><span class="top-back"><span>0</span></span><span
+                                class="bottom">0</span><span class="bottom-back"><span>0</span></span>
                         </div>
                     </div>
-                
+
                     <div class="bloc-time sec" data-init-value="0">
                         <span class="count-title">Segons</span>
                         <div class="figure sec sec-1">
-                            <span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span>
+                            <span class="top">0</span><span class="top-back"><span>0</span></span><span
+                                class="bottom">0</span><span class="bottom-back"><span>0</span></span>
                         </div>
                         <div class="figure sec sec-2">
-                            <span class="top">0</span><span class="top-back"><span>0</span></span><span class="bottom">0</span><span class="bottom-back"><span>0</span></span>
+                            <span class="top">0</span><span class="top-back"><span>0</span></span><span
+                                class="bottom">0</span><span class="bottom-back"><span>0</span></span>
                         </div>
                     </div>
                 </div>
@@ -89,12 +105,13 @@
                 <div class="inscripcions-card">
                     <h2>Uneix-te a l'aventura</h2>
                     <p><strong>6 de juny de 2026</strong></p>
-                    <a href="https://cronocheck.com/cursadelserrat2026" target="_blank" class="boto-destacat">REALITZAR INSCRIPCIÓ</a>
+                    <a href="https://cronocheck.com/cursadelserrat2026" target="_blank" class="boto-destacat">REALITZAR
+                        INSCRIPCIÓ</a>
                     <div class="detalls-rapids">
                         <span>
                             <a href="https://www.google.com/maps/place/Parc+dels+Castanyers/@41.9452469,2.0207366,143m/data=!3m1!1e3!4m6!3m5!1s0x12a51da71fcdd0fd:0x5671c691da66f9c5!8m2!3d41.9452222!4d2.0209238!16s%2Fg%2F11kqxclprt"
-                            target="_blank">
-                            📍 Ubicació: Parc dels Castanyers, Sant Feliu Sasserra
+                                target="_blank">
+                                📍 Ubicació: Parc dels Castanyers, Sant Feliu Sasserra
                             </a>
                         </span>
                         <span>🕒 Sortida: 09:00h</span>
@@ -128,35 +145,34 @@
                             <h3>La Cursa del Serrat</h3>
 
                             <p>
-                            La Cursa del Serrat és una cursa de muntanya que recorre
-                            camins i corriols al voltant de <strong>Sant Feliu Sasserra</strong>,
-                            en ple cor del Lluçanès.
+                                La Cursa del Serrat és una cursa de muntanya que recorre
+                                camins i corriols al voltant de <strong>Sant Feliu Sasserra</strong>,
+                                en ple cor del Lluçanès.
                             </p>
 
                             <p>
-                            El recorregut llarg puja fins al <strong>Serrat Llobater</strong>,
-                            el punt més alt del municipi, amb vistes espectaculars
-                            del paisatge natural que envolta el poble.
+                                El recorregut llarg puja fins al <strong>Serrat Llobater</strong>,
+                                el punt més alt del municipi, amb vistes espectaculars
+                                del paisatge natural que envolta el poble.
                             </p>
 
                             <p>
-                            Amb dues distàncies de <strong>5 km</strong> i <strong>13 km</strong>,
-                            la prova està pensada tant per corredors populars
-                            com per amants del trail running.
+                                Amb dues distàncies de <strong>5 km</strong> i <strong>13 km</strong>,
+                                la prova està pensada tant per corredors populars
+                                com per amants del trail running.
                             </p>
 
                             <p>
-                            Una jornada esportiva i festiva per gaudir de la muntanya,
-                            el poble i l’ambient únic de la cursa.
+                                Una jornada esportiva i festiva per gaudir de la muntanya,
+                                el poble i l’ambient únic de la cursa.
                             </p>
 
                         </div>
 
                     </div>
                     <h2>Informació d'Interès</h2>
-                    <p>Tot el que necessites saber per gaudir de la cursa.</p>
                 </header>
-                
+
                 <div class="graella-cards">
                     <div class="card">
                         <h3>Recorreguts</h3>
@@ -169,19 +185,20 @@
                     </div>
                     <div class="card">
                         <h3>Avituallaments</h3>
-                        <p>NPI .</p>
+                        <p>Curta: 1 Liquid i 1 solid .</p>
+                        <p>Llarga: 1 Liquid i 2 solids .</p>
                     </div>
                     <div class="card">
                         <h3>Aparcament</h3>
-                        <p>Zones habilitades gratuïtes al costat de la línia de sortida.</p>
+                        <p>Zones habilitades gratuïtes al poble.</p>
                     </div>
                     <div class="card">
-                        <h3>Material</h3>
-                        <p>l'Eloi en porta per tothom, no problem.</p>
+                        <h3>Material obligatori</h3>
+                        <p>Mòbil i 500ml d'aigua</p>
                     </div>
                     <div class="card">
-                        <h3>Reglament</h3>
-                        <p>ni puta idea.</p>
+                        <h3>Obsequi</h3>
+                        <p>Samarreta conmemorativa.</p>
                     </div>
                 </div>
 
@@ -193,7 +210,7 @@
                     </details>
                     <details>
                         <summary>Hi ha servei de dutxes?</summary>
-                        <p>Sí, a la piscina municipal situada a 550m de l'arribada (si no es que el MR JR se la carrega abans).</p>
+                        <p>Sí, a la piscina municipal situada a 550m de l'arribada.</p>
                     </details>
                 </div>
             </div>
@@ -201,70 +218,71 @@
 
         <!-- Secció Classificacions -->
         <section id="classificacions" class="seccio-classificacions">
-        <div class="contenidor">
-            <header class="seccio-header">
-            <h2>Classificacions</h2>
-            <p>Consulta els resultats i cerca participants.</p>
-            </header>
+            <div class="contenidor">
+                <header class="seccio-header">
+                    <h2>Classificacions</h2>
+                    <p>Consulta els resultats i cerca participants.</p>
+                </header>
 
-            <!-- Botons (cards) de selecció d'any -->
-            <div class="graella-classificacions">
-             <button class="card-resultats boto-any" type="button" data-any="2025" aria-expanded="false">
-                <h3>Edició 2025</h3>
-                <span class="enllac-card">Veure resultats</span>
-            </button>   
-            <button class="card-resultats boto-any" type="button" data-any="2024" aria-expanded="false">
-                <h3>Edició 2026</h3>
-                <span class="enllac-card">Properament</span>
-            </button>
-            </div>
+                <!-- Botons (cards) de selecció d'any -->
+                <div class="graella-classificacions">
+                    <button class="card-resultats boto-any" type="button" data-any="2025" aria-expanded="false">
+                        <h3>Edició 2025</h3>
+                        <span class="enllac-card">Veure resultats</span>
+                    </button>
+                    <button class="card-resultats boto-any" type="button" data-any="2024" aria-expanded="false">
+                        <h3>Edició 2026</h3>
+                        <span class="enllac-card">Properament</span>
+                    </button>
+                </div>
 
-            <!-- Panell desplegable (pinta la taula i el cercador) -->
-            <div id="panell-resultats" class="panell-resultats" hidden>
-            <div class="panell-cap">
-                <h3 id="titol-resultats">Resultats</h3>
+                <!-- Panell desplegable (pinta la taula i el cercador) -->
+                <div id="panell-resultats" class="panell-resultats" hidden>
+                    <div class="panell-cap">
+                        <h3 id="titol-resultats">Resultats</h3>
 
-                <div class="panell-accions">
-                <label class="label-cercador" for="cercador-resultats">Buscar</label>
-                <input id="cercador-resultats" class="input-cercador" type="search" placeholder="Nom, cognoms o dorsal..." autocomplete="off">
-                <button id="boto-netejar" class="boto-netejar" type="button">Netejar</button>
+                        <div class="panell-accions">
+                            <label class="label-cercador" for="cercador-resultats">Buscar</label>
+                            <input id="cercador-resultats" class="input-cercador" type="search"
+                                placeholder="Nom, cognoms o dorsal..." autocomplete="off">
+                            <button id="boto-netejar" class="boto-netejar" type="button">Netejar</button>
+                        </div>
+                    </div>
+
+                    <div class="taula-wrap">
+                        <table class="taula-resultats">
+                            <thead>
+                                <tr>
+                                    <th>Pos.</th>
+                                    <th>Dorsal</th>
+                                    <th>Nom</th>
+                                    <th>Arribada</th>
+                                    <th>Temps</th>
+                                    <th>Ritme</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="cos-taula-resultats">
+                                <!-- S’omple amb JS -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Modal “i” -->
+                    <div id="modal-detall" class="modal" hidden>
+                        <div class="modal-fons" data-tancar-modal="1"></div>
+                        <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="modal-titol">
+                            <div class="modal-cap">
+                                <h4 id="modal-titol">Detall del participant</h4>
+                                <button class="modal-tancar" type="button" data-tancar-modal="1">✕</button>
+                            </div>
+                            <div id="modal-contingut" class="modal-contingut">
+                                <!-- S’omple amb JS -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="taula-wrap">
-                <table class="taula-resultats">
-                <thead>
-                    <tr>
-                    <th>Pos.</th>
-                    <th>Dorsal</th>
-                    <th>Nom</th>
-                    <th>Arribada</th>
-                    <th>Temps</th>
-                    <th>Ritme</th>
-                    <th></th>
-                    </tr>
-                </thead>
-                <tbody id="cos-taula-resultats">
-                    <!-- S’omple amb JS -->
-                </tbody>
-                </table>
-            </div>
-
-            <!-- Modal “i” -->
-            <div id="modal-detall" class="modal" hidden>
-                <div class="modal-fons" data-tancar-modal="1"></div>
-                <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="modal-titol">
-                <div class="modal-cap">
-                    <h4 id="modal-titol">Detall del participant</h4>
-                    <button class="modal-tancar" type="button" data-tancar-modal="1">✕</button>
-                </div>
-                <div id="modal-contingut" class="modal-contingut">
-                    <!-- S’omple amb JS -->
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
         </section>
 
         <!-- Dades + lògica de resultats -->
@@ -341,7 +359,8 @@
     </footer>
 
     <!-- Leaflet JS and plugins -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.4/leaflet-omnivore.min.js"></script>
 
     <!-- Dependencies for Flip Countdown -->
@@ -355,7 +374,3 @@
 </body>
 
 </html>
-
-
-
-
