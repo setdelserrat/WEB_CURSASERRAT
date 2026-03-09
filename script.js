@@ -33,34 +33,9 @@ document.querySelectorAll('a[href^="#"]').forEach(ancora => {
 // Gestió d'imatges placeholder (comentari per al client)
 // Aquí es poden substituir les imatges per fotos oficials del perfil d'Instagram
 // S'ha utilitzat una estructura de graella responsive per facilitar-ne el canvi.
-// Lògica per al Marquee corbat animat
-function startMarquee(id, pathId, content, speed) {
-    const textPath = document.getElementById(id);
-    const path = document.getElementById(pathId);
-    if (!textPath || !path) return;
 
-    const pathLength = path.getTotalLength();
-    textPath.innerHTML = content;
+console.log(`${configuracioWeb.nomEsdeveniment} configurada correctament al domini: ${configuracioWeb.dominiPreferit}`);
 
-    let offset = 0;
 
-    function animateText() {
-        offset -= speed;
-        if (offset < 0) {
-            offset = pathLength;
-        } else if (offset > pathLength) {
-            offset = 0;
-        }
-        textPath.setAttribute('startOffset', `${offset}px`);
-        requestAnimationFrame(animateText);
-    }
 
-    animateText();
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Spacer for separation
-    const spacer = '&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;&nbsp;';
-    const textContent = (`INSCRIPCIONS #CDS2026 PROPERAMENT ${spacer}`).repeat(20);
-    startMarquee('marquee-text', 'text-path', textContent, -2);
-});
