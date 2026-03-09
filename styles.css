@@ -993,7 +993,8 @@ footer {
         top: 15vh;
         /* Just a sota del marquee */
         bottom: 5vh;
-        width: 180px;
+        width: 220px;
+        /* Eixamplat per encabir les files de 2 */
         z-index: 50;
         overflow-y: auto;
         /* Amagar scrollbar a diferents navegadors */
@@ -1017,8 +1018,12 @@ footer {
     }
 
     .sponsors-logos {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
+        flex-direction: row;
+        /* Canviat de column a row perquè s'agrupin als costats */
+        flex-wrap: wrap;
+        /* Permetem l'apilament múltiple */
+        justify-content: center;
+        align-items: flex-start;
+        /* Que quedin arran de dalt */
     }
 }
