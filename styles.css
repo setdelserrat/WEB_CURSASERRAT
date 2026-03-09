@@ -946,9 +946,22 @@ footer {
     text-align: center;
 }
 
+/* Traiem el fons i la vora discontínua si hi ha una imatge a dins */
+.sponsor-item:has(img) {
+    background-color: transparent;
+    border: none;
+}
+
 .sponsor-item:hover {
     border-color: var(--accent-primari);
     background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+}
+
+/* Si té imatge, només volem l'efecte d'escala quan hi passem per sobre */
+.sponsor-item:has(img):hover {
+    border: none;
+    background-color: transparent;
     transform: scale(1.05);
 }
 
