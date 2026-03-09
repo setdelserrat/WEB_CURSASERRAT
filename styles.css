@@ -87,12 +87,19 @@ ul {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(rgba(11, 15, 20, 0.65),
-            rgba(11, 15, 20, 0.75)), url('Imatges/Capçal.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #101010;
+    overflow: hidden;
+}
+
+#res-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 0;
+    opacity: 0.6; /* Slight opacity so content pops */
 }
 
 .hero-contingut {
