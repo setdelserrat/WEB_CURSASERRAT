@@ -56,8 +56,10 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #e50000; /* Fons vermell */
-    color: #ffffff;            /* Lletres blanques */
+    background-color: #e50000;
+    /* Fons vermell */
+    color: #ffffff;
+    /* Lletres blanques */
     padding: 12px 0;
     z-index: 9999;
     overflow: hidden;
@@ -74,8 +76,13 @@ ul {
 }
 
 @keyframes marquee-rodant {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* Hero Section */
@@ -87,7 +94,8 @@ ul {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--fons-principal); /* Light green/beige background */
+    background-color: var(--fons-principal);
+    /* Light green/beige background */
     overflow: hidden;
 }
 
@@ -99,13 +107,15 @@ ul {
     height: 100%;
     object-fit: contain;
     z-index: 0;
-    opacity: 0.8; /* Adjusted opacity for lighter theme */
+    opacity: 0.8;
+    /* Adjusted opacity for lighter theme */
 }
 
 .hero-contingut {
     position: relative;
     z-index: 2;
-    padding: 60px 20px 0 20px; /* Add top padding to clear the 50px fixed marquee */
+    padding: 60px 20px 0 20px;
+    /* Add top padding to clear the 50px fixed marquee */
 }
 
 .logo-placeholder {
@@ -134,14 +144,16 @@ ul {
 
 /* Compte enrere */
 .comptador-contenidor {
-    margin-top: -10px; /* Pull counting block up */
+    margin-top: -100px;
+    /* Pull counting block up */
 }
 
 .comptador {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-bottom: 2rem; /* Add some space before buttons */
+    margin-bottom: 2rem;
+    /* Add some space before buttons */
     flex-wrap: wrap;
 }
 
@@ -153,7 +165,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--accent-primari); /* Dark green text */
+    color: var(--accent-primari);
+    /* Dark green text */
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -163,7 +176,8 @@ ul {
     display: block;
     font-size: 4rem;
     font-weight: 300;
-    color: var(--text-principal); /* Dark text */
+    color: var(--text-principal);
+    /* Dark text */
     font-family: 'Share Tech Mono', monospace;
     line-height: 1;
     margin-bottom: 5px;
