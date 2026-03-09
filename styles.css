@@ -894,3 +894,131 @@ footer {
         min-width: 220px;
     }
 }
+
+/* ==============================
+   Patrocinadors (Sponsors Laterals)
+   ============================== */
+.seccio-patrocinadors {
+    /* En mòbil es mostra com a secció normal apilada a sota */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: var(--fons-principal);
+}
+
+.sponsors-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsors-titol {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent-primari);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.sponsors-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.sponsor-item {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px dashed rgba(77, 97, 53, 0.4);
+    border-radius: var(--vora-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secundari);
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: var(--transicio);
+    overflow: hidden;
+    text-align: center;
+}
+
+.sponsor-item:hover {
+    border-color: var(--accent-primari);
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+}
+
+.sponsor-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.sponsor-item span {
+    padding: 5px;
+}
+
+.sponsor-gros {
+    width: 160px;
+    height: 120px;
+}
+
+.sponsor-mitja {
+    width: 120px;
+    height: 90px;
+    font-size: 0.75rem;
+}
+
+.sponsor-petit {
+    width: 90px;
+    height: 60px;
+    font-size: 0.65rem;
+}
+
+/* Pantalles amples: col·loquem les barres laterals de forma fixa */
+@media (min-width: 1550px) {
+    .seccio-patrocinadors {
+        padding: 0;
+        background-color: transparent;
+        display: block;
+    }
+
+    .sponsors-lateral {
+        position: fixed;
+        top: 15vh;
+        /* Just a sota del marquee */
+        bottom: 5vh;
+        width: 180px;
+        z-index: 50;
+        overflow-y: auto;
+        /* Amagar scrollbar a diferents navegadors */
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE i Edge */
+    }
+
+    .sponsors-lateral::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari i Opera */
+    }
+
+    .sponsors-esquerra {
+        left: 20px;
+    }
+
+    .sponsors-dreta {
+        right: 20px;
+    }
+
+    .sponsors-logos {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
