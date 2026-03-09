@@ -87,7 +87,7 @@ ul {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #101010;
+    background-color: var(--fons-principal); /* Light green/beige background */
     overflow: hidden;
 }
 
@@ -99,7 +99,7 @@ ul {
     height: 100%;
     object-fit: contain;
     z-index: 0;
-    opacity: 0.6; /* Slight opacity so content pops */
+    opacity: 0.8; /* Adjusted opacity for lighter theme */
 }
 
 .hero-contingut {
@@ -149,22 +149,20 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #ffffff;
+    color: var(--accent-primari); /* Dark green text */
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .segment-comptador span {
     display: block;
     font-size: 4rem;
     font-weight: 300;
-    color: #ffffff;
+    color: var(--text-principal); /* Dark text */
     font-family: 'Share Tech Mono', monospace;
     line-height: 1;
     margin-bottom: 5px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 /* Botons */

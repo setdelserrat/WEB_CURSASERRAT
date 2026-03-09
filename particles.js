@@ -10,7 +10,7 @@ import("https://esm.sh/@chriscourses/perlin-noise").then(ChriscoursesPerlinNoise
     let thickLineThresholdMultiple = 3; 
     let res = 6.5; 
     let baseZOffset = 0.0002; 
-    let lineColor = "#739950"; // Use a khaki/green color matching the theme
+    let lineColor = "#4d6135"; // Dark green color from the theme
     
     const incrementValue = 0.005;
     const radius = 30;
