@@ -3,12 +3,18 @@
 */
 
 :root {
-    --fons-principal: #0b0f14;
-    --fons-seccions: #0f1722;
-    --text-principal: #e6edf3;
-    --text-secundari: #a9b4c0;
+    --fons-principal: #f5f5dc;
+    /* Beix clar principal */
+    --fons-seccions: #ebd5b3;
+    /* Beix fosc targetes i seccions */
+    --text-principal: #1f2937;
+    /* Negre/gris fosc per contrast */
+    --text-secundari: #4b5563;
+    /* Gris per subtítols */
     --accent-primari: #4d6135;
+    /* Verd kaki escollit */
     --accent-secundari: #edecd7;
+    /* Blau/beix accent */
     --vora-radius: 4px;
     --ombra-suau: 0 4px 20px rgba(0, 0, 0, 0.3);
     --transicio: all 0.3s ease;
@@ -53,10 +59,8 @@ ul {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(
-        rgba(11,15,20,0.65),
-        rgba(11,15,20,0.75)
-    ), url('Imatges/Capçal.jpg');
+    background-image: linear-gradient(rgba(11, 15, 20, 0.65),
+            rgba(11, 15, 20, 0.75)), url('Imatges/Capçal.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,13 +81,15 @@ ul {
     letter-spacing: 2px;
 }
 
-.hero h1 {
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-    line-height: 1.1;
-    text-transform: uppercase;
+/* Logo en lloc del títol */
+.logo-hero {
+    max-width: 90vw;
+    width: 600px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
 }
+
 
 .subtitol {
     font-size: clamp(1rem, 3vw, 1.5rem);
@@ -108,7 +114,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #ffffff;
+    color: var(--text-principal);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -118,7 +124,7 @@ ul {
     display: block;
     font-size: 4rem;
     font-weight: 300;
-    color: #ffffff;
+    color: var(--text-principal);
     font-family: 'Share Tech Mono', monospace;
     line-height: 1;
     margin-bottom: 5px;
@@ -143,8 +149,9 @@ ul {
 }
 
 .boto-secundari {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.05);
+    /* Adaptat al beix clar */
+    border: 1px solid rgba(0, 0, 0, 0.2);
     color: var(--text-principal);
     padding: 14px 28px;
     border-radius: 4px;
@@ -156,12 +163,13 @@ ul {
 .boto-primari:hover,
 .boto-destacat:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
+    box-shadow: 0 10px 20px rgba(77, 97, 53, 0.3);
+    /* Canviat ombra verda */
 }
 
 .boto-secundari:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: var(--accent-secundari);
+    background: rgba(0, 0, 0, 0.1);
+    border-color: var(--text-principal);
 }
 
 /* Inscriptions Section */
@@ -345,8 +353,9 @@ details p {
 /* Footer */
 footer {
     padding: 80px 0 40px;
-    background-color: #06090c;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #e3cbaa;
+    /* Adaptat a beix */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer-contingut {
@@ -391,7 +400,7 @@ footer {
 .presentacio-img img {
     width: 100%;
     border-radius: 16px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .presentacio-text h3 {
@@ -413,10 +422,10 @@ footer {
 .panell-resultats {
     margin-top: 22px;
     padding: 18px;
-    background: #0f1722;
-    border: 1px solid rgba(255,255,255,0.08);
+    background: var(--fons-seccions);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .panell-cap {
@@ -444,30 +453,30 @@ footer {
     min-width: 260px;
     padding: 10px 12px;
     border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.12);
-    background: #0b0f14;
-    color: #e6edf3;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: var(--fons-principal);
+    color: var(--text-principal);
     outline: none;
 }
 
 .input-cercador:focus {
-    border-color: rgba(34,197,94,0.55);
-    box-shadow: 0 0 0 3px rgba(34,197,94,0.18);
+    border-color: rgba(77, 97, 53, 0.55);
+    box-shadow: 0 0 0 3px rgba(77, 97, 53, 0.18);
 }
 
 .boto-netejar {
     padding: 10px 12px;
     border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.12);
+    border: 1px solid rgba(0, 0, 0, 0.12);
     background: transparent;
-    color: #e6edf3;
+    color: var(--text-principal);
     cursor: pointer;
 }
 
 .taula-wrap {
     overflow: auto;
     border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .taula-resultats {
@@ -479,8 +488,8 @@ footer {
 .taula-resultats thead th {
     text-align: left;
     font-size: 13px;
-    color: #a9b4c0;
-    background: rgba(255,255,255,0.03);
+    color: var(--text-secundari);
+    background: rgba(0, 0, 0, 0.03);
     padding: 12px;
     position: sticky;
     top: 0;
@@ -488,29 +497,29 @@ footer {
 
 .taula-resultats tbody td {
     padding: 12px;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    color: #e6edf3;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    color: var(--text-principal);
 }
 
 .taula-resultats tbody tr:hover {
-    background: rgba(56,189,248,0.05);
+    background: rgba(0, 0, 0, 0.05);
 }
 
-.col-nom { 
-    font-weight: 600; 
+.col-nom {
+    font-weight: 600;
 }
 
-.col-accio { 
-    text-align: right; 
-    width: 60px; 
+.col-accio {
+    text-align: right;
+    width: 60px;
 }
 
 .boto-info {
     width: 28px;
     height: 28px;
     border-radius: 999px;
-    border: 1px solid rgba(56,189,248,0.55);
-    background: rgba(56,189,248,0.10);
+    border: 1px solid rgba(56, 189, 248, 0.55);
+    background: rgba(56, 189, 248, 0.10);
     color: #38bdf8;
     cursor: pointer;
     font-weight: 700;
@@ -526,26 +535,29 @@ footer {
    Modal detall (icona i)
    ============================== */
 
-.modal { 
-    position: fixed; 
-    inset: 0; 
-    z-index: 9999; 
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
 }
 
 .modal-fons {
-    position: absolute; 
+    position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0, 0, 0, 0.7);
+    /* Més enfosquit per ressaltar fons clar modal */
 }
 
 .modal-caixa {
     position: relative;
     width: min(760px, 92vw);
     margin: 6vh auto;
-    background: #0f1722;
-    border: 1px solid rgba(255,255,255,0.10);
+    background: var(--fons-seccions);
+    /* Fons clar */
+    border: 1px solid rgba(0, 0, 0, 0.10);
     border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.55);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    /* Ombra ajustada */
     overflow: hidden;
 }
 
@@ -555,21 +567,23 @@ footer {
     justify-content: space-between;
     gap: 10px;
     padding: 14px 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    /* Linia ajustada */
 }
 
 .modal-tancar {
     background: transparent;
-    border: 1px solid rgba(255,255,255,0.15);
-    color: #e6edf3;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    /* Ajustat a fons clar */
+    color: var(--text-principal);
     width: 34px;
     height: 34px;
     border-radius: 12px;
     cursor: pointer;
 }
 
-.modal-contingut { 
-    padding: 16px; 
+.modal-contingut {
+    padding: 16px;
 }
 
 .detall-grid {
@@ -578,25 +592,27 @@ footer {
     gap: 12px;
 }
 
-.detall-nom { 
-    grid-column: 1 / -1; 
+.detall-nom {
+    grid-column: 1 / -1;
 }
 
 .detall-item {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(0, 0, 0, 0.03);
+    /* Ajustat a fons clar */
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    /* Ajustat a fons clar */
     border-radius: 14px;
     padding: 12px;
 }
 
 .detall-label {
-    color: #a9b4c0;
+    color: var(--text-secundari);
     font-size: 13px;
     margin-bottom: 6px;
 }
 
 .detall-valor {
-    color: #e6edf3;
+    color: var(--text-principal);
     font-size: 16px;
 }
 
@@ -616,9 +632,10 @@ footer {
     display: block;
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.08);
-    background: #0f1722;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--fons-seccions);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    /* Ombra ajustada per fons clar */
 }
 
 .flickr-card img {
@@ -638,7 +655,7 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     padding: 18px;
-    background: linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0.12), rgba(0,0,0,0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
 }
 
 .flickr-overlay h3 {
@@ -650,7 +667,7 @@ footer {
 
 .flickr-overlay p {
     margin: 6px 0 0 0;
-    color: rgba(230,237,243,0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 0.95rem;
 }
 
@@ -813,4 +830,3 @@ footer {
         min-width: 220px;
     }
 }
-

@@ -46,9 +46,9 @@ actualitzaComptador();
 
 // Funció per al desplaçament suau (Smooth Scroll) als enllaços interns
 document.querySelectorAll('a[href^="#"]').forEach(ancora => {
-    ancora.addEventListener('click', function(e) {
+    ancora.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
-        
+
         // Si és només '#' o no existeix l'element, no fem res especial
         if (href === '#' || !document.querySelector(href)) return;
 
