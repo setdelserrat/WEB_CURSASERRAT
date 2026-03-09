@@ -1029,6 +1029,46 @@ footer {
         width: 100%;
         padding-bottom: 20px;
     }
+}
+
+/* Final de la secció mòbil i de base */
+
+/* Pantalles amples: col·loquem les barres laterals de forma fixa */
+@media (min-width: 1550px) {
+    .seccio-patrocinadors {
+        padding: 0;
+        background-color: transparent;
+        display: block;
+        position: relative;
+        /* Necessari per posicionar la barra inferior a sota */
+    }
+
+    .sponsors-lateral {
+        position: absolute;
+        /* Fixats al document, fan scroll amb la pàgina */
+        top: 15vh;
+        width: 320px;
+        /* Amplada necessària per 2 columnes: compte amplies 160x2! */
+        z-index: 50;
+    }
+
+    .sponsors-esquerra {
+        left: 20px;
+    }
+
+    .sponsors-dreta {
+        right: 20px;
+    }
+
+    .sponsors-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Forcem 2 columnes idèntiques */
+        grid-auto-rows: max-content;
+        gap: 10px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
 
     /* Fila Inferior de Patrocinadors Petits */
     .sponsors-inferior {
