@@ -994,7 +994,7 @@ footer {
 }
 
 /* Pantalles amples: col·loquem les barres laterals de forma fixa */
-@media (min-width: 1550px) {
+@media (min-width: 1300px) {
     .seccio-patrocinadors {
         padding: 0;
         background-color: transparent;
