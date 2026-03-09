@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: nowrap; /* Prevent wrapping so it stays on 1 line */
-    gap: 15px;
+    gap: 30px;
 }
 
 .countdown .bloc-time {
@@ -151,7 +151,7 @@
 /* Responsibilitat mòbil per al flip */
 @media (max-width: 600px) {
     .countdown {
-        gap: 5px; /* Menys espai entre blocs */
+        gap: 12px; /* Més espai entre blocs */
         max-width: 100vw;
     }
 
