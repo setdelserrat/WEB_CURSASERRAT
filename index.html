@@ -20,7 +20,7 @@
 
     <!-- Curved Marquee (Substitueix antic kiosk/badge) -->
     <div class="marquee-container" id="marquee-top">
-        <svg width="100%" height="80px" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <svg width="100%" viewBox="0 -10 1000 120">
             <defs>
                 <path id="text-path" d="M -50 50 Q 200 -50, 400 50 Q 600 150, 800 50 Q 1000 -50, 1200 50"
                     fill="transparent" />
@@ -28,11 +28,11 @@
 
             <!-- Background vermell -->
             <path d="M -50 50 Q 200 -50, 400 50 Q 600 150, 800 50 Q 1000 -50, 1200 50" fill="none" stroke="#ff0000"
-                class="marquee-bg" />
+                stroke-width="40" class="marquee-bg" />
 
             <!-- Text blanc -->
-            <text font-size="0.8rem" fill="#ffffff" font-weight="bold" font-family="'Share Tech Mono', monospace"
-                class="uppercase-text" text-anchor="middle" dominant-baseline="middle">
+            <text font-size="18" fill="#ffffff" font-weight="bold" font-family="'Share Tech Mono', monospace"
+                class="uppercase-text" text-anchor="middle" dominant-baseline="central">
                 <textPath id="marquee-text" href="#text-path">
                     <!-- Text adds in JavaScript -->
                 </textPath>

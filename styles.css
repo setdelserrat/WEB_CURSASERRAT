@@ -63,33 +63,11 @@ ul {
 
 .uppercase-text {
     text-transform: uppercase;
-    font-size: 1.2rem;
     letter-spacing: 2px;
 }
 
-.marquee-bg {
-    stroke-width: 6rem;
-}
+/* Background size controlled via SVG stroke-width directly for uniform scaling */
 
-@media (max-width: 768px) {
-    .uppercase-text {
-        font-size: 1rem;
-    }
-
-    .marquee-bg {
-        stroke-width: 8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .uppercase-text {
-        font-size: 0.9rem;
-    }
-
-    .marquee-bg {
-        stroke-width: 10rem;
-    }
-}
 
 /* Hero Section */
 .hero {
