@@ -50,9 +50,10 @@ ul {
     list-style: none;
 }
 
-/* Kiosk MÃ²bil */
+/* Kiosk Mòbil */
 .kiosk-marquee {
-    position: fixed;
+    position: absolute;
+    /* Canviat d'absolute perquè baixi amb l'scroll */
     top: 0;
     left: 0;
     width: 100%;
@@ -932,36 +933,22 @@ footer {
 }
 
 .sponsor-item {
-    background-color: rgba(255, 255, 255, 0.6);
-    border: 2px dashed rgba(77, 97, 53, 0.4);
+    display: none;
+    /* Amagat per defecte si està buit */
     border-radius: var(--vora-radius);
-    display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-secundari);
-    font-size: 0.8rem;
-    font-weight: 600;
     transition: var(--transicio);
     overflow: hidden;
-    text-align: center;
 }
 
-/* Traiem el fons i la vora discontínua si hi ha una imatge a dins */
+/* Només el mostrem quan el slot tingui una imatge inserida a dins */
 .sponsor-item:has(img) {
-    background-color: transparent;
-    border: none;
+    display: flex;
 }
 
-.sponsor-item:hover {
-    border-color: var(--accent-primari);
-    background-color: rgba(255, 255, 255, 1);
-    transform: scale(1.05);
-}
-
-/* Si té imatge, només volem l'efecte d'escala quan hi passem per sobre */
+/* Efecte per fer-ho més gran quan el ratolí hi passa per sobre */
 .sponsor-item:has(img):hover {
-    border: none;
-    background-color: transparent;
     transform: scale(1.05);
 }
 
