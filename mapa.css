@@ -5,10 +5,16 @@
     height: 60vh;
     min-height: 450px;
     position: relative;
-    border-radius: var(--vora-radius);
     overflow: hidden;
-    box-shadow: var(--ombra-suau);
-    border: 4px solid var(--accent-primari);
+}
+
+.mapa-contenidor.full-width {
+    border: none;
+    border-top: 4px solid var(--accent-primari);
+    border-bottom: 4px solid var(--accent-primari);
+    border-radius: 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 #map {
