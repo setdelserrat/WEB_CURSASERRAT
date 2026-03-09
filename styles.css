@@ -121,7 +121,7 @@ ul {
     max-width: 90vw;
     width: 800px;
     height: auto;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
 }
 
@@ -133,11 +133,15 @@ ul {
 }
 
 /* Compte enrere */
+.comptador-contenidor {
+    margin-top: -10px; /* Pull counting block up */
+}
+
 .comptador {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* Add some space before buttons */
     flex-wrap: wrap;
 }
 
