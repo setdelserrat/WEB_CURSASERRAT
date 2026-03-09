@@ -1,0 +1,164 @@
+/* ==============================
+   Compte Enrere Flip (Estil Draft)
+   ============================== */
+
+.countdown {
+    width: 100%;
+    max-width: 600px; /* Reduced from 720 to fit better on standard screens */
+    margin: 0 auto;
+    display: flex; /* Use flexbox for better centering and responsiveness */
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 15px; /* Spacing between blocks */
+}
+
+.countdown .bloc-time {
+    /* Removed float: left and margin-right as we use flex gap now */
+    text-align: center;
+}
+
+.countdown .count-title {
+    display: block;
+    margin-bottom: 10px;
+    font-family: var(--font-family, system-ui, sans-serif);
+    font-size: 0.94em;
+    font-weight: 600;
+    color: var(--text-secundari); /* Adaptat al disseny clar */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.countdown .figure {
+    position: relative;
+    float: left; /* Keep this float for the figures inside the bloc */
+    height: 90px;  /* Slightly smaller to fit better */
+    width: 75px;   /* Slightly smaller */
+    margin-right: 8px; /* Slightly less gap */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15), inset 2px 4px 0 0 rgba(255, 255, 255, 0.8);
+}
+
+.countdown .figure:last-child {
+    margin-right: 0;
+}
+
+.countdown .figure > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: var(--font-family, system-ui, sans-serif);
+    font-size: 4.5em; /* Scaled down from 5.94em */
+    line-height: 87px; /* Scaled down from 107px */
+    font-weight: 700;
+    color: #de4848; /* Vermell clàssic del flip */
+}
+
+.countdown .figure .top, .countdown .figure .bottom-back {
+    position: absolute;
+    width: 100%;
+}
+
+.countdown .figure .top::after, .countdown .figure .bottom-back::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.countdown .figure .top {
+    z-index: 3;
+    background-color: #f7f7f7;
+    transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transform: perspective(200px);
+}
+
+.countdown .figure .bottom {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.countdown .figure .bottom::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.countdown .figure .bottom-back {
+    z-index: 2;
+    top: 0;
+    height: 50%;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.countdown .figure .bottom-back span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.countdown .figure .top, .countdown .figure .top-back {
+    height: 50%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.countdown .figure .top-back {
+    z-index: 4;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    transform: perspective(200px) rotateX(180deg);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: absolute;
+    width: 100%;
+}
+
+.countdown .figure .top-back span {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* Responsibilitat mòbil per al flip */
+@media (max-width: 600px) {
+    .countdown .figure {
+        height: 60px;
+        width: 45px;
+        margin-right: 4px;
+    }
+    
+    .countdown .figure > span {
+        font-size: 2.8em;
+        line-height: 58px;
+    }
+    
+    .countdown .bloc-time {
+        margin-bottom: 15px;
+    }
+}
