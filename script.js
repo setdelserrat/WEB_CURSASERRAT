@@ -35,3 +35,21 @@ document.querySelectorAll('a[href^="#"]').forEach(ancora => {
 // S'ha utilitzat una estructura de graella responsive per facilitar-ne el canvi.
 
 console.log(`${configuracioWeb.nomEsdeveniment} configurada correctament al domini: ${configuracioWeb.dominiPreferit}`);
+
+// Funció per forçar la descàrrega d'arxius (com els GPX) sense obrir-los com a text
+function descarregarArxiu(url, nomArxiu) {
+    fetch(url)
+        .then(response => response.blob())
+        .then(blob => {
+            const blobUrl = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = blobUrl;
+            a.download = nomArxiu;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(blobUrl);
+            document.body.removeChild(a);
+        })
+        .catch(error => console.error("Error al descarregar l'arxiu:", error));
+}

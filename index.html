@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDS</title>
     <meta name="description" content="Web oficial de La Cursa del Serrat.">
+    <link rel="icon" type="image/png" href="./Imatges/FAVICON.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -92,7 +93,7 @@
 
             <div class="hero-accions">
                 <a href="#inscripcions" class="boto-primari"
-                    onclick="alert('EP NO CORRIS! ENCARA NO!... AVIAT AVIAT'); return false;">Inscripcions</a>
+                    onclick="document.getElementById('modal-inscripcions-aviat').classList.add('actiu'); return false;">Inscripcions</a>
                 <a href="#informacio" class="boto-secundari">Informació</a>
             </div>
 
@@ -101,51 +102,51 @@
 
     <!-- Marquee de Patrocinadors -->
     <section class="patrocinadors-marquee wrapper">
-      <div class="marquee">
-        <div class="marquee__group">
-          <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
-          <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
-          <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
-          <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
-          <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
-          <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
-          <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
-          <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
+        <div class="marquee">
+            <div class="marquee__group">
+                <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
+                <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
+                <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
+                <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
+                <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
+                <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
+                <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
+                <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
+            </div>
+            <div aria-hidden="true" class="marquee__group">
+                <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
+                <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
+                <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
+                <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
+                <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
+                <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
+                <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
+                <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
+            </div>
         </div>
-        <div aria-hidden="true" class="marquee__group">
-          <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
-          <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
-          <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
-          <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
-          <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
-          <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
-          <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
-          <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
-        </div>
-      </div>
 
-      <div class="marquee marquee--reverse">
-        <div class="marquee__group">
-          <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
-          <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
-          <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
-          <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
-          <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
-          <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
-          <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
-          <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
+        <div class="marquee marquee--reverse">
+            <div class="marquee__group">
+                <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
+                <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
+                <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
+                <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
+                <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
+                <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
+                <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
+                <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
+            </div>
+            <div aria-hidden="true" class="marquee__group">
+                <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
+                <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
+                <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
+                <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
+                <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
+                <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
+                <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
+                <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
+            </div>
         </div>
-        <div aria-hidden="true" class="marquee__group">
-          <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
-          <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
-          <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
-          <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
-          <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
-          <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
-          <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
-          <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
-        </div>
-      </div>
     </section>
 
     <main>
@@ -160,31 +161,62 @@
                     <div class="presentacio-text">
                         <h3>La Cursa del Serrat</h3>
                         <p>
-                            La Cursa del Serrat és una cursa de muntanya que recorre
-                            camins i corriols al voltant de <strong>Sant Feliu Sasserra</strong>,
-                            en ple cor del Lluçanès.
+                            La Cursa del Serrat és una prova de trail running que recorre alguns dels camins i corriols
+                            més espectaculars de l’entorn del Serrat Llobater. Una cursa pensada per gaudir de la
+                            muntanya, de l’esport i del bon ambient que es crea al voltant del trail, sense perdre mai
+                            el caràcter popular que ens fa especials.
                         </p>
                         <p>
-                            El recorregut llarg puja fins al <strong>Serrat Llobater</strong>,
-                            el punt més alt del municipi, amb vistes espectaculars
-                            del paisatge natural que envolta el poble.
+                            La prova ofereix dues distàncies perquè tothom hi pugui participar segons el seu nivell i
+                            les seves ganes de guerra:
+                        </p>
+                        <ul style="padding-left: 20px; padding-bottom: 1em;">
+                            <li><strong>Trail 12 km</strong> – un recorregut complet, amb desnivell, corriols divertits
+                                i algun tram tècnic que farà treballar les cames.</li>
+                            <li><strong>Trail 5 km</strong> – una distància més curta però igualment intensa, perfecta
+                                per iniciar-se al trail o per sortir a córrer fort.</li>
+                        </ul>
+                        <p>
+                            Més enllà de la competició, la Cursa del Serrat vol ser també una festa per al poble. Una
+                            jornada per garantir bon ambient entre corredors, voluntaris i públic, i per omplir els
+                            camins del Serrat de gent amb ganes de passar-ho bé.
                         </p>
                         <p>
-                            Amb dues distàncies de <strong>5 km</strong> i <strong>13 km</strong>,
-                            la prova està pensada tant per corredors populars
-                            com per amants del trail running.
+                            Després de la cursa, corredors i acompanyants podran allargar la festa amb el dinar popular,
+                            amb menjar, beguda i postres per 15 €.
                         </p>
                         <p>
-                            Una jornada esportiva i festiva per gaudir de la muntanya,
-                            el poble i l’ambient únic de la cursa.
+                            Les inscripcions inclouen assegurança per als corredors federats, i en cas de no disposar-ne
+                            es podrà contractar una assegurança puntual per 2 €.
                         </p>
+                        <p>
+                            Els participants inscrits abans del 6 de maig tindran assegurada la samarreta oficial de la
+                            cursa. A partir d’aquesta data les inscripcions seguiran obertes, però sense garantia de
+                            samarreta, tot i que es podrà encarregar el mateix dia de la cursa si encara n’hi ha
+                            disponibles.
+                        </p>
+                        <p>
+                            La Cursa del Serrat és molt més que una cursa: és muntanya, esforç, comunitat i territori…
+                            però sobretot és poble.
+                        </p>
+                        <div class="botons-descarrega-gpx"
+                            style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                            <a href="#"
+                                onclick="descarregarArxiu('./Referències/LaCursadelSerrat_5K.gpx', 'LaCursadelSerrat_5K.gpx'); return false;"
+                                class="boto-secundari">Descarregar GPX 5K</a>
+                            <a href="#"
+                                onclick="descarregarArxiu('./Referències/LaCursadelSerrat_12K.gpx', 'LaCursadelSerrat_12K.gpx'); return false;"
+                                class="boto-secundari">Descarregar GPX 12K</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Secció Inscripcions -->
-        <section id="inscripcions" class="seccio-inscripcions">
-            <div class="contenidor">
+        <section id="inscripcions" class="seccio-inscripcions" style="position: relative;">
+            <canvas id="inscripcions-canvas"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
+            <div class="contenidor" style="position: relative; z-index: 1;">
                 <div class="inscripcions-banner">
                     <div class="inscripcions-info">
                         <h2>Inscripcions:</h2>
@@ -202,8 +234,8 @@
                         </div>
                     </div>
                     <div class="inscripcions-accio">
-                        <a href="https://cronocheck.com/cursadelserrat2026" class="boto-mega-destacat"
-                            onclick="alert('EP NO CORRIS! ENCARA NO!... AVIAT AVIAT'); return false;">
+                        <a href="#" class="boto-mega-destacat"
+                            onclick="document.getElementById('modal-inscripcions-aviat').classList.add('actiu'); return false;">
                             REALITZAR INSCRIPCIÓ
                         </a>
                     </div>
@@ -225,7 +257,7 @@
         <!-- Secció Informació -->
         <section id="informacio" class="seccio-informacio">
             <div class="contenidor">
-                    <h2>Informació d'Interès</h2>
+                <h2>Informació d'Interès</h2>
                 </header>
 
                 <div class="graella-cards">
@@ -392,6 +424,16 @@
 
     </main>
 
+    <!-- Modal d'Inscripcions Aviat (Liquid Glass) -->
+    <div id="modal-inscripcions-aviat" class="modal-liquid-fons">
+        <div class="modal-liquid-caixa">
+            <h3>Ep, no corris!</h3>
+            <p>Les inscripcions encara no estan obertes. Hem de preparar-ho tot per tenir la millor cursa possible!</p>
+            <button class="boto-liquid-tancar"
+                onclick="document.getElementById('modal-inscripcions-aviat').classList.remove('actiu')">D'acord</button>
+        </div>
+    </div>
+
     <!-- Peu de pàgina -->
     <footer id="footer">
         <div class="contenidor">
@@ -427,6 +469,10 @@
     <script src="script.js?v=4"></script>
     <script src="countdown-flip.js"></script>
     <script src="mapa.js"></script>
+    <!-- Three.js (pel fons d'inscripcions) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="efecte-inscripcions.js"></script>
+
     <!-- Floating Strava Button -->
     <a href="https://www.strava.com/clubs/1924347" target="_blank" class="strava-floating-btn" aria-label="Strava Club">
         <span class="strava-text">Club Strava CDS</span>

@@ -127,9 +127,11 @@ ul {
 }
 
 .logo-placeholder {
-    font-size: 2.3rem; /* Made bigger */
+    font-size: 2.3rem;
+    /* Made bigger */
     font-weight: 800;
-    color: #000; /* Made black */
+    color: #000;
+    /* Made black */
     letter-spacing: 2px;
     margin: 30px 0 0 0;
     /* Add top margin to space from marquee */
@@ -193,9 +195,11 @@ ul {
 /* Botons */
 .hero-accions {
     display: flex;
-    gap: 25px; /* Mes separats */
+    gap: 25px;
+    /* Mes separats */
     justify-content: center;
-    margin-top: 15px; /* Mes separats del compte enrere */
+    margin-top: 15px;
+    /* Mes separats del compte enrere */
 }
 
 .boto-primari,
@@ -242,7 +246,8 @@ ul {
 /* Inscriptions Section */
 .seccio-inscripcions {
     padding: 60px 0;
-    background-color: var(--fons-seccions); /* Make section itself the background color */
+    background-color: var(--fons-seccions);
+    /* Make section itself the background color */
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     position: relative;
@@ -252,7 +257,9 @@ ul {
 .seccio-inscripcions::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 6px;
     background: linear-gradient(90deg, var(--accent-primari), var(--accent-secundari));
 }
@@ -330,18 +337,22 @@ ul {
         align-items: flex-start;
         gap: 25px;
     }
+
     .inscripcions-accio {
         width: 100%;
         text-align: center;
     }
+
     .separador-detall {
         display: none;
     }
+
     .detalls-rapids {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
+
     .boto-mega-destacat {
         width: 100%;
     }
@@ -491,10 +502,10 @@ details p {
 }
 
 @keyframes fade {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 /* ==============================
@@ -506,21 +517,22 @@ details p {
     right: 25px;
     height: 60px;
     padding: 0 20px;
-    border-radius: 30px; /* Pill shape */
+    border-radius: 30px;
+    /* Pill shape */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
     z-index: 1000;
     text-decoration: none;
-    
+
     /* Liquid Glass Effect */
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    
+
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -541,7 +553,7 @@ details p {
     width: 35px;
     height: 35px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 @media (max-width: 768px) {
@@ -552,9 +564,11 @@ details p {
         padding: 0 15px;
         border-radius: 25px;
     }
+
     .strava-text {
         font-size: 0.95rem;
     }
+
     .strava-floating-btn img {
         width: 28px;
         height: 28px;
@@ -606,17 +620,28 @@ footer {
     color: var(--accent-secundari);
 }
 
-/* PresentaciÃ³ cursa - escriptori */
+/* Presentació cursa - escriptori */
 .presentacio-cursa {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.8fr;
+    /* Més amplada al text (aprox 64%) */
     gap: 50px;
-    align-items: center;
+    align-items: stretch;
+    /* Les dues columnes tindran la mateixa alçada */
     margin-bottom: 80px;
+}
+
+.presentacio-img {
+    height: 100%;
+    /* Assegura que el contenidor de la imatge ocupa l'alçada completa */
 }
 
 .presentacio-img img {
     width: 100%;
+    height: 100%;
+    /* Ocupar tota l'alçada que marca el text */
+    object-fit: cover;
+    /* Retalla la imatge proporcionalment sense deformar-la */
     border-radius: var(--vora-radius);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
@@ -627,10 +652,11 @@ footer {
     text-align: center;
 }
 
-.presentacio-text p {
+.presentacio-text p,
+.presentacio-text ul {
     color: var(--text-secundari);
-    margin-bottom: 15px;
-    line-height: 1.7;
+    margin-bottom: 12px;
+    line-height: 1.6;
 }
 
 /* ==============================
@@ -1054,110 +1080,189 @@ footer {
    Marquee Sponsor Logos
    ============================== */
 :root {
-  --mq-size: clamp(10rem, 1rem + 25vw, 18rem);
-  --mq-gap: calc(var(--mq-size) / 10);
-  --mq-duration: 50s;
-  --scroll-start: 0;
-  --scroll-end: calc(-100% - var(--mq-gap));
+    --mq-size: clamp(10rem, 1rem + 25vw, 18rem);
+    --mq-gap: calc(var(--mq-size) / 10);
+    --mq-duration: 50s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--mq-gap));
 }
 
 .patrocinadors-marquee {
-  position: relative;
-  display: flex;
-  align-content: center;
-  overflow: hidden;
-  width: 100%;
-  padding: 50px 0;
-  background-color: var(--fons-principal);
+    position: relative;
+    display: flex;
+    align-content: center;
+    overflow: hidden;
+    width: 100%;
+    padding: 50px 0;
+    background-color: var(--fons-principal);
 }
 
 .marquee {
-  display: flex;
-  overflow: hidden;
-  user-select: none;
-  gap: var(--mq-gap);
-  mask-image: linear-gradient(
-    var(--mask-direction, to right),
-    hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 1) 20%,
-    hsl(0 0% 0% / 1) 80%,
-    hsl(0 0% 0% / 0)
-  );
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--mq-gap);
+    mask-image: linear-gradient(var(--mask-direction, to right),
+            hsl(0 0% 0% / 0),
+            hsl(0 0% 0% / 1) 20%,
+            hsl(0 0% 0% / 1) 80%,
+            hsl(0 0% 0% / 0));
 }
 
 .marquee__group {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: var(--mq-gap);
-  min-width: 100%;
-  animation: scroll-x var(--mq-duration) linear infinite;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--mq-gap);
+    min-width: 100%;
+    animation: scroll-x var(--mq-duration) linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee__group {
-    animation-play-state: paused;
-  }
+    .marquee__group {
+        animation-play-state: paused;
+    }
 }
 
 .marquee--vertical {
-  --mask-direction: to bottom;
+    --mask-direction: to bottom;
 }
 
 .marquee--vertical,
 .marquee--vertical .marquee__group {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .marquee--vertical .marquee__group {
-  animation-name: scroll-y;
+    animation-name: scroll-y;
 }
 
 .marquee--reverse .marquee__group {
-  animation-direction: reverse;
-  animation-delay: -3s;
+    animation-direction: reverse;
+    animation-delay: -3s;
 }
 
 @keyframes scroll-x {
-  from {
-    transform: translateX(var(--scroll-start));
-  }
-  to {
-    transform: translateX(var(--scroll-end));
-  }
+    from {
+        transform: translateX(var(--scroll-start));
+    }
+
+    to {
+        transform: translateX(var(--scroll-end));
+    }
 }
 
 @keyframes scroll-y {
-  from {
-    transform: translateY(var(--scroll-start));
-  }
-  to {
-    transform: translateY(var(--scroll-end));
-  }
+    from {
+        transform: translateY(var(--scroll-start));
+    }
+
+    to {
+        transform: translateY(var(--scroll-end));
+    }
 }
 
 .marquee img {
-  display: block;
-  max-width: var(--mq-size);
-  height: 80px; /* Reduced height to avoid pixelation / extreme stretching */
-  background: var(--fons-principal);
-  padding: 10px;
-  border-radius: 0.5rem;
-  object-fit: contain;
+    display: block;
+    max-width: var(--mq-size);
+    height: 80px;
+    /* Reduced height to avoid pixelation / extreme stretching */
+    background: var(--fons-principal);
+    padding: 10px;
+    border-radius: 0.5rem;
+    object-fit: contain;
 }
 
 .marquee--vertical img {
-  height: auto;
-  width: calc(var(--mq-size) / 1.5);
-  padding: 10px;
+    height: auto;
+    width: calc(var(--mq-size) / 1.5);
+    padding: 10px;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: var(--mq-gap);
-  margin: auto;
-  max-width: 100%;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--mq-gap);
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+}
+
+/* ==============================
+   Modal Inscripcions (Liquid Glass)
+   ============================== */
+.modal-liquid-fons {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.modal-liquid-fons.actiu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-liquid-caixa {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    padding: 50px 40px;
+    text-align: center;
+    max-width: 90%;
+    width: 500px;
+    transform: scale(0.9);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal-liquid-fons.actiu .modal-liquid-caixa {
+    transform: scale(1);
+}
+
+.modal-liquid-caixa h3 {
+    font-size: 2.2rem;
+    color: var(--text-principal);
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-liquid-caixa p {
+    font-size: 1.1rem;
+    color: var(--text-secundari);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.boto-liquid-tancar {
+    background: linear-gradient(135deg, var(--accent-primari) 0%, #303d21 100%);
+    color: var(--fons-principal);
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(77, 97, 53, 0.3);
+    transition: all 0.3s ease;
+}
+
+.boto-liquid-tancar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(77, 97, 53, 0.5);
 }
