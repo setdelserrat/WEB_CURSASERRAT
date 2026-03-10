@@ -53,3 +53,38 @@ function descarregarArxiu(url, nomArxiu) {
         })
         .catch(error => console.error("Error al descarregar l'arxiu:", error));
 }
+
+// --- Generació dinàmica de Patrocinadors ---
+if (typeof llistaSponsors !== 'undefined') {
+    const dirSponsors = "./Imatges/LOGOS SPONSORS/";
+
+    // Funció per formatar el nom de l'arxiu com a atribut alt (sense extensió)
+    function formatarAlt(nomArxiu) {
+        return nomArxiu.split('.')[0].replace(/_/g, ' ');
+    }
+
+    // Filtrem per assegurar que només agafem imatges
+    const sponsorsValids = llistaSponsors.filter(s => s.match(/\.(png|jpe?g|webp|gif|svg)$/i));
+
+    // Generar l'HTML per cada grup
+    let htmlNormal = sponsorsValids.map(sponsor =>
+        `<img src="${dirSponsors}${sponsor}" alt="${formatarAlt(sponsor)}" />`
+    ).join('');
+
+    let htmReverse = [...sponsorsValids].reverse().map(sponsor =>
+        `<img src="${dirSponsors}${sponsor}" alt="${formatarAlt(sponsor)}" />`
+    ).join('');
+
+    // Inserir als contenidors
+    const marqueeNormal = document.getElementById('marquee-normal');
+    if (marqueeNormal) {
+        const grups = marqueeNormal.querySelectorAll('.marquee__group');
+        grups.forEach(grup => grup.innerHTML = htmlNormal);
+    }
+
+    const marqueeReverse = document.getElementById('marquee-reverse');
+    if (marqueeReverse) {
+        const grups = marqueeReverse.querySelectorAll('.marquee__group');
+        grups.forEach(grup => grup.innerHTML = htmReverse);
+    }
+}
