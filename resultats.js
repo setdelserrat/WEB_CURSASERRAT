@@ -114,10 +114,12 @@
           <div class="detall-label">Ritme</div>
           <div class="detall-valor">${r.ritme ?? "-"}</div>
         </div>
+        </div>
       </div>
-    `;
-
-    modal.hidden = false;
+      <div class="modal-accions" style="text-align: center; margin-top: 20px;">
+        <button id="boto-descarregar-certificat" class="boto-primari" data-dorsal="${r.dorsal}">Descarregar Certificat</button>
+      </div>
+    `; modal.hidden = false;
   }
 
   // Tanca el modal
@@ -128,6 +130,13 @@
 
   // Activa un any i mostra panell
   function activaAny(any) {
+    if (anyActiu === any && !panell.hidden) {
+      panell.hidden = true;
+      botonsAny.forEach((b) => b.setAttribute("aria-expanded", "false"));
+      anyActiu = null;
+      return;
+    }
+
     anyActiu = any;
 
     // Només hi ha dades del 2025 (de moment)
@@ -179,6 +188,181 @@
     const dorsal = btn.getAttribute("data-dorsal");
     obreModalPerDorsal(dorsal);
   });
+
+  // Delegació d'events per descarregar el certificat al modal
+  modalContingut.addEventListener("click", (ev) => {
+    if (ev.target.id === "boto-descarregar-certificat") {
+      const dorsal = ev.target.getAttribute("data-dorsal");
+      generaCertificat(dorsal);
+    }
+  });
+
+  // Generar i descarregar certificat tipus diploma en un canvas fora de pantalla (Pur JS per evitar problemes CORS)
+  function generaCertificat(dorsal) {
+    const r = dadesActives.find((x) => String(x.dorsal) === String(dorsal));
+    if (!r) return;
+
+    // Crear el canvas (Mesures A4 Apaisat a 150 DPI)
+    const canvas = document.createElement("canvas");
+    canvas.width = 1754;
+    canvas.height = 1240;
+    const ctx = canvas.getContext("2d");
+
+    // Colors oficials de la web
+    const colorFons = "#f5f5dc";
+    const colorPrimari = "#4d6135";
+    const colorTextFosc = "#1f2937";
+    const colorLinies = "rgba(77, 97, 53, 0.25)";
+
+    // 1. Dibuixar fons net beix
+    ctx.fillStyle = colorFons;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // 2. Dibuixar patró de corbes de nivell (topogràfic) molt més natural
+    ctx.strokeStyle = colorLinies;
+    ctx.lineWidth = 1.5;
+
+    // Funció pseudo-aleatòria per fer soroll ("Noise") rudimentari en 1D
+    const simpleNoise = (x, y, scale = 0.05) => {
+      return Math.sin(x * scale) * Math.cos(y * scale) + Math.sin((x + y) * scale * 0.5);
+    };
+
+    // Generar corbes travessant la pantalla que ondulin orgànicament
+    const numLines = 45;
+    for (let i = 0; i < numLines; i++) {
+      ctx.beginPath();
+      let startY = -400 + (i * 45); // Espaiat base entre corbes
+      ctx.moveTo(0, startY);
+
+      for (let x = 0; x <= canvas.width; x += 30) {
+        // Desplaçament vertical combinant freqüències de soroll perquè el traç sigui terrós
+        let offsetY = simpleNoise(x, i * 100, 0.01) * 80 + simpleNoise(x, i * 100, 0.003) * 200;
+        ctx.lineTo(x, startY + offsetY);
+      }
+      ctx.stroke();
+    }
+
+    // Generar també uns quants cercles / cims concèntrics naturals distorsionats
+    const drawTopoPeak = (cx, cy, maxRadius, step) => {
+      for (let rConfig = step; rConfig < maxRadius; rConfig += step) {
+        ctx.beginPath();
+        for (let angle = 0; angle <= Math.PI * 2; angle += 0.1) {
+          // Afegir soroll radial per deformar el cercle
+          let rDistorted = rConfig + simpleNoise(cx + Math.cos(angle) * rConfig, cy + Math.sin(angle) * rConfig, 0.02) * 15;
+          let x = cx + Math.cos(angle) * rDistorted;
+          let y = cy + Math.sin(angle) * rDistorted;
+          if (angle === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.stroke();
+      }
+    };
+
+    // Un parell de cims suaus espargits per la pàgina per fer de topo real
+    drawTopoPeak(1400, 300, 500, 45);
+    drawTopoPeak(200, 1000, 400, 45);
+    drawTopoPeak(800, -100, 300, 45);
+
+    // 3. Marc exterior fi d'estil mapa
+    ctx.strokeStyle = colorPrimari;
+    ctx.lineWidth = 6;
+    ctx.strokeRect(50, 50, canvas.width - 100, canvas.height - 100);
+    ctx.lineWidth = 1;
+    ctx.strokeRect(60, 60, canvas.width - 120, canvas.height - 120);
+
+    // 4. Carregar el LOGO real de la cursa i continuar el dibuix via onload
+    const logoImg = new Image();
+    logoImg.onload = () => {
+      // Dibuixar logo
+      const logoTargetWidth = 550;
+      const logoTargetHeight = (logoImg.height / logoImg.width) * logoTargetWidth;
+      ctx.drawImage(logoImg, canvas.width / 2 - logoTargetWidth / 2, 120, logoTargetWidth, logoTargetHeight);
+
+      // 5. Textos Principals del Corredor
+      ctx.textAlign = "center";
+      ctx.fillStyle = colorTextFosc;
+      ctx.font = "bold 90px 'Share Tech Mono', monospace, Arial";
+
+      const nomCorredor = (r.nom || "Corredor").toUpperCase();
+      if (nomCorredor.length > 25) ctx.font = "bold 70px 'Share Tech Mono', monospace, Arial";
+
+      ctx.fillText(nomCorredor, canvas.width / 2, 530);
+
+      // Línia separadora sota el nom
+      ctx.strokeStyle = colorPrimari;
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(canvas.width / 2 - 350, 580);
+      ctx.lineTo(canvas.width / 2 + 350, 580);
+      ctx.stroke();
+
+      // 6. Bloques de dades (graella tipus finisher)
+      const paintDataBlock = (label, value, x, y) => {
+        // Fons semitransparent per llegibilitat
+        ctx.fillStyle = "rgba(245, 245, 220, 0.85)";
+        ctx.fillRect(x - 170, y - 50, 340, 160);
+        ctx.strokeStyle = colorPrimari;
+        ctx.lineWidth = 1;
+        ctx.strokeRect(x - 170, y - 50, 340, 160);
+
+        ctx.fillStyle = colorPrimari;
+        ctx.font = "bold 26px Arial";
+        ctx.fillText(label.toUpperCase(), x, y - 5);
+
+        ctx.fillStyle = colorTextFosc;
+        ctx.font = "bold 58px 'Share Tech Mono', Arial";
+        ctx.fillText(value, x, y + 65);
+      };
+
+      // Temps central destacat
+      const ampladaCaixaTemps = 580; // Ampliada per tancar bé tot el temps
+      ctx.fillStyle = "rgba(245, 245, 220, 0.9)";
+      ctx.fillRect(canvas.width / 2 - (ampladaCaixaTemps / 2), 650, ampladaCaixaTemps, 180);
+      ctx.strokeStyle = colorPrimari;
+      ctx.lineWidth = 2;
+      ctx.strokeRect(canvas.width / 2 - (ampladaCaixaTemps / 2), 650, ampladaCaixaTemps, 180);
+
+      ctx.fillStyle = colorPrimari;
+      ctx.font = "bold 26px Arial";
+      ctx.fillText("TEMPS OFICIAL", canvas.width / 2, 700);
+      ctx.fillStyle = colorTextFosc;
+      // Text de temps ben gran i al centre
+      ctx.font = "bold 85px 'Share Tech Mono', Arial";
+      ctx.fillText(r.temps || "-", canvas.width / 2, 800);
+
+      // Bloques laterals inferiors
+      paintDataBlock("Posició", r.posicio || "-", canvas.width / 2 - 400, 930);
+      paintDataBlock("Ritme", r.ritme || "-", canvas.width / 2, 930);
+      paintDataBlock("Distància", r.distancia || "12km", canvas.width / 2 + 400, 930);
+
+      // 7. Missatge felicitació o Edició
+      ctx.fillStyle = colorPrimari;
+      ctx.font = "italic bold 42px Arial";
+      ctx.fillText("FINISHER · EDICIÓ 2025", canvas.width / 2, 1150);
+
+      // Procés de descàrrega
+      try {
+        const url = canvas.toDataURL("image/png");
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `Certificat_A4_CDS_${r.nom ? r.nom.replace(/\s+/g, "_") : "Corredor"}.png`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      } catch (e) {
+        console.error("Error al descarregar:", e);
+        alert("No s'ha pogut descarregar el certificat automàticament.");
+      }
+    };
+
+    // Si REALLOGO_B64 està disponible des de logo_b64.js, ho fem servir:
+    if (typeof REALLOGO_B64 !== "undefined") {
+      logoImg.src = REALLOGO_B64;
+    } else {
+      logoImg.src = "Imatges/logo.png";
+    }
+  }
 
   // Tancar modal (clic al fons o botó)
   document.addEventListener("click", (ev) => {
