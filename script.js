@@ -35,7 +35,3 @@ document.querySelectorAll('a[href^="#"]').forEach(ancora => {
 // S'ha utilitzat una estructura de graella responsive per facilitar-ne el canvi.
 
 console.log(`${configuracioWeb.nomEsdeveniment} configurada correctament al domini: ${configuracioWeb.dominiPreferit}`);
-
-
-
-

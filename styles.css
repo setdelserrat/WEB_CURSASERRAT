@@ -127,9 +127,9 @@ ul {
 }
 
 .logo-placeholder {
-    font-size: 1.8rem;
+    font-size: 2.3rem; /* Made bigger */
     font-weight: 800;
-    color: var(--accent-primari);
+    color: #000; /* Made black */
     letter-spacing: 2px;
     margin: 30px 0 0 0;
     /* Add top margin to space from marquee */
@@ -152,7 +152,8 @@ ul {
 
 /* Compte enrere */
 .comptador-contenidor {
-    /* Container wrapper */
+    /* Separar una mica del logo */
+    margin-top: 15px;
 }
 
 .comptador {
@@ -192,8 +193,9 @@ ul {
 /* Botons */
 .hero-accions {
     display: flex;
-    gap: 15px;
+    gap: 25px; /* Mes separats */
     justify-content: center;
+    margin-top: 15px; /* Mes separats del compte enrere */
 }
 
 .boto-primari,
@@ -231,38 +233,118 @@ ul {
     border-color: var(--text-principal);
 }
 
-/* Inscriptions Section */
-.seccio-inscripcions {
-    padding: 80px 0;
+/* Presentacio Section */
+.seccio-presentacio {
+    padding: 80px 0 20px 0;
     background-color: var(--fons-principal);
 }
 
-.inscripcions-card {
-    background-color: var(--fons-seccions);
-    padding: 40px;
-    border-radius: var(--vora-radius);
-    text-align: center;
-    box-shadow: var(--ombra-suau);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+/* Inscriptions Section */
+.seccio-inscripcions {
+    padding: 60px 0;
+    background-color: var(--fons-seccions); /* Make section itself the background color */
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
 }
 
-.inscripcions-card h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+.seccio-inscripcions::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--accent-primari), var(--accent-secundari));
 }
 
-.inscripcions-card p {
-    color: var(--text-secundari);
-    margin-bottom: 2rem;
+.inscripcions-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.inscripcions-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inscripcions-info h2 {
+    font-size: 2.5rem;
+    color: var(--text-principal);
+    margin: 0;
+}
+
+.data-destacada {
+    font-size: 1.15rem;
+    color: var(--accent-primari);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .detalls-rapids {
     display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    font-size: 0.95rem;
     color: var(--text-secundari);
+    font-weight: 500;
+    margin: 0;
+}
+
+.separador-detall {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.inscripcions-accio {
+    flex-shrink: 0;
+}
+
+.boto-mega-destacat {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-primari) 0%, #303d21 100%);
+    color: var(--fons-principal);
+    padding: 22px 45px;
+    border-radius: var(--vora-radius);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 30px rgba(77, 97, 53, 0.4);
+    margin: 0;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.boto-mega-destacat:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(77, 97, 53, 0.6);
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .inscripcions-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .inscripcions-accio {
+        width: 100%;
+        text-align: center;
+    }
+    .separador-detall {
+        display: none;
+    }
+    .detalls-rapids {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .boto-mega-destacat {
+        width: 100%;
+    }
 }
 
 /* SecciÃ³ General */
@@ -406,6 +488,77 @@ details p {
 .foto-placeholder:hover img {
     opacity: 1;
     transform: scale(1.05);
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ==============================
+   Floating Strava Button (Liquid Glass)
+   ============================== */
+.strava-floating-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 30px; /* Pill shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    z-index: 1000;
+    text-decoration: none;
+    
+    /* Liquid Glass Effect */
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.strava-floating-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.strava-text {
+    font-weight: 700;
+    color: var(--text-principal);
+    font-size: 1.05rem;
+}
+
+.strava-floating-btn img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+@media (max-width: 768px) {
+    .strava-floating-btn {
+        bottom: 20px;
+        right: 20px;
+        height: 50px;
+        padding: 0 15px;
+        border-radius: 25px;
+    }
+    .strava-text {
+        font-size: 0.95rem;
+    }
+    .strava-floating-btn img {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 .galeria-accions {
@@ -896,148 +1049,115 @@ footer {
     }
 }
 
+
 /* ==============================
-   Patrocinadors (Sponsors Laterals)
+   Marquee Sponsor Logos
    ============================== */
-.seccio-patrocinadors {
-    /* En mòbil es mostra com a secció normal apilada a sota */
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 60px 20px;
-    background-color: var(--fons-principal);
+:root {
+  --mq-size: clamp(10rem, 1rem + 25vw, 18rem);
+  --mq-gap: calc(var(--mq-size) / 10);
+  --mq-duration: 50s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--mq-gap));
 }
 
-.sponsors-lateral {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.patrocinadors-marquee {
+  position: relative;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 50px 0;
+  background-color: var(--fons-principal);
 }
 
-.sponsors-titol {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--accent-primari);
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    text-align: center;
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--mq-gap);
+  mask-image: linear-gradient(
+    var(--mask-direction, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
 }
 
-.sponsors-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--mq-gap);
+  min-width: 100%;
+  animation: scroll-x var(--mq-duration) linear infinite;
 }
 
-.sponsor-item {
-    display: none;
-    /* Amagat per defecte si està buit */
-    border-radius: var(--vora-radius);
-    align-items: center;
-    justify-content: center;
-    transition: var(--transicio);
-    overflow: hidden;
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
 }
 
-/* Només el mostrem quan el slot tingui una imatge inserida a dins */
-.sponsor-item:has(img) {
-    display: flex;
+.marquee--vertical {
+  --mask-direction: to bottom;
 }
 
-/* Efecte per fer-ho més gran quan el ratolí hi passa per sobre */
-.sponsor-item:has(img):hover {
-    transform: scale(1.05);
+.marquee--vertical,
+.marquee--vertical .marquee__group {
+  flex-direction: column;
 }
 
-.sponsor-item img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    padding: 8px;
+.marquee--vertical .marquee__group {
+  animation-name: scroll-y;
 }
 
-.sponsor-item span {
-    padding: 5px;
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: -3s;
 }
 
-.sponsor-gros {
-    width: 160px;
-    height: 120px;
+@keyframes scroll-x {
+  from {
+    transform: translateX(var(--scroll-start));
+  }
+  to {
+    transform: translateX(var(--scroll-end));
+  }
 }
 
-.sponsor-mitja {
-    width: 120px;
-    height: 90px;
-    font-size: 0.75rem;
+@keyframes scroll-y {
+  from {
+    transform: translateY(var(--scroll-start));
+  }
+  to {
+    transform: translateY(var(--scroll-end));
+  }
 }
 
-.sponsor-petit {
-    width: 90px;
-    height: 60px;
-    font-size: 0.65rem;
+.marquee img {
+  display: block;
+  max-width: var(--mq-size);
+  height: 80px; /* Reduced height to avoid pixelation / extreme stretching */
+  background: var(--fons-principal);
+  padding: 10px;
+  border-radius: 0.5rem;
+  object-fit: contain;
 }
 
+.marquee--vertical img {
+  height: auto;
+  width: calc(var(--mq-size) / 1.5);
+  padding: 10px;
+}
 
-
-/* Pantalles amples: col·loquem les barres laterals de forma fixa */
-@media (min-width: 1300px) {
-    .seccio-patrocinadors {
-        padding: 0;
-        background-color: transparent;
-        display: block;
-    }
-
-    .sponsors-lateral {
-        position: absolute;
-        /* Fixats al document, fan scroll amb la pàgina */
-        top: 15vh;
-        width: 380px;
-        /* Multiplicat per 2 perquè càpiguen les dues columnes perfectament */
-        z-index: 50;
-    }
-
-    .sponsors-esquerra {
-        left: 20px;
-    }
-
-    .sponsors-dreta {
-        right: 20px;
-    }
-
-    .sponsors-logos {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        /* MÀGIA DEL DISSENY: Graella de 6 columnes invisibles.
-           - Grossos:  ocupen 6 (1 per fila perquè 6/6 = 1)
-           - Mitjans:  ocupen 3 (2 per fila perquè 6/3 = 2)
-           - Petits:   ocupen 2 (3 per fila perquè 6/2 = 3)
-        */
-        gap: 15px;
-        width: 100%;
-        padding-bottom: 20px;
-    }
-
-    .sponsors-lateral .sponsor-gros {
-        grid-column: span 6;
-        /* 1 per fila */
-        width: 100%;
-        height: 140px;
-    }
-
-    .sponsors-lateral .sponsor-mitja {
-        grid-column: span 3;
-        /* 2 per fila */
-        width: 100%;
-        height: 100px;
-    }
-
-    .sponsors-lateral .sponsor-petit {
-        grid-column: span 2;
-        /* 3 per fila */
-        width: 100%;
-        height: 70px;
-    }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mq-gap);
+  margin: auto;
+  max-width: 100%;
+  position: relative;
 }
