@@ -102,50 +102,14 @@
 
     <!-- Marquee de Patrocinadors -->
     <section class="patrocinadors-marquee wrapper">
-        <div class="marquee">
-            <div class="marquee__group">
-                <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
-                <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
-                <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
-                <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
-                <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
-                <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
-                <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
-                <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
-            </div>
-            <div aria-hidden="true" class="marquee__group">
-                <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
-                <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
-                <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
-                <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
-                <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
-                <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
-                <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
-                <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
-            </div>
+        <div class="marquee" id="marquee-normal">
+            <div class="marquee__group"></div>
+            <div aria-hidden="true" class="marquee__group"></div>
         </div>
 
-        <div class="marquee marquee--reverse">
-            <div class="marquee__group">
-                <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
-                <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
-                <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
-                <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
-                <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
-                <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
-                <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
-                <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
-            </div>
-            <div aria-hidden="true" class="marquee__group">
-                <img src="./Imatges/LOGOS SPONSORS/TOTIMES.png" alt="Totimes" />
-                <img src="./Imatges/LOGOS SPONSORS/MARTABOIXADER.png" alt="MartaBoixader" />
-                <img src="./Imatges/LOGOS SPONSORS/LLOBARTERA.png" alt="Llobartera" />
-                <img src="./Imatges/LOGOS SPONSORS/LIBEXCRONOS.png" alt="LIBEXCRONOS" />
-                <img src="./Imatges/LOGOS SPONSORS/FORJACAPELLAS.png" alt="ForjaCapellas" />
-                <img src="./Imatges/LOGOS SPONSORS/COSAFEL.png" alt="Cosafel" />
-                <img src="./Imatges/LOGOS SPONSORS/CALTORI.png" alt="Caltori" />
-                <img src="./Imatges/LOGOS SPONSORS/ARCÍS.png" alt="Arcís" />
-            </div>
+        <div class="marquee marquee--reverse" id="marquee-reverse">
+            <div class="marquee__group"></div>
+            <div aria-hidden="true" class="marquee__group"></div>
         </div>
     </section>
 
@@ -201,11 +165,9 @@
                         </p>
                         <div class="botons-descarrega-gpx"
                             style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                            <a href="#"
-                                onclick="descarregarArxiu('./Referències/LaCursadelSerrat_5K.gpx', 'LaCursadelSerrat_5K.gpx'); return false;"
+                            <a href="./Referències/LaCursadelSerrat_5K.gpx" download="LaCursadelSerrat_5K.gpx"
                                 class="boto-secundari">Descarregar GPX 5K</a>
-                            <a href="#"
-                                onclick="descarregarArxiu('./Referències/LaCursadelSerrat_12K.gpx', 'LaCursadelSerrat_12K.gpx'); return false;"
+                            <a href="./Referències/LaCursadelSerrat_12K.gpx" download="LaCursadelSerrat_12K.gpx"
                                 class="boto-secundari">Descarregar GPX 12K</a>
                         </div>
                     </div>
@@ -215,7 +177,7 @@
         <!-- Secció Inscripcions -->
         <section id="inscripcions" class="seccio-inscripcions" style="position: relative;">
             <canvas id="inscripcions-canvas"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;"></canvas>
             <div class="contenidor" style="position: relative; z-index: 1;">
                 <div class="inscripcions-banner">
                     <div class="inscripcions-info">
@@ -466,6 +428,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
     <script src="particles.js"></script>
+    <script src="llista_sponsors.js"></script>
     <script src="script.js?v=4"></script>
     <script src="countdown-flip.js"></script>
     <script src="mapa.js"></script>
