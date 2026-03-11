@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>LA CURSA DEL SERRAT 2026</name>
@@ -7,7 +7,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-6.png</href>
+          <href>Imatges/referències mapa/icon-6.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -18,7 +18,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-6.png</href>
+          <href>Imatges/referències mapa/icon-6.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -39,7 +39,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-5.png</href>
+          <href>Imatges/referències mapa/icon-5.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -50,7 +50,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-5.png</href>
+          <href>Imatges/referències mapa/icon-5.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -71,7 +71,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-4.png</href>
+          <href>Imatges/referències mapa/icon-4.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -82,7 +82,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-4.png</href>
+          <href>Imatges/referències mapa/icon-4.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -103,7 +103,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-1.png</href>
+          <href>Imatges/referències mapa/icon-1.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -114,7 +114,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-1.png</href>
+          <href>Imatges/referències mapa/icon-1.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -135,7 +135,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-2.png</href>
+          <href>Imatges/referències mapa/icon-2.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -146,7 +146,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-2.png</href>
+          <href>Imatges/referències mapa/icon-2.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -167,7 +167,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-3.png</href>
+          <href>Imatges/referències mapa/icon-3.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -178,7 +178,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-3.png</href>
+          <href>Imatges/referències mapa/icon-3.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -2674,3 +2674,4 @@
     </Folder>
   </Document>
 </kml>
+
