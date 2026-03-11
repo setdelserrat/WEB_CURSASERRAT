@@ -106,15 +106,17 @@ document.addEventListener('DOMContentLoaded', function () {
                         let cleanText = descText.replace(/^(descripció:|nombre:)\s*/i, '').trim();
                         popupContent += `<p>${cleanText}</p>`;
                     }
-                    // Afegim un botó per obrir a Google Maps si és un punt (marcador)
-                    if (feature.geometry.type === 'Point') {
-                        const coords = feature.geometry.coordinates;
-                        // KML defineix coordinates com [longitud, latitud]
-                        const lat = coords[1];
-                        const lng = coords[0];
-                        const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+                }
 
-                        popupContent += `
+                // Afegim un botó per obrir a Google Maps si és un punt (marcador)
+                if (feature.geometry && feature.geometry.type === 'Point') {
+                    const coords = feature.geometry.coordinates;
+                    // KML defineix coordinates com [longitud, latitud]
+                    const lat = coords[1];
+                    const lng = coords[0];
+                    const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+
+                    popupContent += `
                         <div style="margin-top: 15px; text-align: center;">
                             <a href="${mapsUrl}" target="_blank" style="
                                 display: inline-flex;
@@ -133,12 +135,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             </a>
                         </div>
                     `;
-                    }
-
-                    layer.bindPopup(popupContent);
                 }
+
+                layer.bindPopup(popupContent);
             }
-        });
+        }
+    });
 
     // Cridem KML via omnivore
     omnivore.kml('cursa_serrat.kml', null, customLayer)
