@@ -157,6 +157,34 @@ document.addEventListener('DOMContentLoaded', function () {
         .on('ready', function () {
             // Quan s'ha carregat tot el KML s'ajusta la càmera visualitzar-ho tot
             map.fitBounds(customLayer.getBounds(), { padding: [30, 30] });
+
+            // Afegim una llegenda (avís) fixe al mapa després de carregar-ho tot
+            const warnControl = L.control({ position: 'bottomright' });
+
+            warnControl.onAdd = function (map) {
+                const div = L.DomUtil.create('div', 'map-warning');
+                div.innerHTML = `
+                    <div style="
+                        background-color: rgba(255, 255, 255, 0.95);
+                        border-left: 5px solid #ff4d4d;
+                        padding: 12px 15px;
+                        border-radius: 6px;
+                        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                        max-width: 320px;
+                        font-family: 'Share Tech Mono', monospace;
+                        font-size: 0.85em;
+                        color: #333;
+                        line-height: 1.4;
+                    ">
+                        <strong style="color: #ff4d4d; font-size: 1.1em; display: block; margin-bottom: 5px;">⚠️ ATENCIÓ!</strong>
+                        Els camins marcats per Google Maps que generi el botó "Porta'm al lloc" <strong>NO estan revisats</strong> i poden ser inexactes. <br><br>
+                        Revisa sempre de forma externa la ruta de com arribar-hi; nosaltres només en marquem el punt!
+                    </div>
+                `;
+                return div;
+            };
+
+            warnControl.addTo(map);
         })
         .on('error', function (e) {
             console.error('Error carregant el KML:', e);
