@@ -1276,3 +1276,64 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 12px 25px rgba(77, 97, 53, 0.5);
 }
+
+/* ==============================
+   Animació Vibració i Missatge Secret
+   ============================== */
+@keyframes vibrar {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-4px) rotate(-1deg); }
+    40% { transform: translateX(4px) rotate(1deg); }
+    60% { transform: translateX(-4px) rotate(-1deg); }
+    80% { transform: translateX(4px) rotate(1deg); }
+    100% { transform: translateX(0); }
+}
+
+.vibrar {
+    animation: vibrar 0.3s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.btn-secret {
+    position: relative;
+}
+
+.missatge-secret {
+    position: absolute;
+    bottom: 110%; /* Sobre el botó */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(48, 61, 33, 0.95); /* Color fosc de la web */
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+/* Triàngol a sota del tooltip */
+.missatge-secret::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(48, 61, 33, 0.95) transparent transparent transparent;
+}
+
+.missatge-secret.mostrar {
+    animation: fadeInOut 2.5s ease forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translate(-50%, 10px); }
+    10% { opacity: 1; transform: translate(-50%, 0); }
+    80% { opacity: 1; transform: translate(-50%, 0); }
+    100% { opacity: 0; transform: translate(-50%, -10px); }
+}

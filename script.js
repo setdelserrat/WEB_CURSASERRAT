@@ -88,3 +88,26 @@ if (typeof llistaSponsors !== 'undefined') {
         grups.forEach(grup => grup.innerHTML = htmReverse);
     }
 }
+
+// --- Missatge Secret per a Botons GPX ---
+function mostrarSecret(element) {
+    // Afegir vibració
+    element.classList.add('vibrar');
+    setTimeout(() => {
+        element.classList.remove('vibrar');
+    }, 300);
+
+    // Comprovar si ja hi ha un missatge actiu
+    let msgElement = element.querySelector('.missatge-secret');
+    if (!msgElement) {
+        msgElement = document.createElement('span');
+        msgElement.className = 'missatge-secret';
+        msgElement.innerText = "Encara no t'ho podem dir! És secret!";
+        element.appendChild(msgElement);
+    }
+
+    // Reiniciar animació de fadedesaparèixer
+    msgElement.classList.remove('mostrar');
+    void msgElement.offsetWidth; // Reflow
+    msgElement.classList.add('mostrar');
+}
