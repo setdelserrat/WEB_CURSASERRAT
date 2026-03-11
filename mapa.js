@@ -63,48 +63,58 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     // Si és una taula HTML generada per Earth/Maps, la netegem
                     if (descText.includes('<table')) {
-                        // Creem un element temporal per parsejar l'HTML
                         const tempDiv = document.createElement('div');
                         tempDiv.innerHTML = descText;
 
-                        // Busquem el text real. Normalment està en divs o tds.
                         let clearText = "";
 
-                        // Intentem trobar les files de la taula
+                        // Trobar totes les cel·les que tenen informació
                         const rows = tempDiv.querySelectorAll('tr');
-                        if (rows.length > 0) {
-                            rows.forEach(row => {
-                                const cells = row.querySelectorAll('td');
-                                if (cells.length === 2) {
-                                    const label = cells[0].innerText.trim().toLowerCase();
-                                    const value = cells[1].innerText.trim();
-                                    // Ignorem etiquetes buides o no desitjades si no tenen valor real (excepte si el valor és útil i no s'assembla a l'etiqueta)
-                                    if (value && value !== "" && label !== "nombre" && !label.includes("descripci")) {
-                                        clearText += `<p><strong>${cells[0].innerText.trim()}</strong> ${value}</p>`;
-                                    } else if (value && value !== "" && (label === "nombre" || label.includes("descripci"))) {
-                                        // Si és la descripció real o el nom però té valor, només posem el valor
-                                        clearText += `<p>${value}</p>`;
+                        rows.forEach(row => {
+                            const cells = row.querySelectorAll('td');
+                            if (cells.length === 2) {
+                                const labelText = cells[0].innerText.trim().toLowerCase();
+                                const valueText = cells[1].innerText.trim();
+
+                                // Ometem etiquetes "nombre" i "descripción" per no repetir-les passivament com etiquetes
+                                // i només guardem el seu valor assignat.
+                                if (valueText !== "") {
+                                    if (labelText.includes("nombre")) {
+                                        // ja tenim el nom en format <h3>
+                                    } else if (labelText.includes("descripci")) {
+                                        clearText += `<p>${valueText}</p>`;
+                                    } else {
+                                        // És una altra propietat (per si n'afegeixes de noves)
+                                        clearText += `<p><strong>${cells[0].innerText.trim()}:</strong> ${valueText}</p>`;
                                     }
                                 }
-                            });
-                        } else {
-                            // Si no hi ha files (estructura diferent), agafem només el text net
-                            clearText = tempDiv.innerText.trim();
-                        }
-
-                        // Netejar "descripció:" "nombre:" si han quedat com a text pla al principi
-                        clearText = clearText.replace(/^(descripció:|nombre:)\s*/i, '').trim();
+                            }
+                        });
 
                         if (clearText) {
                             popupContent += `${clearText}`;
                         } else {
-                            // Fallback si la neteja deixa el text buit però hi havia alguna cosa original
+                            // Si no ha trobat taules estàndard de Google però hi ha text
                             popupContent += `<p>${tempDiv.innerText.replace(/^(descripció:|nombre:)\s*/gi, '').trim()}</p>`;
                         }
                     } else {
-                        // Si no és una taula, només netegem les etiquetes no desitjades si apareixen al principi
-                        let cleanText = descText.replace(/^(descripció:|nombre:)\s*/i, '').trim();
-                        popupContent += `<p>${cleanText}</p>`;
+                        // Si no és una taula, sinó text pla amb salts de línia (<br>)
+                        let lines = descText.split(/<br\s*\/?>/i);
+                        let cleanLines = "";
+
+                        lines.forEach(line => {
+                            let text = line.trim();
+                            // Ignorem el text si és buit, o només diu "nombre:" o "descripción:"
+                            if (text !== "" && text.toLowerCase() !== "nombre:" && text.toLowerCase() !== "descripción:" && text.toLowerCase() !== "descripció:") {
+                                // Netegem les línies que comencen just per l'etiqueta que no volem veure, ex: "descripció: Contingut reial" -> "Contingut reial"
+                                let cleanedLine = text.replace(/^(descripci[óo]n?:|nombre:)\s*/i, '').trim();
+                                if (cleanedLine) {
+                                    cleanLines += `<p>${cleanedLine}</p>`;
+                                }
+                            }
+                        });
+
+                        popupContent += cleanLines;
                     }
                 }
 
@@ -131,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 box-shadow: 0 2px 5px rgba(0,0,0,0.2);
                                 transition: all 0.3s ease;
                             ">
-                                <span style="margin-right: 8px; font-size: 1.2em;">📍</span> Porta'm al lloc
+                                Porta'm al lloc
                             </a>
                         </div>
                     `;
