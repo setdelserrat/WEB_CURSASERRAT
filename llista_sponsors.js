@@ -6,6 +6,7 @@ const llistaSponsors = [
     "CONSORCI.png", 
     "CORRAL.png", 
     "COSAFEL.png", 
+    "FERBIKES.png", 
     "FORJACAPELLAS.png", 
     "HORTPUIG.png", 
     "LIBEXCRONOS.png", 
