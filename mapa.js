@@ -165,20 +165,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 const div = L.DomUtil.create('div', 'map-warning');
                 div.innerHTML = `
                     <div style="
-                        background-color: rgba(255, 255, 255, 0.95);
+                        background: rgba(255, 255, 255, 0.65);
+                        backdrop-filter: blur(12px);
+                        -webkit-backdrop-filter: blur(12px);
+                        border: 1px solid rgba(255, 255, 255, 0.6);
                         border-left: 5px solid #ff4d4d;
                         padding: 12px 15px;
-                        border-radius: 6px;
-                        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-                        max-width: 320px;
+                        border-radius: 8px;
+                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+                        max-width: 330px;
                         font-family: 'Share Tech Mono', monospace;
                         font-size: 0.85em;
-                        color: #333;
+                        color: #111;
                         line-height: 1.4;
                     ">
-                        <strong style="color: #ff4d4d; font-size: 1.1em; display: block; margin-bottom: 5px;">⚠️ ATENCIÓ!</strong>
-                        Els camins marcats per Google Maps que generi el botó "Porta'm al lloc" <strong>NO estan revisats</strong> i poden ser inexactes. <br><br>
-                        Revisa sempre de forma externa la ruta de com arribar-hi; nosaltres només en marquem el punt!
+                        <strong style="color: #d32f2f; font-size: 1.1em; display: block; margin-bottom: 5px; text-shadow: 0 1px 2px rgba(255,255,255,0.8);">⚠️ OJU!</strong>
+                        Els camins que et marca el Google Maps <strong style="color: #d32f2f;">NO estan revisats</strong> i poden no estar perfectes. Sobretot si no vas amb un vehicle 4x4, vigila!<br><br>
+                        Revisa sempre de forma externa la ruta de com arribar-hi; nosaltres només et marquem el punt (ja fem prou). Busca't la ruta i la vida!
                     </div>
                 `;
                 return div;
