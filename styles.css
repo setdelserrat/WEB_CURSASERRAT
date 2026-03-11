@@ -1337,3 +1337,43 @@ footer {
     80% { opacity: 1; transform: translate(-50%, 0); }
     100% { opacity: 0; transform: translate(-50%, -10px); }
 }
+
+/* ==============================
+   Spotify Player (Desktop Only - Liquid Glass)
+   ============================== */
+.floating-spotify-container {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 1000;
+    width: 320px;
+    
+    /* Liquid Glass Effect */
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 10px;
+    
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.floating-spotify-container iframe {
+    display: block; /* Evita espais en blanc innecessaris sota l'iframe */
+}
+
+.floating-spotify-container:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Ocultar en mòbils / tauletes petites */
+@media (max-width: 768px) {
+    .floating-spotify-container {
+        display: none !important;
+    }
+}
