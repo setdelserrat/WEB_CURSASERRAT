@@ -3,7 +3,7 @@
    ========================================= */
 
 // Importació dinàmica de l'algorisme de "Perlin Noise" per generar el relleu
-import("https://esm.sh/@chriscourses/perlin-noise").then(ChriscoursesPerlinNoise => {
+import("./perlin-noise.js").then(ChriscoursesPerlinNoise => {
     
     // Valors configurables
     let thresholdIncrement = 5; // Salt de desnivell entre línies isolínies (topogràfiques)

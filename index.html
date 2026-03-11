@@ -333,9 +333,9 @@
         </section>
 
         <!-- Dades + lògica de resultats -->
-        <script src="dades_resultats_2025.js"></script>
-        <script src="logo_b64.js"></script>
-        <script src="resultats.js"></script>
+        <script src="dades_resultats_2025.js" defer></script>
+        <script src="logo_b64.js" defer></script>
+        <script src="resultats.js" defer></script>
 
         <!-- Secció Galeria -->
         <section id="fotos" class="seccio-galeria">
@@ -419,27 +419,35 @@
 
     <!-- Leaflet JS and plugins -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.4/leaflet-omnivore.min.js"></script>
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.4/leaflet-omnivore.min.js" defer></script>
 
     <!-- Dependencies for Flip Countdown -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" defer></script>
 
-    <script src="particles.js"></script>
-    <script src="llista_sponsors.js"></script>
-    <script src="script.js?v=4"></script>
-    <script src="countdown-flip.js"></script>
-    <script src="mapa.js"></script>
+    <script src="particles.js" defer></script>
+    <script src="llista_sponsors.js" defer></script>
+    <script src="script.js?v=4" defer></script>
+    <script src="countdown-flip.js" defer></script>
+    <script src="mapa.js" defer></script>
     <!-- Three.js (pel fons d'inscripcions) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="efecte-inscripcions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="efecte-inscripcions.js" defer></script>
 
-    <!-- Floating Strava Button -->
-    <a href="https://www.strava.com/clubs/1924347" target="_blank" class="strava-floating-btn" aria-label="Strava Club">
-        <span class="strava-text">Club Strava CDS</span>
-        <img src="./Imatges/STRAVA.webp" alt="Strava Logo">
-    </a>
+    <!-- Floating Social Buttons -->
+    <div class="floating-social-container">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/lacursadelserrat/" target="_blank" class="floating-social-btn" aria-label="Instagram">
+            <span class="social-text">Instagram CDS</span>
+            <img src="./Imatges/INSTAGRAM.svg" alt="Instagram Logo">
+        </a>
+        <!-- Strava -->
+        <a href="https://www.strava.com/clubs/1924347" target="_blank" class="floating-social-btn" aria-label="Strava Club">
+            <span class="social-text">Club Strava CDS</span>
+            <img src="./Imatges/STRAVA.webp" alt="Strava Logo">
+        </a>
+    </div>
 
 </body>
 

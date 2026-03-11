@@ -509,12 +509,19 @@ details p {
 }
 
 /* ==============================
-   Floating Strava Button (Liquid Glass)
+   Floating Social Buttons (Liquid Glass)
    ============================== */
-.strava-floating-btn {
+.floating-social-container {
     position: fixed;
     bottom: 25px;
     right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.floating-social-btn {
     height: 60px;
     padding: 0 20px;
     border-radius: 30px;
@@ -523,7 +530,6 @@ details p {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    z-index: 1000;
     text-decoration: none;
 
     /* Liquid Glass Effect */
@@ -536,20 +542,20 @@ details p {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.strava-floating-btn:hover {
+.floating-social-btn:hover {
     transform: translateY(-5px) scale(1.05);
     background: rgba(255, 255, 255, 0.45);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.strava-text {
+.social-text {
     font-weight: 700;
     color: var(--text-principal);
     font-size: 1.05rem;
 }
 
-.strava-floating-btn img {
+.floating-social-btn img {
     width: 35px;
     height: 35px;
     object-fit: contain;
@@ -557,19 +563,23 @@ details p {
 }
 
 @media (max-width: 768px) {
-    .strava-floating-btn {
+    .floating-social-container {
         bottom: 20px;
         right: 20px;
+        gap: 10px;
+    }
+
+    .floating-social-btn {
         height: 50px;
         padding: 0 15px;
         border-radius: 25px;
     }
 
-    .strava-text {
+    .social-text {
         font-size: 0.95rem;
     }
 
-    .strava-floating-btn img {
+    .floating-social-btn img {
         width: 28px;
         height: 28px;
     }
