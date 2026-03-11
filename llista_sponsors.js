@@ -2,7 +2,7 @@
 const llistaSponsors = [ 
     "ARCÍS.png", 
     "BONGUST.png", 
-    "BPM.jpg", 
+    "BPM.png", 
     "CALTORI.png", 
     "COMAS.png", 
     "CONSORCI.png", 
