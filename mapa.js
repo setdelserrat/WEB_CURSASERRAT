@@ -106,11 +106,39 @@ document.addEventListener('DOMContentLoaded', function () {
                         let cleanText = descText.replace(/^(descripció:|nombre:)\s*/i, '').trim();
                         popupContent += `<p>${cleanText}</p>`;
                     }
+                    // Afegim un botó per obrir a Google Maps si és un punt (marcador)
+                    if (feature.geometry.type === 'Point') {
+                        const coords = feature.geometry.coordinates;
+                        // KML defineix coordinates com [longitud, latitud]
+                        const lat = coords[1];
+                        const lng = coords[0];
+                        const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+
+                        popupContent += `
+                        <div style="margin-top: 15px; text-align: center;">
+                            <a href="${mapsUrl}" target="_blank" style="
+                                display: inline-flex;
+                                align-items: center;
+                                background-color: var(--calm-green, #4d6135);
+                                color: white;
+                                padding: 8px 15px;
+                                border-radius: 8px;
+                                text-decoration: none;
+                                font-family: 'Share Tech Mono', monospace;
+                                font-size: 0.9em;
+                                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                                transition: all 0.3s ease;
+                            ">
+                                <span style="margin-right: 8px; font-size: 1.2em;">📍</span> Porta'm al lloc
+                            </a>
+                        </div>
+                    `;
+                    }
+
+                    layer.bindPopup(popupContent);
                 }
-                layer.bindPopup(popupContent);
             }
-        }
-    });
+        });
 
     // Cridem KML via omnivore
     omnivore.kml('cursa_serrat.kml', null, customLayer)
