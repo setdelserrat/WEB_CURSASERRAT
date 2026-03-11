@@ -7,7 +7,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-8.png</href>
+          <href>images/icon-6.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -18,7 +18,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-8.png</href>
+          <href>images/icon-6.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -39,7 +39,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-7.png</href>
+          <href>images/icon-5.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -50,7 +50,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-7.png</href>
+          <href>images/icon-5.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -67,43 +67,11 @@
         <styleUrl>#icon-1517-A52714-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1574-558B2F-normal">
-      <IconStyle>
-        <scale>1</scale>
-        <Icon>
-          <href>images/icon-1.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-    </Style>
-    <Style id="icon-1574-558B2F-highlight">
-      <IconStyle>
-        <scale>1</scale>
-        <Icon>
-          <href>images/icon-1.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-    </Style>
-    <StyleMap id="icon-1574-558B2F">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1574-558B2F-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1574-558B2F-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
     <Style id="icon-1577-A52714-normal">
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-6.png</href>
+          <href>images/icon-4.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -114,7 +82,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-6.png</href>
+          <href>images/icon-4.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -131,43 +99,11 @@
         <styleUrl>#icon-1577-A52714-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1661-558B2F-normal">
-      <IconStyle>
-        <scale>1</scale>
-        <Icon>
-          <href>images/icon-2.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-    </Style>
-    <Style id="icon-1661-558B2F-highlight">
-      <IconStyle>
-        <scale>1</scale>
-        <Icon>
-          <href>images/icon-2.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-    </Style>
-    <StyleMap id="icon-1661-558B2F">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1661-558B2F-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1661-558B2F-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
     <Style id="icon-1661-BDBDBD-normal">
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-3.png</href>
+          <href>images/icon-1.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -178,7 +114,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-3.png</href>
+          <href>images/icon-1.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -199,7 +135,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-4.png</href>
+          <href>images/icon-2.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -210,7 +146,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-4.png</href>
+          <href>images/icon-2.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -231,7 +167,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-5.png</href>
+          <href>images/icon-3.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -242,7 +178,7 @@
       <IconStyle>
         <scale>1</scale>
         <Icon>
-          <href>images/icon-5.png</href>
+          <href>images/icon-3.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -338,57 +274,10 @@
     <Folder>
       <name>Wikiloc - 7dS</name>
       <Placemark>
-        <name>Inici de la ruta 7dS</name>
-        <description><![CDATA[descripció: dimarts, 6 de maig del 2025 19:12 CEST<br>Elevació: 612 m<br>nombre: <br>descripción: ]]></description>
-        <styleUrl>#icon-1574-558B2F</styleUrl>
-        <ExtendedData>
-          <Data name="descripció">
-            <value>dimarts, 6 de maig del 2025 19:12 CEST
-Elevació: 612 m</value>
-          </Data>
-          <Data name="nombre">
-            <value/>
-          </Data>
-          <Data name="descripción">
-            <value/>
-          </Data>
-        </ExtendedData>
-        <Point>
-          <coordinates>
-            2.021053,41.94481,612.417
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Fi de la ruta 7dS</name>
-        <description><![CDATA[descripció: dimarts, 6 de maig del 2025 20:22 CEST<br>Elevació: 613 m<br>nombre: <br>descripción: ]]></description>
-        <styleUrl>#icon-1661-558B2F</styleUrl>
-        <ExtendedData>
-          <Data name="descripció">
-            <value>dimarts, 6 de maig del 2025 20:22 CEST
-Elevació: 613 m</value>
-          </Data>
-          <Data name="nombre">
-            <value/>
-          </Data>
-          <Data name="descripción">
-            <value/>
-          </Data>
-        </ExtendedData>
-        <Point>
-          <coordinates>
-            2.021027,41.944964,613.409
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>SORTIDA/ARRIBADA</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1661-BDBDBD</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -404,12 +293,9 @@ Elevació: 613 m</value>
       </Placemark>
       <Placemark>
         <name>PARKING</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#poly-1A237E-2501-163</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -424,8 +310,10 @@ Elevació: 613 m</value>
               <coordinates>
                 2.0206899,41.943502,0
                 2.0197619,41.9446711,0
-                2.0196573,41.9446611,0
-                2.0205988,41.9434681,0
+                2.0196908,41.9446641,0
+                2.0196519,41.9446511,0
+                2.0200851,41.9441264,0
+                2.0206176,41.9434801,0
                 2.0206899,41.943502,0
               </coordinates>
             </LinearRing>
@@ -434,12 +322,9 @@ Elevació: 613 m</value>
       </Placemark>
       <Placemark>
         <name>WC</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1733-0288D1</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -455,12 +340,9 @@ Elevació: 613 m</value>
       </Placemark>
       <Placemark>
         <name>DUTXES</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1865-0288D1</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -476,12 +358,9 @@ Elevació: 613 m</value>
       </Placemark>
       <Placemark>
         <name>CONTROL (SERRAT LLOBATER)</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[Control 12k control sòlid<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1577-A52714</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -497,12 +376,9 @@ Elevació: 613 m</value>
       </Placemark>
       <Placemark>
         <name>CONTROL (HIDRATACIÓ)</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[Control 5k i 12k, control liquid<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1517-A52714</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -517,34 +393,10 @@ Elevació: 613 m</value>
         </Point>
       </Placemark>
       <Placemark>
-        <name>ANIMACIÓ 1</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
-        <styleUrl>#icon-1502-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
-          <Data name="nombre">
-            <value/>
-          </Data>
-          <Data name="descripción">
-            <value/>
-          </Data>
-        </ExtendedData>
-        <Point>
-          <coordinates>
-            2.008302,41.951486,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>BALMA DE LES PASTORELLES</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[Apreta les dents, aquí comença la pujada bona<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1502-FFEA00</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -560,12 +412,9 @@ Elevació: 613 m</value>
       </Placemark>
       <Placemark>
         <name>ANIMACIÓ 2</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[Punt d'animació 2, aquí la curta vindrà directe del punt 1 però la llarga passarà al km 10.<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1502-FFEA00</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -581,12 +430,9 @@ Elevació: 613 m</value>
       </Placemark>
       <Placemark>
         <name>SERRAT LLOBATER</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[Punt més alt de la cursa, a partir d'ara, tot pla i avall!<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#icon-1502-FFEA00</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -602,12 +448,9 @@ Elevació: 613 m</value>
       </Placemark>
       <Placemark>
         <name>CDS12k</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#line-E65100-5000</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -2223,12 +2066,9 @@ Elevació: 613 m</value>
       </Placemark>
       <Placemark>
         <name>CDS5k</name>
-        <description><![CDATA[descripció: <br>nombre: <br>descripción: ]]></description>
+        <description><![CDATA[<br><br>nombre: <br>descripción: ]]></description>
         <styleUrl>#line-558B2F-5000</styleUrl>
         <ExtendedData>
-          <Data name="descripció">
-            <value/>
-          </Data>
           <Data name="nombre">
             <value/>
           </Data>
@@ -2813,9 +2653,24 @@ Elevació: 613 m</value>
           </coordinates>
         </LineString>
       </Placemark>
-    </Folder>
-    <Folder>
-      <name>LaCursadelSerrat_12K.gpx</name>
+      <Placemark>
+        <name>ANIMACIÓ 1</name>
+        <description><![CDATA[Punt d'animació 1, aquí passaran cursa curta i llarga en el km 2 aprox.,<br><br>nombre: <br>descripción: ]]></description>
+        <styleUrl>#icon-1502-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="nombre">
+            <value/>
+          </Data>
+          <Data name="descripción">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            2.0064174,41.9507681,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
   </Document>
 </kml>
