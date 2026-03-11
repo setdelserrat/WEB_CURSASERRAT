@@ -1,9 +1,11 @@
 // Arxiu generat automaticament per ActualitzarLogos.bat 
 const llistaSponsors = [ 
     "ARCÍS.png", 
+    "BPM.jpg", 
     "CALTORI.png", 
     "COMAS.png", 
     "CONSORCI.png", 
+    "CORASERRA.jpg", 
     "CORRAL.png", 
     "COSAFEL.png", 
     "FERBIKES.png", 
