@@ -14,4 +14,5 @@ const llistaSponsors = [
     "SALERSVINYES.PNG", 
     "TEXPUHER.png", 
     "TOTIMES.png", 
+    "VITAL.png", 
 ]; 
