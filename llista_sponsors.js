@@ -15,6 +15,7 @@ const llistaSponsors = [
     "LIBEXCRONOS.png", 
     "LLOBARTERA.png", 
     "MARTABOIXADER.png", 
+    "QUERCUS.png", 
     "SALERSVINYES.PNG", 
     "TAULELL.png", 
     "TEXPUHER.png", 
