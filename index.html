@@ -28,15 +28,29 @@
 
 <body>
 
-    <!-- Kiosk Mòbil (Marquee) -->
-    <div class="kiosk-marquee">
-        <div class="kiosk-text">
-            inscripcions #CDS2026 properament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions #CDS2026 properament
-            &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions #CDS2026 properament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions
-            #CDS2026 properament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions #CDS2026 properament
-            &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions #CDS2026 properament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions
-            #CDS2026 properament &nbsp;&nbsp;&bull;&nbsp;&nbsp; inscripcions #CDS2026 properament
-        </div>
+    <!-- Animació Inscripcions (Substitueix el quiosc superior) -->
+    <div id="container-animacio-inscripcions">
+        <a href="#inscripcions" id="circle-animacio" aria-label="Inscripcions obertes">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <!-- Fons vermell circular centrat -->
+                <circle cx="150" cy="150" r="145" fill="#ff0000" />
+                <defs>
+                    <path id="circlePath" d="M 150, 150 m -118, 0 a 118,118 0 0,1 236,0 a 118,118 0 0,1 -236,0 " />
+                </defs>
+                <g class="cercle-rotatori">
+                    <use xlink:href="#circlePath" fill="none" />
+                    <!-- Text de color blanc -->
+                    <text fill="#ffffff" class="text-giratori">
+                        <textPath xlink:href="#circlePath" textLength="720" lengthAdjust="spacing">INSCRIPCIONS OBERTES
+                            ~ INSCRIPCIONS OBERTES ~ </textPath>
+                    </text>
+                </g>
+                <!-- Text fix al mig -->
+                <text x="150" y="162" fill="#ffffff" text-anchor="middle" font-size="44" font-weight="900"
+                    class="text-fix">#CDS26</text>
+            </svg>
+        </a>
     </div>
 
     <!-- Capçalera i Secció Hero -->

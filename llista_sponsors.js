@@ -2,6 +2,7 @@
 const llistaSponsors = [ 
     "ARCÍS.png", 
     "BONGUST.png", 
+    "BOSCH.png", 
     "BPM.png", 
     "CALTORI.png", 
     "COMAS.png", 
@@ -15,6 +16,7 @@ const llistaSponsors = [
     "LIBEXCRONOS.png", 
     "LLOBARTERA.png", 
     "MARTABOIXADER.png", 
+    "OLITROS.png", 
     "QUERCUS.png", 
     "SALERSVINYES.PNG", 
     "TAULELL.png", 
