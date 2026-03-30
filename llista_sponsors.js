@@ -1,15 +1,20 @@
 // Arxiu generat automaticament per ActualitzarLogos.bat 
 const llistaSponsors = [ 
+    "ARABO.png", 
     "ARCÍS.png", 
     "BONGUST.png", 
     "BOSCH.png", 
     "BPM.png", 
+    "BUSI.png", 
     "CALTORI.png", 
+    "CANJAN.png", 
     "COMAS.png", 
     "CONSORCI.png", 
     "CORASERRA.jpg", 
     "CORRAL.png", 
     "COSAFEL.png", 
+    "ECOBASICS.png", 
+    "FEEC.png", 
     "FERBIKES.png", 
     "FORJACAPELLAS.png", 
     "HORTPUIG.png", 
@@ -22,5 +27,6 @@ const llistaSponsors = [
     "TAULELL.png", 
     "TEXPUHER.png", 
     "TOTIMES.png", 
+    "TRUMFO.png", 
     "VITAL.png", 
 ]; 
