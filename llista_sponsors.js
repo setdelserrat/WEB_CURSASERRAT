@@ -18,6 +18,7 @@ const llistaSponsors = [
     "FERBIKES.png", 
     "FORJACAPELLAS.png", 
     "HORTPUIG.png", 
+    "INFOACTIVAT.png", 
     "LIBEXCRONOS.png", 
     "LLOBARTERA.png", 
     "MARTABOIXADER.png", 
