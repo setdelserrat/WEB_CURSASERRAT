@@ -19,6 +19,7 @@ const llistaSponsors = [
     "FEEC.png", 
     "FERBIKES.png", 
     "FORJACAPELLAS.png", 
+    "FRMCREUETA.png", 
     "HORTPUIG.png", 
     "INFOACTIVAT.png", 
     "LIBEXCRONOS.png", 
