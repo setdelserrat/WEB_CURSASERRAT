@@ -8,7 +8,7 @@
 // En entorns locals pot quedar buida o amb el placeholder.
 const configuracioWeb = {
     dominiPreferit: "http://cursadelserrat.com/",
-    dataEsdeveniment: "2027-06-08T09:00:00",
+    dataEsdeveniment: "2027-06-05T09:00:00",
     nomEsdeveniment: "Cursa del Serrat"
 };
 

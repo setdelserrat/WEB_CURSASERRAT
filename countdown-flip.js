@@ -54,36 +54,22 @@ var FlipCountdown = {
   initDOM: function($figures, value) {
     if (!$figures || !$figures.length) return;
     
-    var valStr = value.toString().padStart(2, '0');
-    var val_1 = valStr.charAt(0);
-    var val_2 = valStr.charAt(1);
+    var numDigits = $figures.length;
+    var valStr = value.toString().padStart(numDigits, '0');
 
-    var $fig1 = $figures.eq(0);
-    var $fig2 = $figures.eq(1);
-
-    if ($fig1.length) {
-      $fig1.find('.top').html(val_1);
-      $fig1.find('.bottom').html(val_1);
-      $fig1.find('.bottom-back span').html(val_1);
-    }
-    
-    if ($fig2.length) {
-      $fig2.find('.top').html(val_2);
-      $fig2.find('.bottom').html(val_2);
-      $fig2.find('.bottom-back span').html(val_2);
+    for (var i = 0; i < numDigits; i++) {
+      var val = valStr.charAt(i);
+      var $fig = $figures.eq(i);
+      if ($fig.length) {
+        $fig.find('.top').html(val);
+        $fig.find('.bottom').html(val);
+        $fig.find('.bottom-back span').html(val);
+      }
     }
   },
   
   count: function() {
     var that    = this;
-    var $day_1 = this.$.days ? this.$.days.eq(0) : null;
-    var $day_2 = this.$.days ? this.$.days.eq(1) : null;
-    var $hour_1 = this.$.hours.eq(0);
-    var $hour_2 = this.$.hours.eq(1);
-    var $min_1  = this.$.minutes.eq(0);
-    var $min_2  = this.$.minutes.eq(1);
-    var $sec_1  = this.$.seconds.eq(0);
-    var $sec_2  = this.$.seconds.eq(1);
     
     this.countdown_interval = setInterval(function() {
       if(that.total_seconds > 0) {
@@ -106,10 +92,10 @@ var FlipCountdown = {
         }
 
         // Update DOM values
-        if ($day_1 && $day_2) that.checkDualDigitUpdate(that.values.days, $day_1, $day_2);
-        that.checkDualDigitUpdate(that.values.hours, $hour_1, $hour_2);
-        that.checkDualDigitUpdate(that.values.minutes, $min_1, $min_2);
-        that.checkDualDigitUpdate(that.values.seconds, $sec_1, $sec_2);
+        if (that.$.days) that.checkDigitUpdate(that.values.days, that.$.days);
+        if (that.$.hours) that.checkDigitUpdate(that.values.hours, that.$.hours);
+        if (that.$.minutes) that.checkDigitUpdate(that.values.minutes, that.$.minutes);
+        if (that.$.seconds) that.checkDigitUpdate(that.values.seconds, that.$.seconds);
 
         --that.total_seconds;
       }
@@ -151,16 +137,21 @@ var FlipCountdown = {
     });    
   },
   
-  checkDualDigitUpdate: function(value, $el_1, $el_2) {
-    var valStr = value.toString().padStart(2, '0');
-    var val_1 = valStr.charAt(0);
-    var val_2 = valStr.charAt(1);
+  checkDigitUpdate: function(value, $figures) {
+    if (!$figures || !$figures.length) return;
+    var numDigits = $figures.length;
+    var valStr = value.toString().padStart(numDigits, '0');
     
-    var fig_1_value = $el_1.find('.top').html();
-    var fig_2_value = $el_2.find('.top').html();
-
-    if(fig_1_value !== val_1) this.animateFigure($el_1, val_1);
-    if(fig_2_value !== val_2) this.animateFigure($el_2, val_2);
+    for (var i = 0; i < numDigits; i++) {
+      var val = valStr.charAt(i);
+      var $fig = $figures.eq(i);
+      if ($fig.length) {
+        var fig_val = $fig.find('.top').html();
+        if (fig_val !== val) {
+          this.animateFigure($fig, val);
+        }
+      }
+    }
   }
 };
 
