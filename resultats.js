@@ -9,6 +9,8 @@
   const inputCercador = document.getElementById("cercador-resultats");
   const botoNetejar = document.getElementById("boto-netejar");
   const cosTaula = document.getElementById("cos-taula-resultats");
+  const filtreDistancia = document.getElementById("filtre-distancia");
+  const filtreGenere = document.getElementById("filtre-genere");
 
   // Elements del modal
   const modal = document.getElementById("modal-detall");
@@ -63,20 +65,25 @@
     }
   }
 
-  // Filtra segons el text del cercador
+  // Filtra segons el text del cercador i els desplegables de distància i gènere
   function aplicaFiltre() {
     const q = normalitza(inputCercador.value);
-
-    if (!q) {
-      dadesFiltrades = [...dadesActives];
-      pintaTaula(dadesFiltrades);
-      return;
-    }
+    const distancia = filtreDistancia.value;
+    const genere = filtreGenere.value;
 
     dadesFiltrades = dadesActives.filter((r) => {
+      // Filtre de cerca per nom/dorsal
       const nom = normalitza(r.nom);
       const dorsal = normalitza(r.dorsal);
-      return nom.includes(q) || dorsal.includes(q);
+      const compleixCerca = !q || nom.includes(q) || dorsal.includes(q);
+
+      // Filtre de distància
+      const compleixDistancia = distancia === "totes" || r.cursa === distancia;
+
+      // Filtre de gènere
+      const compleixGenere = genere === "tots" || r.genere === genere;
+
+      return compleixCerca && compleixDistancia && compleixGenere;
     });
 
     pintaTaula(dadesFiltrades);
@@ -139,20 +146,37 @@
 
     anyActiu = any;
 
-    // Només hi ha dades del 2025 (de moment)
     if (any === "2025") {
       dadesActives = Array.isArray(window.resultats2025) ? window.resultats2025 : [];
+      dadesActives.forEach(r => {
+        if (!r.cursa) r.cursa = "12K";
+        if (!r.genere) r.genere = "male";
+      });
       titol.textContent = "Resultats edició 2025";
+      // Ocultem els filtres per a l'edició 2025
+      filtreDistancia.style.display = "none";
+      filtreGenere.style.display = "none";
+    } else if (any === "2026") {
+      dadesActives = Array.isArray(window.resultats2026) ? window.resultats2026 : [];
+      titol.textContent = "Resultats edició 2026";
+      // Mostrem els filtres per a l'edició 2026
+      filtreDistancia.style.display = "inline-block";
+      filtreGenere.style.display = "inline-block";
     } else {
       dadesActives = [];
       titol.textContent = `Resultats edició ${any} (properament)`;
+      filtreDistancia.style.display = "none";
+      filtreGenere.style.display = "none";
     }
 
     // Mostrar panell
     panell.hidden = false;
 
-    // Reset de cercador i pinta inicial
+    // Reset de cercador, filtres i pinta inicial
     inputCercador.value = "";
+    filtreDistancia.value = "totes";
+    filtreGenere.value = "tots";
+    
     dadesFiltrades = [...dadesActives];
     pintaTaula(dadesFiltrades);
 
@@ -180,6 +204,10 @@
     aplicaFiltre();
     inputCercador.focus();
   });
+
+  // Filtres desplegables
+  filtreDistancia.addEventListener("change", aplicaFiltre);
+  filtreGenere.addEventListener("change", aplicaFiltre);
 
   // Delegació d’events per al botó “i”
   cosTaula.addEventListener("click", (ev) => {
@@ -334,12 +362,12 @@
       // Bloques laterals inferiors
       paintDataBlock("Posició", r.posicio || "-", canvas.width / 2 - 400, 930);
       paintDataBlock("Ritme", r.ritme || "-", canvas.width / 2, 930);
-      paintDataBlock("Distància", r.distancia || "12km", canvas.width / 2 + 400, 930);
+      paintDataBlock("Distància", r.cursa || r.distancia || "12K", canvas.width / 2 + 400, 930);
 
       // 7. Missatge felicitació o Edició
       ctx.fillStyle = colorPrimari;
       ctx.font = "italic bold 42px Arial";
-      ctx.fillText("FINISHER · EDICIÓ 2025", canvas.width / 2, 1150);
+      ctx.fillText("FINISHER · EDICIÓ " + (anyActiu || "2025"), canvas.width / 2, 1150);
 
       // Procés de descàrrega
       try {

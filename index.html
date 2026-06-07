@@ -295,7 +295,7 @@
                     </button>
                     <button class="card-resultats boto-any" type="button" data-any="2026" aria-expanded="false">
                         <h3>Edició 2026</h3>
-                        <span class="enllac-card">Properament</span>
+                        <span class="enllac-card">Veure resultats</span>
                     </button>
                 </div>
 
@@ -305,6 +305,16 @@
                         <h3 id="titol-resultats">Resultats</h3>
 
                         <div class="panell-accions">
+                            <select id="filtre-distancia" class="input-cercador" style="min-width: 140px; font-weight: bold; background: var(--fons-principal); cursor: pointer;">
+                                <option value="totes">Cursa: Totes</option>
+                                <option value="12K">12K</option>
+                                <option value="5km">5K</option>
+                            </select>
+                            <select id="filtre-genere" class="input-cercador" style="min-width: 140px; font-weight: bold; background: var(--fons-principal); cursor: pointer;">
+                                <option value="tots">Gènere: Tots</option>
+                                <option value="male">Masculí</option>
+                                <option value="female">Femení</option>
+                            </select>
                             <label class="label-cercador" for="cercador-resultats">Buscar</label>
                             <input id="cercador-resultats" class="input-cercador" type="search"
                                 placeholder="Nom, cognoms o dorsal..." autocomplete="off">
@@ -350,6 +360,7 @@
 
         <!-- Dades + lògica de resultats -->
         <script src="dades_resultats_2025.js" defer></script>
+        <script src="dades_resultats_2026.js" defer></script>
         <script src="logo_b64.js" defer></script>
         <script src="resultats.js" defer></script>
 
