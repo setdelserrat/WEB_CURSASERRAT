@@ -13,8 +13,8 @@
 }
 
 .countdown .bloc-time {
-    /* Removed float: left and margin-right as we use flex gap now */
     text-align: center;
+    white-space: nowrap;
 }
 
 .countdown .count-title {
@@ -30,10 +30,11 @@
 
 .countdown .figure {
     position: relative;
-    float: left; /* Keep this float for the figures inside the bloc */
-    height: 90px;  /* Slightly smaller to fit better */
-    width: 75px;   /* Slightly smaller */
-    margin-right: 8px; /* Slightly less gap */
+    display: inline-block;
+    vertical-align: top;
+    height: 90px;
+    width: 75px;
+    margin-right: 8px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15), inset 2px 4px 0 0 rgba(255, 255, 255, 0.8);
@@ -149,28 +150,39 @@
 }
 
 /* Responsibilitat mòbil per al flip */
+@media (max-width: 850px) {
+    .countdown {
+        gap: 16px;
+    }
+    .countdown .figure {
+        height: 70px;
+        width: 55px;
+        margin-right: 4px;
+    }
+    .countdown .figure > span {
+        font-size: 3.2em;
+        line-height: 68px;
+    }
+}
+
 @media (max-width: 600px) {
     .countdown {
-        gap: 12px; /* Més espai entre blocs */
+        gap: 8px;
         max-width: 100vw;
     }
-
     .countdown .figure {
-        height: 50px;
-        width: 35px;
+        height: 46px;
+        width: 30px;
         margin-right: 2px;
     }
-    
     .countdown .figure > span {
-        font-size: 2em;
-        line-height: 48px;
+        font-size: 1.8em;
+        line-height: 44px;
     }
-    
     .countdown .bloc-time {
         margin-bottom: 5px;
         margin-right: 0;
     }
-
     .countdown .count-title {
         font-size: 0.7em;
         margin-bottom: 5px;
