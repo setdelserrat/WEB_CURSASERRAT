@@ -1,78 +1,536 @@
-/* 
-  Dades de classificacions 2025
-  Separada l'informació en un fitxer propi per mantenir el codi net.
-  Afegir/editar participants sense tocar la lògica del cercador.
-*/
-/* 
+﻿/* 
   Dades de classificacions 2025
   Revisades i corregides segons les fotos oficials.
+  Ritmes recalculats a 13km.
 */
 
 window.resultats2025 = [
-  { posicio: 1, nom: "ADRIÀ DUARRI GUILÀ", dorsal: 63, arribada: "10:01:22,130", temps: "01:01:16,210", ritme: "04:37" },
-  { posicio: 2, nom: "JORDI ROY", dorsal: 2, arribada: "10:01:39,880", temps: "01:01:33,960", ritme: "04:38" },
-  { posicio: 3, nom: "JOAN RIBA BURDÓ", dorsal: 1, arribada: "10:01:55,160", temps: "01:01:49,240", ritme: "04:39" },
-  { posicio: 4, nom: "JORDI BORRALLERAS ESTRUCH", dorsal: 33, arribada: "10:04:44,930", temps: "01:04:39,010", ritme: "04:52" },
-  { posicio: 5, nom: "GUIU CORS PUIGDOLLERS", dorsal: 27, arribada: "10:05:18,960", temps: "01:05:13,040", ritme: "04:54" },
-  { posicio: 6, nom: "MARC GINESTA COMAS", dorsal: 66, arribada: "10:05:41,890", temps: "01:05:35,970", ritme: "04:56" },
-  { posicio: 7, nom: "ÈRIC TORRAS BOIXADER", dorsal: 6, arribada: "10:05:58,100", temps: "01:05:52,180", ritme: "04:57" },
-  { posicio: 8, nom: "JUST FONT ROSET", dorsal: 14, arribada: "10:07:37,700", temps: "01:07:31,780", ritme: "05:05" },
-  { posicio: 9, nom: "JORDI BARRANCOS SOLERA", dorsal: 46, arribada: "10:09:35,650", temps: "01:09:29,730", ritme: "05:14" },
-  { posicio: 10, nom: "ROGER VIVES FONT", dorsal: 36, arribada: "10:10:29,660", temps: "01:10:23,740", ritme: "05:18" },
-  { posicio: 11, nom: "XEVI MATARÓ SEUMA", dorsal: 22, arribada: "10:10:49,550", temps: "01:10:43,630", ritme: "05:19" },
-  { posicio: 12, nom: "PAU RIBA BURDO", dorsal: 9, arribada: "10:10:53,730", temps: "01:10:47,810", ritme: "05:20" },
-  { posicio: 13, nom: "FABI SUBIRANA DALMAU", dorsal: 3, arribada: "10:11:06,220", temps: "01:11:00,300", ritme: "05:21" },
-  { posicio: 14, nom: "MARC FREIXA MOLIST", dorsal: 60, arribada: "10:11:40,630", temps: "01:11:34,710", ritme: "05:23" },
-  { posicio: 15, nom: "ROGER SUBIRÀ LARA", dorsal: 11, arribada: "10:12:04,780", temps: "01:11:58,860", ritme: "05:25" },
-  { posicio: 16, nom: "HERIBERT GRIFELL COSTA", dorsal: 68, arribada: "10:12:40,460", temps: "01:12:34,540", ritme: "05:28" },
-  { posicio: 17, nom: "POL TARTER ARANDA", dorsal: 47, arribada: "10:14:06,200", temps: "01:14:00,280", ritme: "05:34" },
-  { posicio: 18, nom: "EUGENI CAPELLAS FONT", dorsal: 48, arribada: "10:14:18,270", temps: "01:14:12,350", ritme: "05:35" },
-  { posicio: 19, nom: "NIL PRATS LÓPEZ", dorsal: 41, arribada: "10:14:55,890", temps: "01:14:49,970", ritme: "05:38" },
-  { posicio: 20, nom: "GERARD COMELLAS BESA", dorsal: 19, arribada: "10:15:25,110", temps: "01:15:19,190", ritme: "05:40" },
-  { posicio: 21, nom: "ROC PUIG RIERA", dorsal: 67, arribada: "10:15:51,100", temps: "01:15:45,180", ritme: "05:42" },
-  { posicio: 22, nom: "ADRIÀ ROVIRA PORTABELLA", dorsal: 25, arribada: "10:16:12,130", temps: "01:16:06,210", ritme: "05:44" },
-  { posicio: 23, nom: "GERARD FIOL AUMATELL", dorsal: 4, arribada: "10:17:39,760", temps: "01:17:33,840", ritme: "05:50" },
-  { posicio: 24, nom: "ALEX CANUDAS", dorsal: 49, arribada: "10:18:06,630", temps: "01:18:00,710", ritme: "05:52" },
-  { posicio: 25, nom: "MARC PICAZOS SERRAJORDIA", dorsal: 23, arribada: "10:18:12,440", temps: "01:18:06,520", ritme: "05:53" },
-  { posicio: 26, nom: "GERARD DOT", dorsal: 59, arribada: "10:18:44,600", temps: "01:18:38,680", ritme: "05:55" },
-  { posicio: 27, nom: "MARC CASALS SERRA", dorsal: 44, arribada: "10:19:13,790", temps: "01:19:07,870", ritme: "05:57" },
-  { posicio: 28, nom: "BERNAT CARRERA HURTADO", dorsal: 31, arribada: "10:19:56,910", temps: "01:19:50,990", ritme: "06:00" },
-  { posicio: 29, nom: "IDOIA OLIVERAS", dorsal: 71, arribada: "10:20:32,210", temps: "01:20:26,290", ritme: "06:03" },
-  { posicio: 30, nom: "DAVID SALLÉS BELMONTE", dorsal: 35, arribada: "10:20:44,840", temps: "01:20:38,920", ritme: "06:04" },
-  { posicio: 31, nom: "ROGER FONTSERÈ PLA", dorsal: 51, arribada: "10:21:05,300", temps: "01:20:59,380", ritme: "06:06" },
-  { posicio: 32, nom: "JOAN SALAS", dorsal: 69, arribada: "10:21:24,840", temps: "01:21:18,920", ritme: "06:07" },
-  { posicio: 33, nom: "MARTÍ VALLBONA YLLA-CATALÀ", dorsal: 61, arribada: "10:22:07,480", temps: "01:22:01,560", ritme: "06:10" },
-  { posicio: 34, nom: "NIL CABANAS", dorsal: 8, arribada: "10:23:32,540", temps: "01:23:26,620", ritme: "06:17" },
-  { posicio: 35, nom: "LAIA DOVAL SANMARTIN", dorsal: 45, arribada: "10:23:53,390", temps: "01:23:47,470", ritme: "06:18" },
-  { posicio: 36, nom: "DAVID FÀBREGAS FREIXA", dorsal: 42, arribada: "10:25:43,980", temps: "01:25:38,060", ritme: "06:27" },
-  { posicio: 37, nom: "MARC BONELL SANCHEZ", dorsal: 34, arribada: "10:25:45,350", temps: "01:25:39,430", ritme: "06:27" },
-  { posicio: 38, nom: "ENRIC CASASAYAS CLUSELLAS", dorsal: 17, arribada: "10:25:52,640", temps: "01:25:46,720", ritme: "06:27" },
-  { posicio: 39, nom: "LAIA SALADIGUES DIAZ", dorsal: 55, arribada: "10:27:23,090", temps: "01:27:17,170", ritme: "06:34" },
-  { posicio: 40, nom: "ANGEL PETIT", dorsal: 53, arribada: "10:27:25,360", temps: "01:27:19,440", ritme: "06:34" },
-  { posicio: 41, nom: "CARME VILACROSA CULLELL", dorsal: 26, arribada: "10:28:35,080", temps: "01:28:29,160", ritme: "06:39" },
-  { posicio: 42, nom: "ADRIÀ SANCHEZ LEIVA", dorsal: 29, arribada: "10:28:36,250", temps: "01:28:30,330", ritme: "06:40" },
-  { posicio: 43, nom: "JORDI RODELLAS", dorsal: 13, arribada: "10:28:59,130", temps: "01:28:53,210", ritme: "06:41" },
-  { posicio: 44, nom: "ADRIÀ HERNÁNDEZ", dorsal: 37, arribada: "10:30:09,090", temps: "01:30:03,170", ritme: "06:47" },
-  { posicio: 45, nom: "ISAAC PERAIRE SOLER", dorsal: 50, arribada: "10:31:48,160", temps: "01:31:42,240", ritme: "06:54" },
-  { posicio: 46, nom: "JORDI TRASERRA SOCIATS", dorsal: 65, arribada: "10:32:35,570", temps: "01:32:29,650", ritme: "06:58" },
-  { posicio: 47, nom: "JUST SOCIATS ASENSIO", dorsal: 5, arribada: "10:32:38,850", temps: "01:32:32,930", ritme: "06:58" },
-  { posicio: 48, nom: "BENJA PONS", dorsal: 40, arribada: "10:35:00,580", temps: "01:34:54,660", ritme: "07:08" },
-  { posicio: 49, nom: "JUANMA HIDALGO FRAGUA", dorsal: 38, arribada: "10:35:01,610", temps: "01:34:55,690", ritme: "07:09" },
-  { posicio: 50, nom: "ROSA VILÀ GARET", dorsal: 32, arribada: "10:36:39,070", temps: "01:36:33,150", ritme: "07:16" },
-  { posicio: 51, nom: "LLUÍS PONSA SANZ", dorsal: 64, arribada: "10:36:49,840", temps: "01:36:43,920", ritme: "07:17" },
-  { posicio: 52, nom: "NÚRIA COMA RIERA", dorsal: 52, arribada: "10:37:14,890", temps: "01:37:08,970", ritme: "07:19" },
-  { posicio: 53, nom: "ANNA ESCRIGAS FABREGAS", dorsal: 39, arribada: "10:38:07,830", temps: "01:38:01,910", ritme: "07:23" },
-  { posicio: 54, nom: "MERITXELL SOCIATS FONT", dorsal: 30, arribada: "10:38:42,020", temps: "01:38:36,100", ritme: "07:25" },
-  { posicio: 55, nom: "JORDI VILA RAGUES", dorsal: 56, arribada: "10:38:42,950", temps: "01:38:37,030", ritme: "07:25" },
-  { posicio: 56, nom: "MARC MONTANYÀ BORRELLAS", dorsal: 57, arribada: "10:38:44,540", temps: "01:38:38,620", ritme: "07:25" },
-  { posicio: 57, nom: "JORDI NOGUÉS MUNTÉ", dorsal: 70, arribada: "10:38:51,480", temps: "01:38:45,560", ritme: "07:26" },
-  { posicio: 58, nom: "XAVI CASTILLO VILELLA", dorsal: 12, arribada: "10:41:19,780", temps: "01:41:13,860", ritme: "07:37" },
-  { posicio: 59, nom: "CARLES BASCOMPTE MORELLON", dorsal: 58, arribada: "10:43:36,540", temps: "01:43:30,620", ritme: "07:47" },
-  { posicio: 60, nom: "JORDI CASAS CASTAÑE", dorsal: 15, arribada: "10:48:26,120", temps: "01:48:20,200", ritme: "08:09" },
-  { posicio: 61, nom: "LLUC CASAS AGUDO", dorsal: 16, arribada: "10:48:32,930", temps: "01:48:27,010", ritme: "08:10" },
-  { posicio: 62, nom: "MARIA PAU PIJOAN MANRESA", dorsal: 43, arribada: "10:57:22,230", temps: "01:57:16,310", ritme: "08:49" },
-  { posicio: 63, nom: "OLGA CAMPS GARCIA", dorsal: 54, arribada: "10:57:23,740", temps: "01:57:17,820", ritme: "08:50" },
-  { posicio: 64, nom: "MOHAMED TELDI", dorsal: 24, arribada: "11:08:31,340", temps: "02:08:25,420", ritme: "09:40" },
-  { posicio: 65, nom: "GISELA GENARÓ SELLABONA", dorsal: 18, arribada: "11:09:56,140", temps: "02:09:50,220", ritme: "09:46" },
-  { posicio: 66, nom: "ANNA PUIG HERMS", dorsal: 28, arribada: "11:10:35,180", temps: "02:10:29,260", ritme: "09:49" }
+    {
+        "posicio":  1,
+        "nom":  "ADRIÃ€ DUARRI GUILÃ€",
+        "dorsal":  63,
+        "arribada":  "10:01:22,130",
+        "temps":  "01:01:16,210",
+        "ritme":  "04:42"
+    },
+    {
+        "posicio":  2,
+        "nom":  "JORDI ROY",
+        "dorsal":  2,
+        "arribada":  "10:01:39,880",
+        "temps":  "01:01:33,960",
+        "ritme":  "04:44"
+    },
+    {
+        "posicio":  3,
+        "nom":  "JOAN RIBA BURDÃ“",
+        "dorsal":  1,
+        "arribada":  "10:01:55,160",
+        "temps":  "01:01:49,240",
+        "ritme":  "04:45"
+    },
+    {
+        "posicio":  4,
+        "nom":  "JORDI BORRALLERAS ESTRUCH",
+        "dorsal":  33,
+        "arribada":  "10:04:44,930",
+        "temps":  "01:04:39,010",
+        "ritme":  "04:58"
+    },
+    {
+        "posicio":  5,
+        "nom":  "GUIU CORS PUIGDOLLERS",
+        "dorsal":  27,
+        "arribada":  "10:05:18,960",
+        "temps":  "01:05:13,040",
+        "ritme":  "05:01"
+    },
+    {
+        "posicio":  6,
+        "nom":  "MARC GINESTA COMAS",
+        "dorsal":  66,
+        "arribada":  "10:05:41,890",
+        "temps":  "01:05:35,970",
+        "ritme":  "05:02"
+    },
+    {
+        "posicio":  7,
+        "nom":  "ÃˆRIC TORRAS BOIXADER",
+        "dorsal":  6,
+        "arribada":  "10:05:58,100",
+        "temps":  "01:05:52,180",
+        "ritme":  "05:04"
+    },
+    {
+        "posicio":  8,
+        "nom":  "JUST FONT ROSET",
+        "dorsal":  14,
+        "arribada":  "10:07:37,700",
+        "temps":  "01:07:31,780",
+        "ritme":  "05:11"
+    },
+    {
+        "posicio":  9,
+        "nom":  "JORDI BARRANCOS SOLERA",
+        "dorsal":  46,
+        "arribada":  "10:09:35,650",
+        "temps":  "01:09:29,730",
+        "ritme":  "05:20"
+    },
+    {
+        "posicio":  10,
+        "nom":  "ROGER VIVES FONT",
+        "dorsal":  36,
+        "arribada":  "10:10:29,660",
+        "temps":  "01:10:23,740",
+        "ritme":  "05:24"
+    },
+    {
+        "posicio":  11,
+        "nom":  "XEVI MATARÃ“ SEUMA",
+        "dorsal":  22,
+        "arribada":  "10:10:49,550",
+        "temps":  "01:10:43,630",
+        "ritme":  "05:26"
+    },
+    {
+        "posicio":  12,
+        "nom":  "PAU RIBA BURDO",
+        "dorsal":  9,
+        "arribada":  "10:10:53,730",
+        "temps":  "01:10:47,810",
+        "ritme":  "05:26"
+    },
+    {
+        "posicio":  13,
+        "nom":  "FABI SUBIRANA DALMAU",
+        "dorsal":  3,
+        "arribada":  "10:11:06,220",
+        "temps":  "01:11:00,300",
+        "ritme":  "05:27"
+    },
+    {
+        "posicio":  14,
+        "nom":  "MARC FREIXA MOLIST",
+        "dorsal":  60,
+        "arribada":  "10:11:40,630",
+        "temps":  "01:11:34,710",
+        "ritme":  "05:30"
+    },
+    {
+        "posicio":  15,
+        "nom":  "ROGER SUBIRÃ€ LARA",
+        "dorsal":  11,
+        "arribada":  "10:12:04,780",
+        "temps":  "01:11:58,860",
+        "ritme":  "05:32"
+    },
+    {
+        "posicio":  16,
+        "nom":  "HERIBERT GRIFELL COSTA",
+        "dorsal":  68,
+        "arribada":  "10:12:40,460",
+        "temps":  "01:12:34,540",
+        "ritme":  "05:34"
+    },
+    {
+        "posicio":  17,
+        "nom":  "POL TARTER ARANDA",
+        "dorsal":  47,
+        "arribada":  "10:14:06,200",
+        "temps":  "01:14:00,280",
+        "ritme":  "05:41"
+    },
+    {
+        "posicio":  18,
+        "nom":  "EUGENI CAPELLAS FONT",
+        "dorsal":  48,
+        "arribada":  "10:14:18,270",
+        "temps":  "01:14:12,350",
+        "ritme":  "05:42"
+    },
+    {
+        "posicio":  19,
+        "nom":  "NIL PRATS LÃ“PEZ",
+        "dorsal":  41,
+        "arribada":  "10:14:55,890",
+        "temps":  "01:14:49,970",
+        "ritme":  "05:45"
+    },
+    {
+        "posicio":  20,
+        "nom":  "GERARD COMELLAS BESA",
+        "dorsal":  19,
+        "arribada":  "10:15:25,110",
+        "temps":  "01:15:19,190",
+        "ritme":  "05:47"
+    },
+    {
+        "posicio":  21,
+        "nom":  "ROC PUIG RIERA",
+        "dorsal":  67,
+        "arribada":  "10:15:51,100",
+        "temps":  "01:15:45,180",
+        "ritme":  "05:49"
+    },
+    {
+        "posicio":  22,
+        "nom":  "ADRIÃ€ ROVIRA PORTABELLA",
+        "dorsal":  25,
+        "arribada":  "10:16:12,130",
+        "temps":  "01:16:06,210",
+        "ritme":  "05:51"
+    },
+    {
+        "posicio":  23,
+        "nom":  "GERARD FIOL AUMATELL",
+        "dorsal":  4,
+        "arribada":  "10:17:39,760",
+        "temps":  "01:17:33,840",
+        "ritme":  "05:57"
+    },
+    {
+        "posicio":  24,
+        "nom":  "ALEX CANUDAS",
+        "dorsal":  49,
+        "arribada":  "10:18:06,630",
+        "temps":  "01:18:00,710",
+        "ritme":  "06:00"
+    },
+    {
+        "posicio":  25,
+        "nom":  "MARC PICAZOS SERRAJORDIA",
+        "dorsal":  23,
+        "arribada":  "10:18:12,440",
+        "temps":  "01:18:06,520",
+        "ritme":  "06:00"
+    },
+    {
+        "posicio":  26,
+        "nom":  "GERARD DOT",
+        "dorsal":  59,
+        "arribada":  "10:18:44,600",
+        "temps":  "01:18:38,680",
+        "ritme":  "06:02"
+    },
+    {
+        "posicio":  27,
+        "nom":  "MARC CASALS SERRA",
+        "dorsal":  44,
+        "arribada":  "10:19:13,790",
+        "temps":  "01:19:07,870",
+        "ritme":  "06:05"
+    },
+    {
+        "posicio":  28,
+        "nom":  "BERNAT CARRERA HURTADO",
+        "dorsal":  31,
+        "arribada":  "10:19:56,910",
+        "temps":  "01:19:50,990",
+        "ritme":  "06:08"
+    },
+    {
+        "posicio":  29,
+        "nom":  "IDOIA OLIVERAS",
+        "dorsal":  71,
+        "arribada":  "10:20:32,210",
+        "temps":  "01:20:26,290",
+        "ritme":  "06:11"
+    },
+    {
+        "posicio":  30,
+        "nom":  "DAVID SALLÃ‰S BELMONTE",
+        "dorsal":  35,
+        "arribada":  "10:20:44,840",
+        "temps":  "01:20:38,920",
+        "ritme":  "06:12"
+    },
+    {
+        "posicio":  31,
+        "nom":  "ROGER FONTSERÃˆ PLA",
+        "dorsal":  51,
+        "arribada":  "10:21:05,300",
+        "temps":  "01:20:59,380",
+        "ritme":  "06:13"
+    },
+    {
+        "posicio":  32,
+        "nom":  "JOAN SALAS",
+        "dorsal":  69,
+        "arribada":  "10:21:24,840",
+        "temps":  "01:21:18,920",
+        "ritme":  "06:15"
+    },
+    {
+        "posicio":  33,
+        "nom":  "MARTÃ VALLBONA YLLA-CATALÃ€",
+        "dorsal":  61,
+        "arribada":  "10:22:07,480",
+        "temps":  "01:22:01,560",
+        "ritme":  "06:18"
+    },
+    {
+        "posicio":  34,
+        "nom":  "NIL CABANAS",
+        "dorsal":  8,
+        "arribada":  "10:23:32,540",
+        "temps":  "01:23:26,620",
+        "ritme":  "06:25"
+    },
+    {
+        "posicio":  35,
+        "nom":  "LAIA DOVAL SANMARTIN",
+        "dorsal":  45,
+        "arribada":  "10:23:53,390",
+        "temps":  "01:23:47,470",
+        "ritme":  "06:26"
+    },
+    {
+        "posicio":  36,
+        "nom":  "DAVID FÃ€BREGAS FREIXA",
+        "dorsal":  42,
+        "arribada":  "10:25:43,980",
+        "temps":  "01:25:38,060",
+        "ritme":  "06:35"
+    },
+    {
+        "posicio":  37,
+        "nom":  "MARC BONELL SANCHEZ",
+        "dorsal":  34,
+        "arribada":  "10:25:45,350",
+        "temps":  "01:25:39,430",
+        "ritme":  "06:35"
+    },
+    {
+        "posicio":  38,
+        "nom":  "ENRIC CASASAYAS CLUSELLAS",
+        "dorsal":  17,
+        "arribada":  "10:25:52,640",
+        "temps":  "01:25:46,720",
+        "ritme":  "06:35"
+    },
+    {
+        "posicio":  39,
+        "nom":  "LAIA SALADIGUES DIAZ",
+        "dorsal":  55,
+        "arribada":  "10:27:23,090",
+        "temps":  "01:27:17,170",
+        "ritme":  "06:42"
+    },
+    {
+        "posicio":  40,
+        "nom":  "ANGEL PETIT",
+        "dorsal":  53,
+        "arribada":  "10:27:25,360",
+        "temps":  "01:27:19,440",
+        "ritme":  "06:43"
+    },
+    {
+        "posicio":  41,
+        "nom":  "CARME VILACROSA CULLELL",
+        "dorsal":  26,
+        "arribada":  "10:28:35,080",
+        "temps":  "01:28:29,160",
+        "ritme":  "06:48"
+    },
+    {
+        "posicio":  42,
+        "nom":  "ADRIÃ€ SANCHEZ LEIVA",
+        "dorsal":  29,
+        "arribada":  "10:28:36,250",
+        "temps":  "01:28:30,330",
+        "ritme":  "06:48"
+    },
+    {
+        "posicio":  43,
+        "nom":  "JORDI RODELLAS",
+        "dorsal":  13,
+        "arribada":  "10:28:59,130",
+        "temps":  "01:28:53,210",
+        "ritme":  "06:50"
+    },
+    {
+        "posicio":  44,
+        "nom":  "ADRIÃ€ HERNÃNDEZ",
+        "dorsal":  37,
+        "arribada":  "10:30:09,090",
+        "temps":  "01:30:03,170",
+        "ritme":  "06:55"
+    },
+    {
+        "posicio":  45,
+        "nom":  "ISAAC PERAIRE SOLER",
+        "dorsal":  50,
+        "arribada":  "10:31:48,160",
+        "temps":  "01:31:42,240",
+        "ritme":  "07:03"
+    },
+    {
+        "posicio":  46,
+        "nom":  "JORDI TRASERRA SOCIATS",
+        "dorsal":  65,
+        "arribada":  "10:32:35,570",
+        "temps":  "01:32:29,650",
+        "ritme":  "07:06"
+    },
+    {
+        "posicio":  47,
+        "nom":  "JUST SOCIATS ASENSIO",
+        "dorsal":  5,
+        "arribada":  "10:32:38,850",
+        "temps":  "01:32:32,930",
+        "ritme":  "07:07"
+    },
+    {
+        "posicio":  48,
+        "nom":  "BENJA PONS",
+        "dorsal":  40,
+        "arribada":  "10:35:00,580",
+        "temps":  "01:34:54,660",
+        "ritme":  "07:18"
+    },
+    {
+        "posicio":  49,
+        "nom":  "JUANMA HIDALGO FRAGUA",
+        "dorsal":  38,
+        "arribada":  "10:35:01,610",
+        "temps":  "01:34:55,690",
+        "ritme":  "07:18"
+    },
+    {
+        "posicio":  50,
+        "nom":  "ROSA VILÃ€ GARET",
+        "dorsal":  32,
+        "arribada":  "10:36:39,070",
+        "temps":  "01:36:33,150",
+        "ritme":  "07:25"
+    },
+    {
+        "posicio":  51,
+        "nom":  "LLUÃS PONSA SANZ",
+        "dorsal":  64,
+        "arribada":  "10:36:49,840",
+        "temps":  "01:36:43,920",
+        "ritme":  "07:26"
+    },
+    {
+        "posicio":  52,
+        "nom":  "NÃšRIA COMA RIERA",
+        "dorsal":  52,
+        "arribada":  "10:37:14,890",
+        "temps":  "01:37:08,970",
+        "ritme":  "07:28"
+    },
+    {
+        "posicio":  53,
+        "nom":  "ANNA ESCRIGAS FABREGAS",
+        "dorsal":  39,
+        "arribada":  "10:38:07,830",
+        "temps":  "01:38:01,910",
+        "ritme":  "07:32"
+    },
+    {
+        "posicio":  54,
+        "nom":  "MERITXELL SOCIATS FONT",
+        "dorsal":  30,
+        "arribada":  "10:38:42,020",
+        "temps":  "01:38:36,100",
+        "ritme":  "07:35"
+    },
+    {
+        "posicio":  55,
+        "nom":  "JORDI VILA RAGUES",
+        "dorsal":  56,
+        "arribada":  "10:38:42,950",
+        "temps":  "01:38:37,030",
+        "ritme":  "07:35"
+    },
+    {
+        "posicio":  56,
+        "nom":  "MARC MONTANYÃ€ BORRELLAS",
+        "dorsal":  57,
+        "arribada":  "10:38:44,540",
+        "temps":  "01:38:38,620",
+        "ritme":  "07:35"
+    },
+    {
+        "posicio":  57,
+        "nom":  "JORDI NOGUÃ‰S MUNTÃ‰",
+        "dorsal":  70,
+        "arribada":  "10:38:51,480",
+        "temps":  "01:38:45,560",
+        "ritme":  "07:35"
+    },
+    {
+        "posicio":  58,
+        "nom":  "XAVI CASTILLO VILELLA",
+        "dorsal":  12,
+        "arribada":  "10:41:19,780",
+        "temps":  "01:41:13,860",
+        "ritme":  "07:47"
+    },
+    {
+        "posicio":  59,
+        "nom":  "CARLES BASCOMPTE MORELLON",
+        "dorsal":  58,
+        "arribada":  "10:43:36,540",
+        "temps":  "01:43:30,620",
+        "ritme":  "07:57"
+    },
+    {
+        "posicio":  60,
+        "nom":  "JORDI CASAS CASTAÃ‘E",
+        "dorsal":  15,
+        "arribada":  "10:48:26,120",
+        "temps":  "01:48:20,200",
+        "ritme":  "08:20"
+    },
+    {
+        "posicio":  61,
+        "nom":  "LLUC CASAS AGUDO",
+        "dorsal":  16,
+        "arribada":  "10:48:32,930",
+        "temps":  "01:48:27,010",
+        "ritme":  "08:20"
+    },
+    {
+        "posicio":  62,
+        "nom":  "MARIA PAU PIJOAN MANRESA",
+        "dorsal":  43,
+        "arribada":  "10:57:22,230",
+        "temps":  "01:57:16,310",
+        "ritme":  "09:01"
+    },
+    {
+        "posicio":  63,
+        "nom":  "OLGA CAMPS GARCIA",
+        "dorsal":  54,
+        "arribada":  "10:57:23,740",
+        "temps":  "01:57:17,820",
+        "ritme":  "09:01"
+    },
+    {
+        "posicio":  64,
+        "nom":  "MOHAMED TELDI",
+        "dorsal":  24,
+        "arribada":  "11:08:31,340",
+        "temps":  "02:08:25,420",
+        "ritme":  "09:52"
+    },
+    {
+        "posicio":  65,
+        "nom":  "GISELA GENARÃ“ SELLABONA",
+        "dorsal":  18,
+        "arribada":  "11:09:56,140",
+        "temps":  "02:09:50,220",
+        "ritme":  "09:59"
+    },
+    {
+        "posicio":  66,
+        "nom":  "ANNA PUIG HERMS",
+        "dorsal":  28,
+        "arribada":  "11:10:35,180",
+        "temps":  "02:10:29,260",
+        "ritme":  "10:02"
+    }
 ];
