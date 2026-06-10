@@ -1,4 +1,4 @@
-﻿/* 
+/* 
   Dades de classificacions 2025
   Revisades i corregides segons les fotos oficials.
   Ritmes recalculats a 13km.
@@ -7,7 +7,7 @@
 window.resultats2025 = [
     {
         "posicio":  1,
-        "nom":  "ADRIÃ€ DUARRI GUILÃ€",
+        "nom":  "ADRIÀ DUARRI GUILÀ",
         "dorsal":  63,
         "arribada":  "10:01:22,130",
         "temps":  "01:01:16,210",
@@ -23,7 +23,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  3,
-        "nom":  "JOAN RIBA BURDÃ“",
+        "nom":  "JOAN RIBA BURDÓ",
         "dorsal":  1,
         "arribada":  "10:01:55,160",
         "temps":  "01:01:49,240",
@@ -55,7 +55,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  7,
-        "nom":  "ÃˆRIC TORRAS BOIXADER",
+        "nom":  "ÈRIC TORRAS BOIXADER",
         "dorsal":  6,
         "arribada":  "10:05:58,100",
         "temps":  "01:05:52,180",
@@ -87,7 +87,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  11,
-        "nom":  "XEVI MATARÃ“ SEUMA",
+        "nom":  "XEVI MATARÓ SEUMA",
         "dorsal":  22,
         "arribada":  "10:10:49,550",
         "temps":  "01:10:43,630",
@@ -119,7 +119,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  15,
-        "nom":  "ROGER SUBIRÃ€ LARA",
+        "nom":  "ROGER SUBIRÀ LARA",
         "dorsal":  11,
         "arribada":  "10:12:04,780",
         "temps":  "01:11:58,860",
@@ -151,7 +151,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  19,
-        "nom":  "NIL PRATS LÃ“PEZ",
+        "nom":  "NIL PRATS LÓPEZ",
         "dorsal":  41,
         "arribada":  "10:14:55,890",
         "temps":  "01:14:49,970",
@@ -175,7 +175,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  22,
-        "nom":  "ADRIÃ€ ROVIRA PORTABELLA",
+        "nom":  "ADRIÀ ROVIRA PORTABELLA",
         "dorsal":  25,
         "arribada":  "10:16:12,130",
         "temps":  "01:16:06,210",
@@ -239,7 +239,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  30,
-        "nom":  "DAVID SALLÃ‰S BELMONTE",
+        "nom":  "DAVID SALLÉS BELMONTE",
         "dorsal":  35,
         "arribada":  "10:20:44,840",
         "temps":  "01:20:38,920",
@@ -247,7 +247,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  31,
-        "nom":  "ROGER FONTSERÃˆ PLA",
+        "nom":  "ROGER FONTSERÈ PLA",
         "dorsal":  51,
         "arribada":  "10:21:05,300",
         "temps":  "01:20:59,380",
@@ -263,7 +263,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  33,
-        "nom":  "MARTÃ VALLBONA YLLA-CATALÃ€",
+        "nom":  "MARTÍ VALLBONA YLLA-CATALÀ",
         "dorsal":  61,
         "arribada":  "10:22:07,480",
         "temps":  "01:22:01,560",
@@ -287,7 +287,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  36,
-        "nom":  "DAVID FÃ€BREGAS FREIXA",
+        "nom":  "DAVID FÀBREGAS FREIXA",
         "dorsal":  42,
         "arribada":  "10:25:43,980",
         "temps":  "01:25:38,060",
@@ -335,7 +335,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  42,
-        "nom":  "ADRIÃ€ SANCHEZ LEIVA",
+        "nom":  "ADRIÀ SANCHEZ LEIVA",
         "dorsal":  29,
         "arribada":  "10:28:36,250",
         "temps":  "01:28:30,330",
@@ -351,7 +351,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  44,
-        "nom":  "ADRIÃ€ HERNÃNDEZ",
+        "nom":  "ADRIÀ HERNÁNDEZ",
         "dorsal":  37,
         "arribada":  "10:30:09,090",
         "temps":  "01:30:03,170",
@@ -399,7 +399,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  50,
-        "nom":  "ROSA VILÃ€ GARET",
+        "nom":  "ROSA VILÀ GARET",
         "dorsal":  32,
         "arribada":  "10:36:39,070",
         "temps":  "01:36:33,150",
@@ -407,7 +407,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  51,
-        "nom":  "LLUÃS PONSA SANZ",
+        "nom":  "LLUÍS PONSA SANZ",
         "dorsal":  64,
         "arribada":  "10:36:49,840",
         "temps":  "01:36:43,920",
@@ -415,7 +415,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  52,
-        "nom":  "NÃšRIA COMA RIERA",
+        "nom":  "NÚRIA COMA RIERA",
         "dorsal":  52,
         "arribada":  "10:37:14,890",
         "temps":  "01:37:08,970",
@@ -447,7 +447,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  56,
-        "nom":  "MARC MONTANYÃ€ BORRELLAS",
+        "nom":  "MARC MONTANYÀ BORRELLAS",
         "dorsal":  57,
         "arribada":  "10:38:44,540",
         "temps":  "01:38:38,620",
@@ -455,7 +455,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  57,
-        "nom":  "JORDI NOGUÃ‰S MUNTÃ‰",
+        "nom":  "JORDI NOGUÉS MUNTÉ",
         "dorsal":  70,
         "arribada":  "10:38:51,480",
         "temps":  "01:38:45,560",
@@ -479,7 +479,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  60,
-        "nom":  "JORDI CASAS CASTAÃ‘E",
+        "nom":  "JORDI CASAS CASTAÑE",
         "dorsal":  15,
         "arribada":  "10:48:26,120",
         "temps":  "01:48:20,200",
@@ -519,7 +519,7 @@ window.resultats2025 = [
     },
     {
         "posicio":  65,
-        "nom":  "GISELA GENARÃ“ SELLABONA",
+        "nom":  "GISELA GENARÓ SELLABONA",
         "dorsal":  18,
         "arribada":  "11:09:56,140",
         "temps":  "02:09:50,220",

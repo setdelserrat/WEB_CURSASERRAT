@@ -1,6 +1,6 @@
-﻿/* 
+/* 
   Dades de classificacions 2026
-  Generat automÃ ticament a partir dels resultats oficials d'Sportmaniacs.
+  Generat automàticament a partir dels resultats oficials d'Sportmaniacs.
   Ritmes recalculats a 12.5km per la 12K i 5km per la 5K.
 */
 
@@ -47,7 +47,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  5,
-        "nom":  "ANIOL BUSQUET GONZÃLEZ",
+        "nom":  "ANIOL BUSQUET GONZÁLEZ",
         "dorsal":  39,
         "arribada":  "09:29:58,978",
         "temps":  "00:28:33,421",
@@ -77,7 +77,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  8,
-        "nom":  "NIL MARTÃN MARRUECOS",
+        "nom":  "NIL MARTÍN MARRUECOS",
         "dorsal":  34,
         "arribada":  "09:31:08,946",
         "temps":  "00:29:43,389",
@@ -87,7 +87,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  9,
-        "nom":  "DAMIÃ€ RIBA SALADA",
+        "nom":  "DAMIÀ RIBA SALADA",
         "dorsal":  9,
         "arribada":  "09:31:39,685",
         "temps":  "00:30:14,128",
@@ -97,7 +97,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  10,
-        "nom":  "GLÃ’RIA CONANGLA CANADELL",
+        "nom":  "GLÒRIA CONANGLA CANADELL",
         "dorsal":  42,
         "arribada":  "09:33:07,676",
         "temps":  "00:31:42,119",
@@ -147,7 +147,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  15,
-        "nom":  "JORDI PARÃ‰S GAROLERA",
+        "nom":  "JORDI PARÉS GAROLERA",
         "dorsal":  37,
         "arribada":  "09:37:35,564",
         "temps":  "00:36:10,007",
@@ -167,7 +167,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  17,
-        "nom":  "JORDI PARÃ‰S TARTER",
+        "nom":  "JORDI PARÉS TARTER",
         "dorsal":  38,
         "arribada":  "09:37:41,981",
         "temps":  "00:36:16,424",
@@ -197,7 +197,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  20,
-        "nom":  "JÃšLIA PORTÃ",
+        "nom":  "JÚLIA PORTÍ",
         "dorsal":  23,
         "arribada":  "09:37:58,489",
         "temps":  "00:36:32,932",
@@ -247,7 +247,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  25,
-        "nom":  "SÃ’NIA TORRAS SERRA",
+        "nom":  "SÒNIA TORRAS SERRA",
         "dorsal":  10,
         "arribada":  "09:39:19,814",
         "temps":  "00:37:54,257",
@@ -267,7 +267,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  27,
-        "nom":  "GREGORI AMENGUAL PERELLÃ“",
+        "nom":  "GREGORI AMENGUAL PERELLÓ",
         "dorsal":  2,
         "arribada":  "09:39:38,870",
         "temps":  "00:38:13,313",
@@ -327,7 +327,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  33,
-        "nom":  "MARTÃ CAPELLAS TORRAS",
+        "nom":  "MARTÍ CAPELLAS TORRAS",
         "dorsal":  13,
         "arribada":  "09:43:12,694",
         "temps":  "00:41:47,137",
@@ -337,7 +337,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  34,
-        "nom":  "ARLET BALLÃšS SANCHEZ",
+        "nom":  "ARLET BALLÚS SANCHEZ",
         "dorsal":  21,
         "arribada":  "09:43:13,497",
         "temps":  "00:41:47,940",
@@ -357,7 +357,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  36,
-        "nom":  "ADRIÃ€ SÃNCHEZ LEIVA",
+        "nom":  "ADRIÀ SÁNCHEZ LEIVA",
         "dorsal":  17,
         "arribada":  "09:45:02,545",
         "temps":  "00:43:36,988",
@@ -387,7 +387,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  39,
-        "nom":  "ELENA MUÃ‘OZ ROBLES",
+        "nom":  "ELENA MUÑOZ ROBLES",
         "dorsal":  30,
         "arribada":  "09:52:27,961",
         "temps":  "00:51:02,404",
@@ -407,7 +407,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  2,
-        "nom":  "ADRIÃ€ CANIMAS",
+        "nom":  "ADRIÀ CANIMAS",
         "dorsal":  190,
         "arribada":  "10:02:21,174",
         "temps":  "01:00:55,617",
@@ -417,7 +417,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  3,
-        "nom":  "JOAN RIBA BURDÃ“",
+        "nom":  "JOAN RIBA BURDÓ",
         "dorsal":  114,
         "arribada":  "10:03:10,048",
         "temps":  "01:01:44,491",
@@ -497,7 +497,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  11,
-        "nom":  "MARC PIÃ‘OT",
+        "nom":  "MARC PIÑOT",
         "dorsal":  182,
         "arribada":  "10:09:27,223",
         "temps":  "01:08:01,666",
@@ -517,7 +517,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  13,
-        "nom":  "JESÃšS PUIG POSA",
+        "nom":  "JESÚS PUIG POSA",
         "dorsal":  180,
         "arribada":  "10:10:01,189",
         "temps":  "01:08:35,632",
@@ -587,7 +587,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  20,
-        "nom":  "LLUC GÃ“MEZ SABATÃ‰",
+        "nom":  "LLUC GÓMEZ SABATÉ",
         "dorsal":  171,
         "arribada":  "10:13:05,511",
         "temps":  "01:11:39,954",
@@ -637,7 +637,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  25,
-        "nom":  "JOSEP M ESTUPIÃ‘Ã FAJA",
+        "nom":  "JOSEP M ESTUPIÑÁ FAJA",
         "dorsal":  138,
         "arribada":  "10:19:27,806",
         "temps":  "01:18:02,249",
@@ -647,7 +647,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  26,
-        "nom":  "CLÃ€UDIA ROCA HERMS",
+        "nom":  "CLÀUDIA ROCA HERMS",
         "dorsal":  142,
         "arribada":  "10:19:30,722",
         "temps":  "01:18:05,165",
@@ -667,7 +667,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  28,
-        "nom":  "MARC PICAZOS SERRAJÃ’RDIA",
+        "nom":  "MARC PICAZOS SERRAJÒRDIA",
         "dorsal":  143,
         "arribada":  "10:20:21,844",
         "temps":  "01:18:56,287",
@@ -697,7 +697,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  31,
-        "nom":  "MOISÃˆS SUADES CASTELLÃ€",
+        "nom":  "MOISÈS SUADES CASTELLÀ",
         "dorsal":  160,
         "arribada":  "10:21:57,076",
         "temps":  "01:20:31,519",
@@ -757,7 +757,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  37,
-        "nom":  "XAVIER MATARÃ“ SEUMA",
+        "nom":  "XAVIER MATARÓ SEUMA",
         "dorsal":  108,
         "arribada":  "10:23:58,171",
         "temps":  "01:22:32,614",
@@ -837,7 +837,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  45,
-        "nom":  "DAVID SALLÃ‰S BELMONTE",
+        "nom":  "DAVID SALLÉS BELMONTE",
         "dorsal":  150,
         "arribada":  "10:27:32,052",
         "temps":  "01:26:06,495",
@@ -857,7 +857,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  47,
-        "nom":  "JORDI VILA RAGUÃ‰S",
+        "nom":  "JORDI VILA RAGUÉS",
         "dorsal":  110,
         "arribada":  "10:28:09,755",
         "temps":  "01:26:44,198",
@@ -867,7 +867,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  48,
-        "nom":  "ROGER SUBIRÃ€ LARA",
+        "nom":  "ROGER SUBIRÀ LARA",
         "dorsal":  163,
         "arribada":  "10:28:10,981",
         "temps":  "01:26:45,424",
@@ -877,7 +877,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  49,
-        "nom":  "MARC MONTANYÃ€",
+        "nom":  "MARC MONTANYÀ",
         "dorsal":  111,
         "arribada":  "10:28:11,237",
         "temps":  "01:26:45,680",
@@ -917,7 +917,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  53,
-        "nom":  "MARIÃ€ ANGLERILL CAPDEVILA",
+        "nom":  "MARIÀ ANGLERILL CAPDEVILA",
         "dorsal":  152,
         "arribada":  "10:29:14,292",
         "temps":  "01:27:48,735",
@@ -927,7 +927,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  54,
-        "nom":  "ALEIX HIDALGO FARRÃ€S",
+        "nom":  "ALEIX HIDALGO FARRÀS",
         "dorsal":  139,
         "arribada":  "10:29:31,170",
         "temps":  "01:28:05,613",
@@ -937,7 +937,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  55,
-        "nom":  "ADRIÃ€ HERNÃNDEZ",
+        "nom":  "ADRIÀ HERNÁNDEZ",
         "dorsal":  186,
         "arribada":  "10:31:29,569",
         "temps":  "01:30:04,012",
@@ -947,7 +947,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  56,
-        "nom":  "Ã€FRICA GIRALT OLIVERAS",
+        "nom":  "ÀFRICA GIRALT OLIVERAS",
         "dorsal":  161,
         "arribada":  "10:33:28,538",
         "temps":  "01:32:02,981",
@@ -967,7 +967,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  58,
-        "nom":  "MERCÃˆ PELAY SOLÃ‰",
+        "nom":  "MERCÈ PELAY SOLÉ",
         "dorsal":  122,
         "arribada":  "10:36:16,083",
         "temps":  "01:34:50,526",
@@ -977,7 +977,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  59,
-        "nom":  "GEMMA MOLLÃ€ FORNELLS",
+        "nom":  "GEMMA MOLLÀ FORNELLS",
         "dorsal":  121,
         "arribada":  "10:36:16,542",
         "temps":  "01:34:50,985",
@@ -1007,7 +1007,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  62,
-        "nom":  "SANTI SÃNCHEZ ALMAZÃN",
+        "nom":  "SANTI SÁNCHEZ ALMAZÁN",
         "dorsal":  178,
         "arribada":  "10:40:09,410",
         "temps":  "01:38:43,853",
@@ -1057,7 +1057,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  67,
-        "nom":  "KIKE GERMÃN",
+        "nom":  "KIKE GERMÁN",
         "dorsal":  188,
         "arribada":  "10:42:28,645",
         "temps":  "01:41:03,088",
@@ -1077,7 +1077,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  69,
-        "nom":  "ROSA VILÃ€ GARET",
+        "nom":  "ROSA VILÀ GARET",
         "dorsal":  107,
         "arribada":  "10:43:50,959",
         "temps":  "01:42:25,402",
@@ -1177,7 +1177,7 @@ window.resultats2026 = [
     },
     {
         "posicio":  79,
-        "nom":  "CARLA BORRÃ€S POLO",
+        "nom":  "CARLA BORRÀS POLO",
         "dorsal":  179,
         "arribada":  "10:55:00,915",
         "temps":  "01:53:35,358",
