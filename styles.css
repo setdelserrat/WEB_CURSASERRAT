@@ -905,6 +905,10 @@ footer {
     margin-top: 40px;
 }
 
+.graella-3col {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flickr-card {
     position: relative;
     display: block;
@@ -959,7 +963,8 @@ footer {
    ============================== */
 
 @media (max-width: 900px) {
-    .graella-flickr {
+    .graella-flickr,
+    .graella-3col {
         grid-template-columns: 1fr;
     }
 
